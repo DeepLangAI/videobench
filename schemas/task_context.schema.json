@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "videobench/task_context",
+  "title": "TaskContext",
+  "description": "Judge 输入的任务上下文与生产约束。有参照模式缺任一参照字段即拒评；无参照模式仅评不需参照的维度。",
+  "type": "object",
+  "required": ["case_id", "mode"],
+  "if": { "properties": { "mode": { "const": "with_reference" } } },
+  "then": { "required": ["case_id", "mode", "brief", "input_assets", "product_facts", "platform_requirements", "brand_requirements"] },
+  "properties": {
+    "case_id": { "type": "string", "description": "goldenset/cases/ 中的题目编号" },
+    "mode": { "enum": ["with_reference", "no_reference"], "description": "评估模式，决定可评维度范围（见 docs/dimensions.md 的需参照列）" },
+    "brief": { "type": "string", "description": "原始 Brief 全文，不允许改写或摘要" },
+    "input_assets": {
+      "type": "array",
+      "description": "输入素材清单",
+      "items": {
+        "type": "object",
+        "required": ["path", "type"],
+        "properties": {
+          "path": { "type": "string" },
+          "type": { "enum": ["video", "image", "audio", "logo", "document"] },
+          "usage_constraint": { "type": "string", "description": "必用/禁用/仅参考 等素材使用要求" }
+        }
+      }
+    },
+    "product_facts": {
+      "type": "array",
+      "description": "产品事实表：可核验的事实断言，L1 信息准确的对照基准",
+      "items": {
+        "type": "object",
+        "required": ["fact"],
+        "properties": {
+          "fact": { "type": "string" },
+          "must_appear": { "type": "boolean", "description": "true 时缺失即触发 Gate『关键内容缺失』" }
+        }
+      }
+    },
+    "platform_requirements": {
+      "type": "object",
+      "description": "平台硬性要求，是 Gate 第 8 条的依据",
+      "properties": {
+        "platform": { "type": "string" },
+        "duration_sec": { "type": "object", "properties": { "min": { "type": "number" }, "max": { "type": "number" } } },
+        "aspect_ratio": { "type": "string" },
+        "subtitle_required": { "type": "boolean" },
+        "content_policies": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "brand_requirements": {
+      "type": "object",
+      "properties": {
+        "logo_rules": { "type": "string" },
+        "palette": { "type": "array", "items": { "type": "string" } },
+        "typography": { "type": "string" },
+        "tone_of_voice": { "type": "string" },
+        "forbidden": { "type": "array", "items": { "type": "string" }, "description": "品牌禁区（竞品、禁语、禁用画面）" }
+      }
+    },
+    "target_audience": { "type": "string", "description": "Judge 逼近的目标人群画像" }
+  }
+}

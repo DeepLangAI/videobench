@@ -1,0 +1,17 @@
+{
+  "source": "mdls (macOS Spotlight metadata), 2026-07-15",
+  "mode": "no_reference",
+  "videos": [
+    { "file": "hyperframes-launch-preview.mp4", "size_kb": 860, "duration_sec": 12.033, "resolution": "1280x720", "codec": "H.264", "total_bitrate_kbps": 583, "audio_track": false, "playable": true },
+    { "file": "texture-launch-preview.mp4", "size_kb": 921, "duration_sec": 10.0, "resolution": "1280x720", "codec": "H.264", "total_bitrate_kbps": 751, "audio_track": false, "playable": true },
+    { "file": "timeline-editor-preview.mp4", "size_kb": 361, "duration_sec": 12.0, "resolution": "1280x720", "codec": "H.264", "total_bitrate_kbps": 243, "audio_track": false, "playable": true },
+    { "file": "vfx-heygen-preview.mp4", "size_kb": 1741, "duration_sec": 12.0, "resolution": "960x540", "codec": "H.264", "total_bitrate_kbps": 1155, "audio_track": false, "playable": true },
+    { "file": "website-to-hyperframes-preview.mp4", "size_kb": 421, "duration_sec": 12.0, "resolution": "1280x720", "codec": "H.264", "total_bitrate_kbps": 284, "audio_track": false, "playable": true }
+  ],
+  "notes": [
+    "全部 5 条无音轨（kMDItemMediaTypes 仅 Video）——L4 音频层记事实『无音轨』；无参照模式下无法判定是否『应有配音而无声』，Gate 规则5 记 borderline 并注明。",
+    "timeline-editor (243 kbps) 与 website-to-hyperframes (284 kbps) 码率显著偏低，压缩伪影风险，交 Judge 复核清晰度。",
+    "vfx-heygen 为 960x540，低于其余四条的 1280x720。",
+    "本机无 ffmpeg，码率/时长来自 Spotlight 元数据，未做逐帧差分闪烁检测。"
+  ]
+}

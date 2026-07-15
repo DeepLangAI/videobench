@@ -1,0 +1,27 @@
+{
+  "$comment": "复制本模板创建新题目，文件名即 case_id（如 case-001.json）。字段契约见 schemas/task_context.schema.json。",
+  "case_id": "case-000",
+  "mode": "with_reference",
+  "brief": "（原始 Brief 全文，不改写）",
+  "input_assets": [
+    { "path": "assets/case-000/product.jpg", "type": "image", "usage_constraint": "必用" }
+  ],
+  "product_facts": [
+    { "fact": "（可核验的事实断言，如：售价 299 元）", "must_appear": true }
+  ],
+  "platform_requirements": {
+    "platform": "抖音",
+    "duration_sec": { "min": 15, "max": 60 },
+    "aspect_ratio": "9:16",
+    "subtitle_required": true,
+    "content_policies": []
+  },
+  "brand_requirements": {
+    "logo_rules": "",
+    "palette": [],
+    "typography": "",
+    "tone_of_voice": "",
+    "forbidden": []
+  },
+  "target_audience": "（Judge 要逼近的目标人群画像）"
+}

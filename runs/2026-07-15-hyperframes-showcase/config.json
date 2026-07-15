@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-07-15-hyperframes-showcase",
+  "date": "2026-07-15",
+  "mode": "no_reference",
+  "purpose": "首次全流程试跑：5 条 HyperFrames showcase preview 片，Gate + 维度诊断（无基线对，GSB 层不适用）",
+  "videos_dir": "/Users/admin/Downloads/hyperframes-showcase",
+  "judges": {
+    "full": "gemini-3.5-flash",
+    "visual_crosscheck": "doubao-seed-2-0-pro-260215",
+    "gateway_config": "~/.claude/skills/video-triage/scripts/config.json",
+    "input": "native video via --file (base64), fps=0.5"
+  },
+  "judge_prompt_version": "video-triage analyze_video.py 内置 PROMPT_FULL / PROMPT_VISUAL（videobench prompts/ 尚未接入脚本，本次为借用）",
+  "scoring": "维度分按 models.md 密度锚定（模型直觉分虚高 1-1.5，只作参考）",
+  "gsb": null,
+  "caveats": [
+    "无参照模式：L1 全部、L6 需参照维度 skipped_no_reference",
+    "全部视频无音轨：L4 记事实，不打分",
+    "单 judge 单采样（未做多次采样/换位，因无成对比较）"
+  ]
+}

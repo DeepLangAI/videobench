@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "videobench/dimension_scores",
+  "title": "DimensionScores",
+  "description": "能力诊断层输出：单条视频的六层质量向量 Q(y)。客观维度由工具直接给分，主观维度由 Judge 打分。",
+  "type": "object",
+  "required": ["case_id", "video_path", "scores"],
+  "properties": {
+    "case_id": { "type": "string" },
+    "video_path": { "type": "string" },
+    "scores": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["layer", "dimension"],
+        "if": { "properties": { "skipped_no_reference": { "const": true } }, "required": ["skipped_no_reference"] },
+        "else": { "required": ["score", "evidence"] },
+        "properties": {
+          "layer": { "enum": ["L1_task", "L2_visual", "L3_temporal", "L4_audio", "L5_narrative", "L6_commercial"] },
+          "dimension": { "type": "string", "description": "docs/dimensions.md 中的维度名，不得自造" },
+          "method": { "enum": ["objective", "judge", "hybrid"], "description": "本分数由客观工具、Judge 还是混合方式得出，须与 dimensions.md 的评测方式列一致" },
+          "skipped_no_reference": { "type": "boolean", "description": "无参照模式下需参照的维度置 true 且不给分" },
+          "score": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "description": "没有证据的分数无效",
+            "items": {
+              "type": "object",
+              "required": ["description"],
+              "properties": {
+                "timestamp_sec": { "type": "number" },
+                "description": { "type": "string" },
+                "quote": { "type": "string" }
+              }
+            }
+          },
+          "fatal_flag": { "type": "boolean", "description": "⚑ 维度触发致命候选时置 true，联动 Gate" }
+        }
+      }
+    }
+  }
+}

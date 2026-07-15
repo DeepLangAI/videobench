@@ -1,0 +1,11 @@
+{
+  "mode": "no_reference",
+  "note": "无参照模式下规则1/2/3/6/8需参照，记 not_assessable；规则5音频缺失:客观轨确认5条全部无音轨（mdls+MP4 box扫描双重验证），但无Brief无法判定'是否应有配音'，一律 borderline 转人工。gemini 报告中所有音频类判定（含其标注的'致命:开头静音'）因音轨不存在而作废。",
+  "results": [
+    { "video": "hyperframes-launch-preview.mp4", "pass": "conditional", "unplayable": "pass", "severe_deformation": "pass", "audio_missing": "borderline(无音轨,是否应有配音需人工)", "extra": "结尾11.6-12.0s出现截断打字'Ask your age|'（doubao单模型发现,疑似'Ask your agent…'被切断）——若属实接近'关键内容缺失/不完整交付',needs_human", "needs_human": true },
+    { "video": "texture-launch-preview.mp4", "pass": "conditional", "unplayable": "pass", "severe_deformation": "pass", "audio_missing": "borderline(无音轨)", "extra": "文案语法问题'these are a MASK that give'（gemini发现,主谓数不一致）,不构成致命", "needs_human": true },
+    { "video": "timeline-editor-preview.mp4", "pass": "conditional", "unplayable": "pass", "severe_deformation": "pass", "audio_missing": "borderline(无音轨)", "extra": "录屏残留无关系统UI（Finder弹窗/浏览器地址栏/Ask Gemini按钮,双模型确认）——产品宣传片中属于明显瑕疵但非致命", "needs_human": true },
+    { "video": "vfx-heygen-preview.mp4", "pass": "conditional", "unplayable": "pass", "severe_deformation": "pass", "audio_missing": "borderline(无音轨)", "extra": "开篇1帧全黑（doubao）;命令行关键信息停留<1s无法读取（gemini）", "needs_human": true },
+    { "video": "website-to-hyperframes-preview.mp4", "pass": "conditional", "unplayable": "pass", "severe_deformation": "pass", "audio_missing": "borderline(无音轨)", "extra": "结尾内容两模型描述冲突（gemini:淡出全白结束 vs doubao:11.1s后还有'01·PRODUCT LAUNCH stripe.com'新场景）——疑似截断或模型漏看,needs_human", "needs_human": true }
+  ]
+}

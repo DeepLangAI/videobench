@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "videobench/evidence",
+  "title": "EvidencePack",
+  "description": "第一步『观察视频』的产物：一条候选视频的证据包。native_video_input 为 false 时，keyframes/shots/asr 为最低必备项。",
+  "type": "object",
+  "required": ["video_path", "playable", "duration_sec", "native_video_input"],
+  "properties": {
+    "video_path": { "type": "string" },
+    "playable": { "type": "boolean", "description": "false 直接触发 Gate 第 7 条" },
+    "duration_sec": { "type": "number" },
+    "aspect_ratio": { "type": "string" },
+    "native_video_input": { "type": "boolean", "description": "Judge 是否以原生视频模态直接看片" },
+    "keyframes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["timestamp_sec", "path", "source"],
+        "properties": {
+          "timestamp_sec": { "type": "number" },
+          "path": { "type": "string" },
+          "source": { "enum": ["uniform", "shot_boundary", "high_motion"], "description": "均匀抽帧 / 镜头边界 / 高运动区间" }
+        }
+      }
+    },
+    "clips": {
+      "type": "array",
+      "description": "供局部复核的连续片段",
+      "items": { "type": "object", "properties": { "start_sec": { "type": "number" }, "end_sec": { "type": "number" }, "path": { "type": "string" } } }
+    },
+    "shots": {
+      "type": "array",
+      "items": { "type": "object", "properties": { "index": { "type": "integer" }, "start_sec": { "type": "number" }, "end_sec": { "type": "number" }, "description": { "type": "string" } } }
+    },
+    "ocr": {
+      "type": "array",
+      "items": { "type": "object", "required": ["timestamp_sec", "text"], "properties": { "timestamp_sec": { "type": "number" }, "text": { "type": "string" }, "region": { "type": "string" } } }
+    },
+    "asr": {
+      "type": "array",
+      "items": { "type": "object", "required": ["start_sec", "end_sec", "text"], "properties": { "start_sec": { "type": "number" }, "end_sec": { "type": "number" }, "text": { "type": "string" }, "language": { "type": "string" } } }
+    },
+    "audio_info": {
+      "type": "object",
+      "properties": { "has_speech": { "type": "boolean" }, "has_music": { "type": "boolean" }, "music_description": { "type": "string" }, "ambient": { "type": "string" }, "loudness_lufs": { "type": "number" } }
+    },
+    "entities": {
+      "type": "array",
+      "description": "人物、产品、动作、场景变化清单",
+      "items": { "type": "object", "properties": { "type": { "enum": ["person", "product", "action", "scene_change"] }, "description": { "type": "string" }, "appearances": { "type": "array", "items": { "type": "number" } } } }
+    },
+    "consistency_signals": {
+      "type": "array",
+      "description": "前后帧一致性信号（闪烁、跳变、主体漂移的自动检测结果）",
+      "items": { "type": "object", "properties": { "timestamp_sec": { "type": "number" }, "signal": { "type": "string" } } }
+    },
+    "objective_metrics": {
+      "type": "object",
+      "description": "客观检查轨结果：确定性工具输出，Judge 不得推翻",
+      "properties": {
+        "resolution": { "type": "string" },
+        "bitrate_kbps": { "type": "number" },
+        "fps": { "type": "number" },
+        "loudness_lufs": { "type": "number" },
+        "audio_clipping": { "type": "boolean" },
+        "asr_language": { "type": "string" },
+        "ocr_typo_hits": { "type": "array", "description": "OCR 文本与词表/事实表比对命中的错字或冲突", "items": { "type": "object", "properties": { "timestamp_sec": { "type": "number" }, "found": { "type": "string" }, "expected": { "type": "string" } } } },
+        "fact_conflicts": { "type": "array", "description": "OCR/ASR 与产品事实表的规则比对冲突项（有参照模式）", "items": { "type": "object", "properties": { "fact": { "type": "string" }, "found": { "type": "string" }, "timestamp_sec": { "type": "number" } } } },
+        "flicker_segments": { "type": "array", "description": "帧间差分检出的疑似闪烁区间", "items": { "type": "object", "properties": { "start_sec": { "type": "number" }, "end_sec": { "type": "number" } } } },
+        "subtitle_coverage": { "type": "number", "description": "有语音区间的字幕覆盖率 0-1" }
+      }
+    }
+  }
+}

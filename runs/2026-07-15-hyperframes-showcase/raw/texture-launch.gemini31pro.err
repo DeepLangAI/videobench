@@ -1,0 +1,2 @@
+ERROR: HTTP 503
+{"error":{"code":"model_not_found","message":"No available channel for model google/gemini-3.1-pro-preview under group default (distributor) (request id: 6a577c75dab3f2bd08485634)","type":"new_api_error"}}

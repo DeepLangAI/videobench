@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "videobench/gsb_result",
+  "title": "GsbResult",
+  "description": "版本决策层输出：一对样本的分维度比较 + 整体 GSB（含换位复评与概率）。",
+  "type": "object",
+  "required": ["case_id", "candidate", "baseline", "gate_shortcut", "dimension_comparison", "gsb", "probabilities", "swap_consistent"],
+  "properties": {
+    "case_id": { "type": "string" },
+    "candidate": { "type": "string", "description": "候选方案视频路径（Judge 评估时不知道哪个是候选）" },
+    "baseline": { "type": "string" },
+    "gate_shortcut": {
+      "type": "object",
+      "description": "第一层：仅一方致命时直接定 GSB",
+      "required": ["applied"],
+      "properties": {
+        "applied": { "type": "boolean" },
+        "fatal_side": { "enum": ["candidate", "baseline", "both", "none"] }
+      }
+    },
+    "dimension_comparison": {
+      "type": "object",
+      "description": "第二层：六个可比层逐层 win/tie/loss（相对候选方案），每层附证据",
+      "required": ["task_alignment", "visual", "temporal", "audio", "narrative", "commercial"],
+      "additionalProperties": false,
+      "properties": {
+        "task_alignment": { "$ref": "#/$defs/layerVerdict" },
+        "visual": { "$ref": "#/$defs/layerVerdict" },
+        "temporal": { "$ref": "#/$defs/layerVerdict" },
+        "audio": { "$ref": "#/$defs/layerVerdict" },
+        "narrative": { "$ref": "#/$defs/layerVerdict" },
+        "commercial": { "$ref": "#/$defs/layerVerdict" }
+      }
+    },
+    "gsb": { "enum": ["G", "S", "B"], "description": "第三层：综合任务目标和用户价值的最终决策" },
+    "probabilities": {
+      "type": "object",
+      "description": "输出概率而不是只有标签",
+      "required": ["G", "S", "B"],
+      "properties": { "G": { "type": "number" }, "S": { "type": "number" }, "B": { "type": "number" } }
+    },
+    "rationale": { "type": "string", "description": "最终判断理由，须引用维度层证据" },
+    "swap_consistent": { "type": ["boolean", "null"], "description": "换位复评是否得到一致结论；null=未做换位；false=标记不稳定" },
+    "n_samples": { "type": "integer", "description": "多次采样次数" },
+    "confidence": { "enum": ["high", "medium", "low"], "description": "low 或 swap_consistent=false 必须转人工" },
+    "needs_human": { "type": "boolean" }
+  },
+  "$defs": {
+    "layerVerdict": {
+      "type": "object",
+      "required": ["verdict"],
+      "properties": {
+        "verdict": { "enum": ["win", "tie", "loss"] },
+        "evidence": { "type": "string", "description": "可验证证据：时间戳、帧号或引文" }
+      }
+    }
+  }
+}

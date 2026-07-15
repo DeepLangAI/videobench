@@ -1,0 +1,63 @@
+{
+  "mode": "no_reference",
+  "skipped": {
+    "L1_task": "全部维度需参照(Brief/产品事实), skipped_no_reference",
+    "L4_audio": "客观轨确认无音轨, 无可评内容; gemini的音频评价全部为幻觉已作废",
+    "L6_commercial": "全部维度需参照(品牌/平台要求), skipped_no_reference"
+  },
+  "scoring_basis": "仅采纳视觉类发现; 双模型同点位确认→高置信, 单模型→标注来源; 分数按 models.md 密度锚定, 模型直觉分仅作参考",
+  "videos": [
+    {
+      "video": "hyperframes-launch-preview.mp4",
+      "model_gut_scores": { "gemini": 3.2 },
+      "confirmed_issues": { "fatal": 0, "obvious": 6, "minor": 2 },
+      "scores": {
+        "L2": { "清晰度": [4, "轻微压缩伪影(doubao 0.0s 存疑)"], "美学": [3, "单屏6层信息(双方向确认: doubao计6层/gemini未反驳), 卡片贴边无留白(doubao)"], "主体质量": [4, "数字人无变形报告"], "文字质量": [3, "0.8-2.4s大标题与背景霓虹字重叠(doubao), 底部字幕贴最下沿(doubao)"] },
+        "L3": { "人物一致性": [4, "单一数字人段落无异常"], "物体恒常性": [3, "播放器边框装饰0-2.4s后无过渡消失(doubao)"], "运动自然": [3, "1-2s缩放过渡生硬线性(gemini)"], "无闪烁": [4, "无闪烁报告"] },
+        "L5": { "开头吸引力": [3, "两模型分歧: gemini认为炫酷片段太短没讲清, doubao认为素材无关——needs_human"], "镜头逻辑": [3, "结尾疑似截断'Ask your age|'(doubao), 切出突兀"], "节奏": [3, "2.4-11.6s同机位静态超8秒(doubao), 代码段停留偏长(gemini)"], "信息层级": [3, "单屏6层(doubao)"] }
+      }
+    },
+    {
+      "video": "texture-launch-preview.mp4",
+      "model_gut_scores": { "gemini": 1.5 },
+      "gut_score_note": "gemini的1.5分主要扣在'无配音''音乐戛然而止'(幻觉)和'无CTA'(prompt口径偏口播带货片), 剔除后实际视觉问题密度是5条里最低的",
+      "confirmed_issues": { "fatal": 0, "obvious": 3, "minor": 3 },
+      "scores": {
+        "L2": { "清晰度": [3, "7.2-7.6s过渡帧模糊(双模型同点位确认), SHADERS液态背景噪点(gemini,存疑)"], "美学": [4, "纹理拼贴风格鲜明统一; 色块对齐随意(doubao)扣分"], "主体质量": [4, "无变形"], "文字质量": [3, "文案语法'these are a MASK that give'主谓不一致(gemini); doubao报的'语义断行'实为kinetic typography刻意设计, 不采纳"] },
+        "L3": { "物体恒常性": [4, "铺路石纹理三次复用(doubao,存疑)"], "运动自然": [4, "快切节奏成立"], "无闪烁": [4, "无闪烁报告"] },
+        "L5": { "开头吸引力": [3, "开头为普通文字屏(双模型), 但作为特效展示片hook要求存疑"], "镜头逻辑": [4, "逐屏展开逻辑连贯"], "节奏": [4, "快节奏与内容匹配"], "信息层级": [3, "两处单屏5层(doubao)"] }
+      }
+    },
+    {
+      "video": "timeline-editor-preview.mp4",
+      "model_gut_scores": { "gemini": 2.0 },
+      "confirmed_issues": { "fatal": 0, "obvious": 5, "minor": 2 },
+      "scores": {
+        "L2": { "清晰度": [2, "客观轨243kbps全场最低码率, 与gemini'UI文字模糊显廉价'相互印证; 5.7-8.7s模糊转场双模型确认"], "美学": [3, "简洁但静态堆砌"], "主体质量": [4, "无变形"], "文字质量": [3, "drag色块对比度低(gemini,存疑)"] },
+        "L3": { "物体恒常性": [3, "录屏残留Finder弹窗/浏览器地址栏/Ask Gemini按钮未清理(双模型确认)——产品片中的明显穿帮"], "运动自然": [3, "模糊转场生硬且无节奏配合(gemini)"], "无闪烁": [3, "5-6s与7.7-8.7s两处一过性模糊"] },
+        "L5": { "开头吸引力": [2, "双模型一致: 前3-4秒纯文字屏平淡, 'Not Anymore'无上下文"], "镜头逻辑": [3, "简化示意→真实界面的递进成立"], "节奏": [3, "前4秒静态文字停留过长(gemini)"], "信息层级": [3, "界面屏5层(doubao)"] }
+      }
+    },
+    {
+      "video": "vfx-heygen-preview.mp4",
+      "model_gut_scores": { "gemini": 2.5 },
+      "confirmed_issues": { "fatal": 0, "obvious": 4, "minor": 3 },
+      "scores": {
+        "L2": { "清晰度": [3, "客观轨: 全场唯一540p; 开篇霓虹噪点(gemini,存疑), 3.0s过渡帧'HI'严重模糊(doubao)"], "美学": [4, "双模型认可: 光效精致/辨识度高"], "主体质量": [4, "iPhone 3D模型无变形"], "文字质量": [2, "9.0-9.6s手机旋转屏幕文字倒置(doubao), 10s命令行停留<1s无法读取(gemini), 7.0s手指遮挡按钮区(doubao)"] },
+        "L3": { "物体恒常性": [4, "无异常"], "运动自然": [4, "3D旋转自然"], "无闪烁": [3, "开篇1帧全黑(doubao)"] },
+        "L5": { "开头吸引力": [3, "Logo开局(gemini批'自嗨'——prompt口径偏泛流量短视频, 对开发者showcase需人工定)"], "镜头逻辑": [3, "Logo→特性→3D→命令行递进成立, 但末段信息传递失效"], "节奏": [2, "关键命令行画面<1s(gemini), 信息停留严重不足"], "信息层级": [3, "手机屏6层(doubao)"] }
+      }
+    },
+    {
+      "video": "website-to-hyperframes-preview.mp4",
+      "model_gut_scores": { "gemini": 1.5 },
+      "gut_score_note": "gemini的1.5分一半扣在幻觉音频(TTS机器感/无BGM/YEAHHH音效), 剔除后视觉问题仍是5条中最密集的",
+      "confirmed_issues": { "fatal": 0, "obvious": 6, "minor": 2 },
+      "scores": {
+        "L2": { "清晰度": [3, "客观轨284kbps次低码率; 终端小字在手机端不可读(双模型确认: gemini'可读性极差'+doubao'窗口叠放遮挡')"], "美学": [2, "卡通YEAHH与科技代码窗风格反差过大(doubao), 底部字幕默认样式廉价(gemini), 窗口随机倾斜对齐混乱(doubao)"], "主体质量": [4, "无变形"], "文字质量": [2, "输入文字过小+互相遮挡(双确认), 中央大字与底部字幕内容重复冗余(gemini), 'hyperfram'疑似拼写截断(doubao,存疑)"] },
+        "L3": { "物体恒常性": [3, "结尾内容两模型描述冲突(淡出白 vs stripe.com新场景)——needs_human"], "运动自然": [3, "窗口平移入场单一(doubao)"], "无闪烁": [4, "无闪烁报告"] },
+        "L5": { "开头吸引力": [3, "命令行开局(双模型批弱钩子——对开发者受众需人工定)"], "镜头逻辑": [3, "四窗口→合并→YEAHH→突然出现新场景, 结尾断裂"], "节奏": [3, "窗口逐个弹出节奏均匀但单调"], "信息层级": [2, "两处单屏5层+(doubao), 大字与字幕重复"] }
+      }
+    }
+  ]
+}

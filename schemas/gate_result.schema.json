@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "videobench/gate_result",
+  "title": "GateResult",
+  "description": "合格性层输出：单条视频的致命错误检测结果（Pointwise Gate）。",
+  "type": "object",
+  "required": ["case_id", "video_path", "pass", "checks"],
+  "properties": {
+    "case_id": { "type": "string" },
+    "video_path": { "type": "string" },
+    "pass": { "type": "boolean", "description": "任一 check 为 fail 即 false" },
+    "checks": {
+      "type": "array",
+      "description": "八条 Gate 规则逐条结论",
+      "items": {
+        "type": "object",
+        "required": ["rule", "verdict"],
+        "properties": {
+          "rule": {
+            "enum": [
+              "product_or_brand_error",
+              "core_fact_error",
+              "key_content_missing",
+              "severe_deformation",
+              "audio_missing_or_wrong_language",
+              "platform_legal_safety_violation",
+              "unplayable",
+              "hard_spec_violation"
+            ]
+          },
+          "verdict": { "enum": ["pass", "fail", "borderline"], "description": "borderline 必须转人工" },
+          "evidence": {
+            "type": "array",
+            "description": "fail/borderline 时必填：可验证证据",
+            "items": {
+              "type": "object",
+              "required": ["description"],
+              "properties": {
+                "timestamp_sec": { "type": "number" },
+                "description": { "type": "string" },
+                "quote": { "type": "string", "description": "OCR/ASR 原文引文" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "needs_human": { "type": "boolean" }
+  }
+}
