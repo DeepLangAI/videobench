@@ -19,8 +19,8 @@
 ## 逐条检查以下八条规则
 
 1. **产品或品牌错误**：出现错误的产品、竞品、错误 Logo/品牌色/品牌名，或触碰 brand_requirements.forbidden；
-2. **核心事实错误**：OCR/ASR 中的价格、参数、功能、名称与 product_facts 冲突；
-3. **关键内容缺失**：product_facts 中 must_appear=true 的事实、必要免责声明或 Brief 明确要求的内容未出现；
+2. **核心事实错误**：OCR/ASR 中的可核验断言与事实表冲突——product_marketing 档比对 product_facts（价格、参数、功能、名称）；content_channel 档比对 key_facts，并参考 research_notes.common_errors（该选题已知查错陷阱）。**注意**：content_channel 的 key_facts 若 verified_by_human=false（AI 起草、未经人工核验），事实冲突一律判 borderline 并置 needs_human，不得据此硬判 fail（未经核验的事实表不作致命裁决依据）；
+3. **关键内容缺失**：must_appear=true 的必备内容未出现——product_marketing 档看 product_facts；content_channel 档看 must_cover 覆盖点（来自 channelDescription/query，可硬判）与 key_facts 中 must_appear=true 的事实（其中 verified_by_human=false 的未核验事实，缺失只记 borderline+needs_human，不硬判）；另含必要免责声明或 Brief 明确要求的内容；
 4. **严重人物、产品变形**：主体崩坏、肢体异常、产品外形失真到影响辨认或引发反感；
 5. **音频缺失或语言错误**：应有配音而无声、语言与要求不符、大段语音错误；
 6. **违反平台、法律或安全要求**：触碰 platform_requirements.content_policies 或法律/安全红线；

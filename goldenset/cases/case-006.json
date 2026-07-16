@@ -1,0 +1,67 @@
+{
+  "case_id": "case-006",
+  "mode": "with_reference",
+  "profile": "content_channel",
+  "channel": {
+    "name": "深海恐惧图解·尺度失控的瞬间",
+    "description": "每期用可视化对比展示深海环境如何让人类感知的尺度和安全感彻底失效——压力、黑暗、未知生物的比例，解析\"深海恐惧症\"背后的具体触发机制",
+    "locale": "zh-cn",
+    "carrier": "Video"
+  },
+  "query": "深海恐惧：当水面吞掉人的尺度",
+  "brief": "【频道】深海恐惧图解·尺度失控的瞬间\n【频道需求】每期用可视化对比展示深海环境如何让人类感知的尺度和安全感彻底失效——压力、黑暗、未知生物的比例，解析\"深海恐惧症\"背后的具体触发机制\n【本期选题】深海恐惧：当水面吞掉人的尺度",
+  "must_cover": [
+    { "point": "用可视化对比展示尺度/安全感如何失效", "source": "channelDescription", "must_appear": true },
+    { "point": "讲清压力这一维度", "source": "channelDescription", "must_appear": true },
+    { "point": "讲清黑暗这一维度", "source": "channelDescription", "must_appear": true },
+    { "point": "讲清未知生物的比例/尺度这一维度", "source": "channelDescription", "must_appear": true },
+    { "point": "解析『深海恐惧症』背后的具体触发机制", "source": "channelDescription", "must_appear": true }
+  ],
+  "key_facts": [
+    { "fact": "海平面处大气压约为 1 个标准大气压，NOAA 表述为约 14.7 psi(1 标准大气压约 101 kPa)，这是人体日常所处的基准压力。", "must_appear": false, "source": "How does pressure change with ocean depth? (NOAA Ocean Service) — https://oceanservice.noaa.gov/facts/pressure.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "在海水中每下潜约 10 米(NOAA 原文为每 33 英尺 / 10.06 米)，压力约增加 1 个大气压(约 101 kPa)；压力随深度近似线性叠加。", "must_appear": true, "source": "How does pressure change with ocean depth? (NOAA Ocean Service) — https://oceanservice.noaa.gov/facts/pressure.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "由每 10 米加约 1 atm 推算，约 1000 米深处压力约为海平面的 100 倍(约 100 atm)；这种压力的成倍放大正是『尺度失控』的核心物理量(此为基于 NOAA 规则的算术推导)。", "must_appear": false, "source": "How does pressure change with ocean depth? (NOAA Ocean Service) — https://oceanservice.noaa.gov/facts/pressure.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "海洋上层约 0–200 米为真光层/透光带(euphotic，即 sunlight zone / epipelagic)，是唯一能支持光合作用的深度；约 200 米以下光合作用已无法进行。", "must_appear": true, "source": "How far does light travel in the ocean? (NOAA Ocean Service) — https://oceanservice.noaa.gov/facts/light_travel.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "约 200–1000 米为弱光带/暮光带(dysphotic / twilight zone)，有微光但不足以光合；约 1000 米以下为无光带/午夜带(aphotic / midnight zone)，阳光无法到达、终年黑暗(NOAA：200 米以下已几乎无有效光照，光最多可探测到约 1000 米)。", "must_appear": true, "source": "How far does light travel in the ocean? (NOAA Ocean Service) — https://oceanservice.noaa.gov/facts/light_travel.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "海洋水层按深度分为：表层带 epipelagic 0–200 m、中层带 mesopelagic 200–1000 m、深层带 bathypelagic 1000–4000 m、深渊带 abyssopelagic 4000–6000 m、海沟带 hadalpelagic 6000 m 以下(对应深海海沟)。", "must_appear": true, "source": "How far does light travel in the ocean? (NOAA Ocean Service) — https://oceanservice.noaa.gov/facts/light_travel.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "颜色随深度按波长依次消失：红光最先被吸收(约 100 米处红光已无法穿透)，蓝光穿透最深；这是深海呈蓝黑色、红色生物在深处变『隐形』的原因。", "must_appear": false, "source": "Why are so many deep-sea animals red in color? (NOAA Ocean Exploration) — https://oceanexplorer.noaa.gov/ocean-fact/red-color/", "confidence": "high", "verified_by_human": false },
+    { "fact": "深海(约 200 米以下)水温很低，平均仅约 4°C(39°F)；最深处(如 5000 米实测)约 2°C，接近但仍高于海水冰点，故保持液态而非结冰。", "must_appear": true, "source": "How does the temperature of ocean water vary? (NOAA Ocean Exploration) — https://oceanexplorer.noaa.gov/facts/temp-vary.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "深海恐惧(thalassophobia)指对深邃、广阔、幽暗大水体(尤其对水面之下未知事物)的持续强烈恐惧，需与『对一切水的恐惧』(aquaphobia)区分开。", "must_appear": true, "source": "Thalassophobia — Wikipedia — https://en.wikipedia.org/wiki/Thalassophobia", "confidence": "high", "verified_by_human": false },
+    { "fact": "thalassophobia 并非 DSM-5 中的独立诊断条目；若恐惧持续、过度、不合理且约 6 个月以上，会被归入『特定恐惧症(specific phobia)』，属其中的『自然环境型』(与恐高、怕水、怕雷暴同类)。", "must_appear": true, "source": "Thalassophobia — Wikipedia — https://en.wikipedia.org/wiki/Thalassophobia", "confidence": "high", "verified_by_human": false },
+    { "fact": "一种被广泛引用的解释(进化假说)认为：人类是陆生动物，深水中无法判断下方尺度、距离与潜在威胁，失去视觉参照会触发对『未知捕食者/坠入深处』的本能警觉——须明确表述为解释性假说，而非已被证实的因果事实。", "must_appear": true, "source": "Thalassophobia — Wikipedia — https://en.wikipedia.org/wiki/Thalassophobia", "confidence": "medium", "verified_by_human": false },
+    { "fact": "流行文化被认为会放大甚至『社会传染』这种恐惧，最常被引用的是 1975 年电影《大白鲨》，以及鲨鱼袭击、海难(如泰坦尼克)等媒体报道；这属于被提出的诱因之一，非唯一或决定性原因。", "must_appear": false, "source": "Thalassophobia — Wikipedia — https://en.wikipedia.org/wiki/Thalassophobia", "confidence": "medium", "verified_by_human": false }
+  ],
+  "research_notes": {
+    "drafted_by": "AI (VideoBench 研究代理, general-purpose)",
+    "drafted_on": "2026-07-16",
+    "verified_by_human": false,
+    "premise_check": {
+      "is_real": "partly",
+      "explanation": "选题的物理/环境部分完全成立：深海确实存在压力随深度剧增、透光随深度衰减直至全黑、水温接近冰点等可核验事实，这些客观上会摧毁人类在陆地上建立的尺度与安全感参照。心理部分『深海恐惧(thalassophobia)』作为被广泛描述的现象也真实存在，但它并非 DSM-5 的独立诊断条目；其『触发机制』(进化警觉、失去视觉参照、对未知捕食者的恐惧)属主流但未被严格证实的解释性假说，不能当作已证实的因果事实陈述。因此判为 partly：物理事实为真，心理机制为『真实存在的现象 + 解释性假说』的混合。",
+      "sources": ["https://oceanservice.noaa.gov/facts/pressure.html", "https://oceanservice.noaa.gov/facts/light_travel.html", "https://en.wikipedia.org/wiki/Thalassophobia"]
+    },
+    "common_errors": [
+      "把压力增速说错：常见错误是『每米加 1 个大气压』或『每 10 米加 1 psi』；正确是每约 10 米加约 1 atm(约 101 kPa)。",
+      "混淆『无光』起点：误称『200 米以下全黑』。实际 200–1000 米是暮光带仍有微光，真正终年黑暗(aphotic/午夜带)是约 1000 米以下。",
+      "夸张压力效果：说『1000 米会把人瞬间压成粉末/内爆』。人体大部分是近乎不可压缩的水，真正受威胁的是含气腔体与设备；『压碎』是过度戏剧化的说法。",
+      "把 thalassophobia 当成正式独立的『病/诊断』。它不是 DSM 独立条目，只有达标才归为特定恐惧症；避免用『确诊深海恐惧症』这类措辞。",
+      "混淆概念：把 thalassophobia(深/大水体)与 aquaphobia(怕一切水)、bathophobia(怕深度/深渊)当作同一个词。",
+      "把进化/心理『触发机制』讲成已被证实的科学定论；应使用『一种假说认为/研究者推测』的措辞。",
+      "误用患病率数字：将『约 9.1% 美国成人』这一全部特定恐惧症的比例安到 thalassophobia 头上——目前缺乏该恐惧的可靠专属流行率。",
+      "深海温度讲错：说深海是温的(把热液喷口局部当整体)或说会结冰；主体是约 2–4°C 的冰冷液态水。",
+      "把海水呈蓝色解释为『反射天空』；实为水对红/长波长光的选择性吸收，蓝光穿透最深。",
+      "深度分层边界写成绝对唯一值而不留余地；不同权威来源边界略有出入(尤其深渊带起点 3000 vs 4000 m)。"
+    ],
+    "scope_notes": "thalassophobia 定性：这是常见的通俗兼半学术词，描述的是真实存在的恐惧现象，但不是 DSM-5 的独立诊断类别；正式语境下被涵盖在『特定恐惧症—自然环境型』之下。全片须严格区分【可核实的物理/生理事实】(压力、透光、分层、温度——高置信、可用 OCR/ASR 客观核对文本引文)与【心理机制的解释性说法】(进化警觉、失去参照、媒体传染——属假说，须显式标注『一种解释/研究者推测』)。深度分层边界各来源略有差异(如 WHOI 将深渊带记为约 3000–6500 m，NOAA 主流方案 4000–6000 m)，本表采用 NOAA 主流方案，此类边界浮动属正常不应据此判错。压力/温度为典型值，随纬度/地点/季节变化。『约 9.1%』仅为全部特定恐惧症的美国成人估计，不可作为深海恐惧的专属数据。敏感性：面向可能有真实焦虑的观众，避免制造恐慌式或『确诊』式表述。"
+  },
+  "platform_requirements": {
+    "platform": "",
+    "locale": "zh-cn",
+    "carrier": "Video",
+    "duration_sec": { "min": null, "max": null },
+    "aspect_ratio": null,
+    "subtitle_required": null,
+    "content_policies": []
+  },
+  "target_audience": "中文泛科普/心理科普观众(青少年及成人、非专业)，对『尺度对比』类可视化敏感但对术语无耐心。物理量用可感知类比落地(如『1000 米≈100 个大气压』)，把压力/黑暗/低温三条客观轴做成随深度下潜的连续可视化——这正是频道『尺度失控』的强项。心理部分讲解克制：可生动描述恐惧体验与被广泛接受的解释，但必须给『假说/推测』留标签，不夸大为医学定论，避免让有相关焦虑的观众误以为自己『患病』。"
+}

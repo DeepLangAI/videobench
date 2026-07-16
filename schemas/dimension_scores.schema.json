@@ -35,7 +35,8 @@
               }
             }
           },
-          "fatal_flag": { "type": "boolean", "description": "⚑ 维度触发致命候选时置 true，联动 Gate" }
+          "fatal_flag": { "type": "boolean", "description": "⚑ 维度触发致命候选时置 true，联动 Gate" },
+          "needs_human": { "type": "boolean", "description": "低置信/证据不足/所依据参照未经人工核验（如 content_channel 中 verified_by_human=false 的 key_facts）时置 true；此时不得据此硬判 fatal_flag（硬规则 4/8）" }
         }
       }
     }

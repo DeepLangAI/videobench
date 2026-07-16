@@ -1,0 +1,64 @@
+{
+  "case_id": "case-002",
+  "mode": "with_reference",
+  "profile": "content_channel",
+  "channel": {
+    "name": "商业解构·一个概念怎么被卖爆",
+    "description": "每期拆解一个消费品牌如何把一个抽象概念（时间段、情绪、场景）包装成可持续售卖的产品线和营销叙事，用真实品牌案例复盘从概念提出到全线产品矩阵的商业逻辑",
+    "locale": "zh-cn",
+    "carrier": "Video"
+  },
+  "query": "雅诗兰黛为什么把\"夜晚\"变成了一门生意？",
+  "brief": "【频道】商业解构·一个概念怎么被卖爆\n【频道需求】每期拆解一个消费品牌如何把一个抽象概念（时间段、情绪、场景）包装成可持续售卖的产品线和营销叙事，用真实品牌案例复盘从概念提出到全线产品矩阵的商业逻辑\n【本期选题】雅诗兰黛为什么把\"夜晚\"变成了一门生意？",
+  "must_cover": [
+    { "point": "说清『夜晚』这一抽象概念如何被包装成可售卖的产品/品类", "source": "query+channelDescription", "must_appear": true },
+    { "point": "复盘从概念提出到全线产品线/产品矩阵的扩张", "source": "channelDescription", "must_appear": true },
+    { "point": "拆解支撑售卖的营销叙事", "source": "channelDescription", "must_appear": true },
+    { "point": "用真实品牌案例(雅诗兰黛真实产品与历史)复盘", "source": "channelDescription", "must_appear": true },
+    { "point": "讲清这门生意为何可持续", "source": "channelDescription", "must_appear": true }
+  ],
+  "key_facts": [
+    { "fact": "雅诗兰黛特润修护精华(Advanced Night Repair，俗称『小棕瓶』)于 1982 年推出，被品牌与行业普遍视为首款以『夜间修护』为核心定位的精华(serum)，首次把『夜晚是肌肤自我修护的黄金时段』包装成可售卖的护肤品类。", "must_appear": true, "source": "40 Years Of Advanced Night Repair | Estée Lauder — https://www.esteelauder.com/blog-article-advanced-night-repair-40-years", "confidence": "high", "verified_by_human": false },
+    { "fact": "1982 年初代产品名为 Night Repair(Cellular Recovery Complex)；『Advanced』一词在 1991 年换代配方(Protective Recovery Complex)才加入，此后又于 2009、2013、2020 年多次重新配方升级。", "must_appear": false, "source": "Estée Lauder Advanced Night Repair Sells 22 Bottles Every Minute — The Zoe Report — https://www.thezoereport.com/beauty/estee-lauder-advanced-night-repair-sells-22-bottles-every-minute-heres-why-34692136", "confidence": "high", "verified_by_human": false },
+    { "fact": "雅诗兰黛官方长期将小棕瓶宣传为『全球第一精华』(#1 serum)，它是品牌 40 余年不衰的招牌产品线(hero franchise)，并于 2026 年 2 月被 WWD 旗下 Beauty Inc 列入『史上百大美妆产品』——这是它作为『一门生意』的核心佐证。", "must_appear": true, "source": "Advanced Night Repair | #1 Serum | Estée Lauder — https://www.esteelauder.com/skin-care/advanced-night-repair/", "confidence": "high", "verified_by_human": false },
+    { "fact": "据品牌向媒体提供的口径，小棕瓶精华约『每分钟售出 22 瓶』；其 Synchronized Recovery Complex II 版本在 2019 年全球售出超过 1170 万瓶。注意：这些是品牌方营销数据，非独立第三方审计的销量或销售额。", "must_appear": false, "source": "The Zoe Report — https://www.thezoereport.com/beauty/estee-lauder-advanced-night-repair-sells-22-bottles-every-minute-heres-why-34692136", "confidence": "medium", "verified_by_human": false },
+    { "fact": "『夜间修护』叙事所借用的科学概念是皮肤的昼夜节律(circadian rhythm)：皮肤屏障与修护功能确实随昼夜/睡眠变化，且同行评审研究显示睡眠质量差与皮肤内在老化迹象增多、屏障恢复变慢相关——这一层面的科学是成立的。", "must_appear": true, "source": "Does poor sleep quality affect skin ageing? — Clinical and Experimental Dermatology (2015) — https://pubmed.ncbi.nlm.nih.gov/25266053/", "confidence": "high", "verified_by_human": false },
+    { "fact": "2017 年诺贝尔生理学或医学奖授予 Hall、Rosbash、Young，表彰其发现控制昼夜节律的分子机制；该奖针对果蝇生物钟的基础研究，与任何护肤品/雅诗兰黛产品无关。若成片援引『诺奖科学』需说明这一边界。", "must_appear": false, "source": "The Nobel Prize in Physiology or Medicine 2017 — NobelPrize.org — https://www.nobelprize.org/prizes/medicine/2017/summary/", "confidence": "high", "verified_by_human": false },
+    { "fact": "雅诗兰黛出资委托、由 Case Western/University Hospitals 的 Elma Baron 医生主持的临床研究(60 名 30–49 岁女性，2013 年公布、2015 年发表于 CED，Oyetakin-White 等)发现睡眠质量差者皮肤老化迹象更多、屏障恢复更慢；但该研究评估的是『睡眠质量与皮肤』的关系，并未测试小棕瓶产品本身，且由雅诗兰黛资助、有其科学家参与署名(利益相关)。", "must_appear": true, "source": "Sleep deprivation linked to aging skin — ScienceDaily — https://www.sciencedaily.com/releases/2013/07/130723155002.htm", "confidence": "high", "verified_by_human": false },
+    { "fact": "雅诗兰黛就其夜间修护肽(如 Tripeptide-32『重启肌肤生物钟/激活修护基因』)的功效宣称，主要依据实验室细胞培养与专利数据；尚无公开的同行评审人体试验证明该成分在活体皮肤中实现所宣称的『基因重启』，产品也未披露该成分浓度。因此这些属未经独立证实的功效宣称，不能当作既定事实呈现。", "must_appear": true, "source": "Does Advanced Night Repair Work? — The Fashion Globe — https://thefashionglobe.com/advanced-night-repair-review/", "confidence": "medium", "verified_by_human": false },
+    { "fact": "雅诗兰黛把『夜间/ANR』概念从单支精华扩展成完整产品矩阵，包括特润修护眼霜(Advanced Night Repair Eye Supercharged)、密集修护安瓶(Intensive Recovery Ampoules)、面膜等，形成围绕『夜晚修护』的产品线——这是『概念→产品矩阵』商业扩张的直接证据。", "must_appear": true, "source": "Advanced Night Repair Eye Supercharged Gel-Creme | Estée Lauder — https://www.esteelauder.com/product/685/104163/product-catalog/skincare/eye-cream-treatment/advanced-night-repair-eye-supercharged-gel-creme/synchronized-multi-recovery-eye-cream", "confidence": "high", "verified_by_human": false },
+    { "fact": "『小棕瓶是史上首款精华』『首款使用玻尿酸(透明质酸)的护肤品』等『首创』说法属品牌营销口径——雅诗兰黛官方 40 周年文案本身也仅表述为『最早使用玻尿酸之一(among the first)』，并非可核实的历史第一，成片引用时应标注为品牌说法。", "must_appear": false, "source": "40 Years Of Advanced Night Repair | Estée Lauder — https://www.esteelauder.com/blog-article-advanced-night-repair-40-years", "confidence": "medium", "verified_by_human": false },
+    { "fact": "小棕瓶的标志性活性成分常被介绍为二裂酵母发酵产物溶胞物(bifida ferment lysate)与透明质酸，发酵成分是该系列『过夜修护』叙事的卖点之一。(此条来源为中文行业/科普博客，权威度较低，生产前应以官方成分表复核。)", "must_appear": false, "source": "小棕瓶进化史剖析 — 知乎 — https://zhuanlan.zhihu.com/p/104381916", "confidence": "low", "verified_by_human": false }
+  ],
+  "research_notes": {
+    "drafted_by": "AI (VideoBench 研究代理, general-purpose)",
+    "drafted_on": "2026-07-16",
+    "verified_by_human": false,
+    "premise_check": {
+      "is_real": "true",
+      "explanation": "前提成立。可核实的商业史实：雅诗兰黛 1982 年推出以『夜间修护』为核心定位的特润修护精华(小棕瓶)，开创了『夜晚是肌肤修护黄金时段』这一可售卖的护肤概念，并扩展成招牌产品线与围绕『夜间』的产品矩阵，40 余年持续畅销。需澄清两点：(1)『夜晚』被具体包装为『夜间/睡眠修护』，而品牌现代口径已改为『日夜都用』，并非字面只在夜间起效；(2)『把夜晚变成生意』指商业与营销叙事的成功，不等于其夜间修护功效已被独立科学证实——商业史实与功效宣称必须分开呈现。",
+      "sources": ["https://www.esteelauder.com/blog-article-advanced-night-repair-40-years", "https://parade.com/beauty/first-of-its-kind-skincare-classic-estee-lauder-serum-1982-ranked-best-beauty-products-of-all-time", "https://www.sciencedaily.com/releases/2013/07/130723155002.htm"]
+    },
+    "common_errors": [
+      "把品牌『首创』口径当既定史实：如断言小棕瓶是『全球第一款精华』或『第一款使用玻尿酸的产品』——前者是品牌/行业叙事，后者品牌自己也软化为『最早之一』。",
+      "把品牌营销数据当独立审计数据：把『每分钟 22 瓶』『2019 年 1170 万瓶』说成客观销量/销售额；这些均为品牌方口径且绑定特定年份/版本。",
+      "把功效宣称当科学事实：声称小棕瓶/其修护肽能『重启肌肤生物钟』『夜间激活修护基因』并已被证实——证据来自细胞培养与专利，缺乏公开的活体人体同行评审证据。",
+      "误用睡眠研究为产品背书：把雅诗兰黛资助的『睡眠质量—皮肤老化』研究说成『证明小棕瓶有效』——该研究测的是睡眠而非产品，且存在品牌资助/科学家署名的利益冲突。",
+      "滥用诺奖光环：暗示 2017 年昼夜节律诺贝尔奖验证了这款护肤品；该奖是果蝇生物钟基础研究，与化妆品功效无关。",
+      "史实错误：把初代名称『Night Repair』与后来的『Advanced Night Repair』混为一谈(Advanced 系 1991 年才加)，或写错 1982 这一推出年份。",
+      "过度简化生理学：宣称皮肤『只在夜间修护』；品牌现口径已是『日夜都用』，绝对化说法不准确。",
+      "品牌混淆：把雅诗兰黛小棕瓶(Advanced Night Repair)与兰蔻小黑瓶(Génifique)张冠李戴。"
+    ],
+    "scope_notes": "时效性：产品版本名与『当前配方』随时间更新，涉及『最新/现款』的表述需在制作日以雅诗兰黛官网核对。数据：未检索到经审计的第三方单品销量/销售额，所有体量数字均为品牌口径且与年份/版本绑定，避免精确报出营收数字。敏感性：功效与健康宣称属敏感区(广告合规，中国广告法禁绝对化功效断言)，不得将修护/抗老作为医学事实断言。存疑点：『首款精华/首用玻尿酸』为品牌说法；睡眠研究为品牌资助且有品牌科学家署名；二裂酵母等成分细节来自低权威度中文博客，需以官方成分表复核。"
+  },
+  "platform_requirements": {
+    "platform": "",
+    "locale": "zh-cn",
+    "carrier": "Video",
+    "duration_sec": { "min": null, "max": null },
+    "aspect_ratio": null,
+    "subtitle_required": null,
+    "content_policies": []
+  },
+  "target_audience": "对美妆消费与商业叙事感兴趣的普通中文观众(非专业皮肤科/成分党)。深度定位『商业逻辑 + 轻科普』：用一句话解释精华/serum 与昼夜节律的通俗含义；全片须清晰区分【可核实的商业史实/数据】与【品牌功效宣称】，对后者一律用『品牌称/宣称』限定，避免任何医疗或功效结论(亦规避广告法绝对化断言)。"
+}

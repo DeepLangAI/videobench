@@ -16,9 +16,11 @@
 
 | 维度 | 定义 | 评测方式 | 需参照 |
 |---|---|---|---|
-| 指令遵循 | 是否覆盖 Brief 的显式要求（主题、结构、指定素材、指定镜头等） | Judge | ✓ |
-| 信息准确 ⚑ | 产品事实、数字、名称、卖点表述与产品事实表一致 | 混合：OCR/ASR 提取后与事实表逐条比对，冲突项交 Judge 确认语义 | ✓ |
-| 内容完整 ⚑ | 关键内容（核心卖点、必要免责声明、CTA）无缺失 | 混合：must_appear 事实规则检出，其余 Judge | ✓ |
+| 指令遵循 | 是否覆盖 Brief 的显式要求（主题、结构、指定素材、指定镜头；content_channel 下含 channel.description 的频道格式要求） | Judge | ✓ |
+| 信息准确 ⚑ | 产品事实、数字、名称、卖点表述与事实表一致（product_marketing 用 product_facts；content_channel 用 key_facts） | 混合：OCR/ASR 提取后与事实表逐条比对，冲突项交 Judge 确认语义 | ✓ |
+| 内容完整 ⚑ | 关键内容无缺失（带货：核心卖点/免责声明/CTA；知识片：must_cover 覆盖点） | 混合：must_appear 规则检出（product_facts / must_cover / key_facts），其余 Judge | ✓ |
+
+> **content_channel 事实表核验门槛**：`key_facts` 若 `verified_by_human=false`（AI 起草、未经人工核验），L1 信息准确/内容完整只可记疑点并置 `needs_human`，**不得据此硬判 fatal**（Gate 与维度两层一致；见 docs/evolution.md 与 CLAUDE.md 硬规则 4/8）。来自 `channel.description`/`query` 的 `must_cover` 覆盖点缺失不受此限，可照常判定。
 
 ## L2 视觉层（Visual Quality）
 
