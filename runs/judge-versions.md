@@ -30,3 +30,28 @@
 - **已知缺口（棘轮前补齐）**：genre_router 虽有"知识解说"类型，但尚无从 content_channel 路由到专用维度 rubric 的落地（现仅有 dimension_judge_showcase.md）——硬规则 11 的路由→rubric 端到端接线未完成；platform_requirements 为承载 content_channel 的 null 桩对所有 profile 放宽（仅放宽未收紧，Gate 规则 8 行为不变）。
 - **独立评审（生成者不自评）**：本次 diff 经独立 subagent 评审——首轮 BLOCK（维度打分层 dimension_judge.md 未接入"未核验→needs_human"例外，与 Gate/schema 承诺冲突），已修复（dimension_judge.md + dimension_scores.schema + dimensions.md 补齐）后复审；结论以独立评审为准，非生成者自行宣布有效（无黄金集数字，不作"改进有效"声明）。
 - **人类检查点**：涉及 Gate 规则 2/3 修改（属"Gate 规则增删改"强制人工确认项）——由用户在本次会话中授权发起，正式棘轮仍需回归数字 + 抽查误判样本。
+
+### 2026-07-16（补接线，承接上条，仍未棘轮）
+
+| 配置 | 变更（单一逻辑变量：补齐硬规则 11 的路由→rubric 端到端接线） | 状态 |
+|---|---|---|
+| genre_router 路由表 + `prompts/dimension_judge_content_channel.md`（新）+ audience_judge 知识类口径注入 | ① 新增 content_channel 专用维度 rubric（对齐 dimensions.md 六层、不新增维度；把"未核验 key_facts→needs_human 不硬判"门槛落到打分层；用中性档位锚定而非"X 不算缺陷"式豁免，避开反模式 #9）；② genre_router 增路由表：知识解说→content_channel rubric + 知识类观众人格，并规定 profile↔genre 对账不一致/低置信→needs_human；③ audience_judge 增知识类"值不值得看"口径（学到没/可信否，行为看收藏转发） | **试验中**（未棘轮） |
+
+**说明**：
+- **向后兼容（精确版）**：路由表对 showcase / 口播带货 / 通用路径只做**现状描述**，不改其行为；新增仅"知识解说→新 rubric"一条分支与新文件。`audience_judge.md` 是跨类型共享 prompt、本次加了一段知识类口径注入——它逻辑上只作用于知识解说人格，但物理上对所有类型可见；2026-07-15 showcase 黄金集是**诊断/视觉基线、不调用 audience 通道**（该通道"v1 已写、未实测"），故 showcase 黄金集确实不受影响。audience 通道尚无 baseline，其回归随 content_channel 首测一并建立——因此不宣称"全局无回归风险"，只说"现有 showcase 诊断黄金集不受影响"。
+- **单变量归因的边界**：本条虽定位为一个"逻辑变量"（补接线），实际动了 3 个资产（路由表 + 新 rubric + audience 注入）。因是 0→1 净新增路由、未扰动既有行为，暂不违反棘轮，但 Step-D 回归须知：该组分数若变化，**无法在三资产间归因**——如需归因，回归时分别开/关三者。
+- **仍不得棘轮**：本条补的是"棘轮前缺口"，非回归证据。content_channel 仍无成片、无人类标注，**错杀率/放水率仍无法测**；接线完成 ≠ 有效性已证。生成者（本次接线的作者）不得自行宣布"改进有效"（evolution.md 第 4 条）。
+
+### 棘轮门禁清单（content_channel：试验中 → 正式，逐项需人工，勿跳步）
+
+按 evolution.md 棘轮机制与 CLAUDE.md 硬规则 10/11/13，下列全部完成前一律"试验中"：
+
+- [ ] **A. 成片**：为 case-001~006 产出成片。**已定：先每题一条起步**（2026-07-16 用户决定）。⚠️ 单条/单档**测不出放水率**（放水需差/致命样本）——分档样本（顶级/中游/差 + 致命，calibration.md 档位矩阵）为后续补齐项；补齐前 Step D 只能报错杀率一侧，报告须注明"放水率暂缺、结论不完整"，且**在双向都能测之前不得棘轮**（硬规则 13）。
+- [ ] **B. key_facts 人工核验**：把已核验的 key_facts 在 case JSON 中置 `verified_by_human=true`（**case-003 必须按发布日复核条款**）。核验前事实冲突只能是 needs_human，不能作判分依据。
+- [ ] **C. 人类标注入库**：≥2 名标注员按 `goldenset/annotations/_content-channel-annotation-template.md` 标注、分歧仲裁，存入 `goldenset/annotations/`。
+- [ ] **D. 双向回归**：跑 content_channel 组，**同时报错杀率 + 放水率 + GSB 三分类一致率 + Gate 致命召回率**；任一退步即回滚。严禁用引导性措辞修错杀（反模式 #9）。
+- [ ] **E. 独立评审**：回归数字由独立运行给出，生成者不自评；抽查 needs_human 与误判样本。
+- [ ] **F. Gate 规则 2/3 人工确认**：evolution.md「Gate 规则增删改」强制人工确认点，看回归 + 抽查后由人类**明确签字确认**（记录确认人/日期/结论）。
+- [ ] **G. 棘轮**：以上齐备且回归为"提升"，才把 2026-07-16 两条从"试验中"改为正式版本，并记版本号 + 成绩 + 改了什么。
+
+> 现状：Step 1（接线，A 之外的基础设施）已完成；A–G 中除本会话已发起的授权外，**均为人工闭环，AI 不代做**（尤其 B/C/F 是硬性人类检查点，D/E 依赖 B/C 的人类 ground truth）。
