@@ -33,9 +33,9 @@
 
 ## 评估思路的三条支柱
 
-1. **客观优先（借鉴 darwin-skill 的双重评估）**：能用工具确定性测量的绝不交给 Judge——时长/比例/可播放用 ffprobe，错字用 OCR 比对，语言/事实用 ASR 对照，响度用 LUFS。Judge 只评工具测不了的主观维度。每个维度的客观/主观分工见 [docs/dimensions.md](docs/dimensions.md)。
+1. **客观优先（双重评估）**：能用工具确定性测量的绝不交给 Judge——时长/比例/可播放用 ffprobe，错字用 OCR 比对，语言/事实用 ASR 对照，响度用 LUFS。Judge 只评工具测不了的主观维度。每个维度的客观/主观分工见 [docs/dimensions.md](docs/dimensions.md)。
 2. **Judge 逼近人类偏好**：AI Judge 预测的是 P(目标人群更偏好 A | 任务, 约束, A, B)，不是绝对"视频真理"。实现上：类型路由前置（prompts/genre_router.md，按视频类型注入 rubric 与观众人格）+ 观众/质检双人格分离（观众通道答"值不值得看"，诊断通道答"差在哪"）。有效性靠人类黄金集双向校准（错杀率+放水率），见 [docs/calibration.md](docs/calibration.md)。
-3. **Judge 自身也被评估和进化（借鉴 darwin-skill 的棘轮机制）**：Judge prompt/rubric 版本化，每次改动必须在黄金集上测与人类的一致率——提升才保留，下降就回滚；单一变量迭代；评审独立，生成者不许自评。见 [docs/evolution.md](docs/evolution.md)。
+3. **Judge 自身也被评估和进化（棘轮机制）**：Judge prompt/rubric 版本化，每次改动必须在黄金集上测与人类的一致率——提升才保留，下降就回滚；单一变量迭代；评审独立，生成者不许自评。见 [docs/evolution.md](docs/evolution.md)。
 
 ## 目录结构
 
