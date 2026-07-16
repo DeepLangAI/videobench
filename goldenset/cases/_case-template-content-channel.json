@@ -1,0 +1,30 @@
+{
+  "$comment": "content_channel 档模板（知识/解说频道视频）。复制本文件创建新题目，文件名即 case_id（如 case-001.json）。字段契约见 schemas/task_context.schema.json。带货片用 _case-template.json。key_facts 若为 AI 起草须置 verified_by_human=false，人工核验后再作 L1 信息准确硬判依据。",
+  "case_id": "case-000",
+  "mode": "with_reference",
+  "profile": "content_channel",
+  "channel": {
+    "name": "（频道名 channelName，原文）",
+    "description": "（频道需求 channelDescription 原文，不改写——L1 指令遵循/内容完整的覆盖基准）",
+    "locale": "zh-cn",
+    "carrier": "Video"
+  },
+  "query": "（本期选题/问题 query 原文，不改写）",
+  "brief": "（channelName + channelDescription + query 原文拼接，不改写）",
+  "must_cover": [
+    { "point": "（频道/选题要求必须覆盖的内容点）", "source": "channelDescription", "must_appear": true }
+  ],
+  "key_facts": [
+    { "fact": "（可核验事实断言）", "must_appear": true, "source": "（来源 URL/出处）", "confidence": "high", "verified_by_human": false }
+  ],
+  "platform_requirements": {
+    "platform": "",
+    "locale": "zh-cn",
+    "carrier": "Video",
+    "duration_sec": { "min": null, "max": null },
+    "aspect_ratio": null,
+    "subtitle_required": null,
+    "content_policies": []
+  },
+  "target_audience": "（Judge 要逼近的目标人群画像）"
+}

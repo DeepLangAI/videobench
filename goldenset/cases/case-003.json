@@ -1,0 +1,65 @@
+{
+  "case_id": "case-003",
+  "mode": "with_reference",
+  "profile": "content_channel",
+  "channel": {
+    "name": "隐私条款拆解·你到底同意了什么",
+    "description": "每期挑一款大众常用 App 的隐私政策/用户协议改动，逐条翻译成人话，对比修改前后条款差异，说清用户勾选\"同意\"时到底授权了什么、数据会被怎么用",
+    "locale": "zh-cn",
+    "carrier": "Video"
+  },
+  "query": "Samsung Health 想把健康数据用于 AI 训练，用户到底同意了什么？",
+  "brief": "【频道】隐私条款拆解·你到底同意了什么\n【频道需求】每期挑一款大众常用 App 的隐私政策/用户协议改动，逐条翻译成人话，对比修改前后条款差异，说清用户勾选\"同意\"时到底授权了什么、数据会被怎么用\n【本期选题】Samsung Health 想把健康数据用于 AI 训练，用户到底同意了什么？",
+  "must_cover": [
+    { "point": "把条款逐条翻译成人话", "source": "channelDescription", "must_appear": true },
+    { "point": "对比修改前后条款差异", "source": "channelDescription", "must_appear": true },
+    { "point": "说清用户点『同意』到底授权了哪些数据、哪些用途", "source": "query+channelDescription", "must_appear": true },
+    { "point": "讲清数据会被怎么用，尤其 AI 训练用途", "source": "query", "must_appear": true },
+    { "point": "说明退出/撤回方式及其真实后果(含三星的澄清)", "source": "topic", "must_appear": true }
+  ],
+  "key_facts": [
+    { "fact": "三星在 Samsung Health 中推出授权提示，标题为『Consent to the Use of Health Data for AI Training and Modelling』(同意将健康数据用于 AI 训练与建模)，用户打开 App 时弹出，要求同意将健康数据用于训练/改进三星 AI。这是本期条款变动的核心事件。", "must_appear": true, "source": "Samsung Health users asked to allow use of their health data for AI training... — GSMArena — https://www.gsmarena.com/samsung_health_data_ai_training_consent-news-73683.php", "confidence": "high", "verified_by_human": false },
+    { "fact": "用途原文(关键措辞，勿改写)：『The health data you have allowed us to collect and process will be used for AI training and modelling, including human review, to improve Samsung Health, including algorithms to analyse health conditions and our AI features.』即：所收集健康数据用于 AI 训练与建模(含人工复核)，以改进 Samsung Health 及其分析健康状况的算法与 AI 功能。", "must_appear": true, "source": "Samsung Health will delete your data without AI training consent [U] — 9to5Google — https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/", "confidence": "high", "verified_by_human": false },
+    { "fact": "授权覆盖的数据范围为四类：健康与健身数据(身体测量、营养、步数/活动、睡眠)、用药数据(药物、处方、剂量)、健康档案(诊断、预后、检查结果、既往病史与治疗记录)、经期/周期追踪数据。即包含病历和生殖健康等高敏感数据，而不仅是步数。", "must_appear": true, "source": "Samsung won't kill health data if you opt out of AI training — Android Authority — https://www.androidauthority.com/samsung-health-train-ai-data-3686684/", "confidence": "high", "verified_by_human": false },
+    { "fact": "条款明确写明用途『including human review』——用于 AI 训练的健康数据可能被人工复核(即三星员工或第三方承包人可能查看数据集中的记录)，并非纯粹自动化处理。", "must_appear": true, "source": "9to5Google — https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/", "confidence": "high", "verified_by_human": false },
+    { "fact": "该 AI 训练授权与 Samsung 账户云同步捆绑：同意才能继续把健康数据同步到 Samsung account；这是打开 App 时的明示同意弹窗(并非静默默认开启)，但拒绝会直接影响云同步能力。", "must_appear": true, "source": "Want Samsung Health cloud sync? You may have to agree to AI training first — Android Central — https://www.androidcentral.com/apps-software/want-samsung-health-cloud-sync-you-may-have-to-agree-to-ai-training-first", "confidence": "high", "verified_by_human": false },
+    { "fact": "拒绝时弹窗警告原文：『You will not be able to sync health data with your Samsung account and your health data will be deleted unless retained pursuant to applicable law. If retention is required, we will erase it as soon as the required retention period ends.』(将无法与账户同步，且除非法律要求保留否则数据将被删除)。", "must_appear": true, "source": "9to5Google — https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/", "confidence": "high", "verified_by_human": false },
+    { "fact": "三星于 2026 年 7 月 14-15 日澄清：退出/撤回同意只会删除『为 AI 开发单独收集和使用的数据』(data separately collected and used for AI development purposes)，不会删除为 Samsung Health 服务而存储的常规健康数据；追踪功能与 App 使用不受影响。三星承认原提示文案有误导，正在改进措辞。成片必须给出这条修正，不能停在『拒绝就丢光所有数据』的旧说法。", "must_appear": true, "source": "Samsung Health won't delete your data if you opt out of AI training — Android Authority — https://www.androidauthority.com/samsung-health-ai-training-opt-out-3687480/", "confidence": "high", "verified_by_human": false },
+    { "fact": "退出/撤回路径：在 Samsung Health 的 设置 > 隐私(Privacy)菜单中，关闭『Consent to the use of health data for AI training and modeling』开关；三星称用户可随时撤回同意(withdraw consent at any time)。", "must_appear": true, "source": "GSMArena — https://www.gsmarena.com/samsung_health_data_ai_training_consent-news-73683.php", "confidence": "high", "verified_by_human": false },
+    { "fact": "时效背景：该授权提示于 2026 年 7 月 10-13 日前后开始出现，正值三星 Galaxy Unpacked(2026 年 7 月 22 日，将发布主打 AI 健康的新款 Galaxy Watch)前夕；三星并未公布该条款的官方生效日期或版本号，媒体与用户报道是主要时间线来源。", "must_appear": true, "source": "Samsung Health will delete your data unless you hand it over for AI training — 9to5Google — https://9to5google.com/2026/07/13/samsung-health-ai-training-data-consent/", "confidence": "medium", "verified_by_human": false },
+    { "fact": "适用地区：提示在多个市场出现，报道与用户反馈覆盖美国与欧盟等地；但三星未官方说明确切的推送地区与时间表，地区差异可能存在。成片不应断言『全球统一生效』或某单一国家专属。", "must_appear": false, "source": "Samsung Health users must accept AI training or lose synced health data — Cybernews — https://cybernews.com/news/samsung-health-ai-training-delete-user-data/", "confidence": "medium", "verified_by_human": false },
+    { "fact": "法律框架争议：健康数据属 GDPR 第 9 条『特殊类别数据』，需自由给出、具体、知情的明示同意；第 7(3) 条要求撤回同意应与给予同样容易。将同意与『拒绝即删除已同步数据』挂钩，被批评与 GDPR『自由给出的同意』标准存在张力。", "must_appear": false, "source": "Cybernews — https://cybernews.com/news/samsung-health-ai-training-delete-user-data/", "confidence": "high", "verified_by_human": false },
+    { "fact": "官方未披露的疑点：条款/提示未说明用于人工复核的健康数据是否先经匿名化或假名化、由谁执行复核、频率如何；本地设备数据与云端数据在删除范围上的边界三星也未完全厘清。这些属『已知的未知』，成片不应替三星补全。", "must_appear": false, "source": "Cybernews — https://cybernews.com/news/samsung-health-ai-training-delete-user-data/", "confidence": "medium", "verified_by_human": false }
+  ],
+  "research_notes": {
+    "drafted_by": "AI (VideoBench 研究代理, general-purpose)",
+    "drafted_on": "2026-07-16",
+    "verified_by_human": false,
+    "premise_check": {
+      "is_real": "true",
+      "explanation": "预设属实但需修正一处关键误读。真实部分：2026 年 7 月中旬起 Samsung Health 弹出标题为『Consent to the Use of Health Data for AI Training and Modelling』的授权提示，明确将用户健康数据用于训练/改进三星自家 AI，授权与 Samsung 账户云同步绑定。需修正：最初报道(及弹窗原文)暗示『拒绝＝已同步数据全部被删』，引发争议；三星随后于 7 月 14-15 日澄清，退出仅删除『为 AI 开发单独收集的数据』，用户常规健康数据保留、App 继续可用，并承认文案有误导、正在修改。因此『健康数据用于 AI 训练』条款真实存在，但『退出会丢光所有数据』是被官方否认的夸大版本。",
+      "sources": ["https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/", "https://www.androidauthority.com/samsung-health-ai-training-opt-out-3687480/", "https://www.gsmarena.com/samsung_health_data_ai_training_consent-news-73683.php", "https://cybernews.com/news/samsung-health-ai-training-delete-user-data/"]
+    },
+    "common_errors": [
+      "沿用被官方否认的夸大版本：说『不同意 AI 训练就会删掉你所有健康数据/病历』。三星已澄清仅删除为 AI 开发单独收集的数据，常规健康数据保留、App 照常可用——必须给出这条修正。",
+      "把用途说成『三星拿去卖给广告商/第三方变现』或『喂给 Google/OpenAI 等外部大模型』。条款措辞是用于训练改进 Samsung Health 自家 AI，无来源支持转售或指名第三方模型。",
+      "断言『默认静默开启、根本不问你』。实际是打开 App 时的明示同意弹窗；但反过来也不能说『纯自愿、拒绝毫无代价』——它与云同步捆绑。两种极端都不准。",
+      "编造或篡改条款原文、生效日期或版本号。三星未公布官方生效日/版本；文案本身在 7 月 14-15 日仍被三星修改中，引用需标注检索日期。",
+      "混淆本地设备数据与云端同步数据的删除边界，或断言删除只针对云端/只针对本地——三星未完全澄清，应表述为未确认。",
+      "在『人工复核』上过度演绎：既不能断言『一定有人看着你实名病历』，也不能替三星宣称『已匿名化处理』——匿名化与否官方未披露。",
+      "把这次 Samsung Health 授权与三星账户通用条款、Galaxy AI 或 Bixby 等其他隐私政策混为一谈。",
+      "遗漏经期/生殖健康与病历属高敏感数据这一点，或反过来只渲染经期数据而忽略其覆盖面。"
+    ],
+    "scope_notes": "版本/时效：所有引用基于 2026 年 7 月 10-15 日的媒体报道与三星提示原文；三星未公布官方生效日期或版本号，且提示文案在 7 月 14-15 日仍被三星主动修改，因此引用的措辞在成片发布时可能已再变化，须复核最新版本。地区推送范围(报道见于美国与欧盟)未经三星官方确认。本地设备数据与云端数据的删除边界、人工复核前是否匿名化，三星均未完全说明。敏感性：涉及病历(诊断/检查结果)与经期/生殖健康等 GDPR 特殊类别高敏感数据。核心措辞第一手来源为三星官方页面 samsunghealth.com/shd/gen-ai(JS 动态渲染无法直接抓取正文)，其原文已由 9to5Google、GSMArena、Android Authority、Cybernews 多家媒体逐字交叉验证。Galaxy Unpacked 定于 2026 年 7 月 22 日，为本条款出现的时间背景。"
+  },
+  "platform_requirements": {
+    "platform": "",
+    "locale": "zh-cn",
+    "carrier": "Video",
+    "duration_sec": { "min": null, "max": null },
+    "aspect_ratio": null,
+    "subtitle_required": null,
+    "content_policies": []
+  },
+  "target_audience": "中文普通智能手机/手环用户，尤其三星 Galaxy 手机与 Galaxy Watch 用户，以及关注隐私的泛受众。用人话解释 GDPR『特殊类别数据』、明示同意 vs 默认勾选、『人工复核』、云同步 vs 本地存储；中等深度，看完能自己去『设置 > 隐私』找到并操作那个开关，并理解退出到底会/不会删什么。须呈现已修正后的事实并明确标注不确定处；不构成法律建议。"
+}

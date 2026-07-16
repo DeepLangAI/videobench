@@ -1,7 +1,8 @@
 {
-  "$comment": "复制本模板创建新题目，文件名即 case_id（如 case-001.json）。字段契约见 schemas/task_context.schema.json。",
+  "$comment": "product_marketing 档模板（带货片）。复制本模板创建新题目，文件名即 case_id（如 case-001.json）。字段契约见 schemas/task_context.schema.json。知识/解说频道片用 _case-template-content-channel.json。",
   "case_id": "case-000",
   "mode": "with_reference",
+  "profile": "product_marketing",
   "brief": "（原始 Brief 全文，不改写）",
   "input_assets": [
     { "path": "assets/case-000/product.jpg", "type": "image", "usage_constraint": "必用" }

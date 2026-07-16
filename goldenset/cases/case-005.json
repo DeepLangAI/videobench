@@ -1,0 +1,66 @@
+{
+  "case_id": "case-005",
+  "mode": "with_reference",
+  "profile": "content_channel",
+  "channel": {
+    "name": "如果历史拐了个弯·反事实推演",
+    "description": "每期挑一个技术/标准之争的历史岔路口，假设当年输的那一方赢了，推演今天的日常生活、工作方式、产业格局会有什么不同，用真实技术史细节支撑推演",
+    "locale": "zh-cn",
+    "carrier": "Video"
+  },
+  "query": "如果 Dvorak 键盘真的取代了 QWERTY，我们今天的办公室会是什么样？",
+  "brief": "【频道】如果历史拐了个弯·反事实推演\n【频道需求】每期挑一个技术/标准之争的历史岔路口，假设当年输的那一方赢了，推演今天的日常生活、工作方式、产业格局会有什么不同，用真实技术史细节支撑推演\n【本期选题】如果 Dvorak 键盘真的取代了 QWERTY，我们今天的办公室会是什么样？",
+  "must_cover": [
+    { "point": "交代真实历史岔路口(QWERTY vs Dvorak 之争的史实)", "source": "channelDescription", "must_appear": true },
+    { "point": "假设当年输的一方(Dvorak)赢了，展开反事实推演", "source": "channelDescription", "must_appear": true },
+    { "point": "推演今天的日常生活/工作方式/产业格局会有何不同", "source": "channelDescription", "must_appear": true },
+    { "point": "用真实技术史细节支撑推演", "source": "channelDescription", "must_appear": true },
+    { "point": "明确区分史实与假设推演(叙事诚实性)", "source": "topic", "must_appear": true }
+  ],
+  "key_facts": [
+    { "fact": "QWERTY 键盘布局由美国报纸编辑、印刷工 Christopher Latham Sholes 与合作者 Carlos Glidden、Samuel W. Soulé 在发明打字机过程中逐步形成；三人于 1868 年获得早期打字机专利，键盘排列在 1870 年代早期(约 1873 年)定型。", "must_appear": true, "source": "Christopher Latham Sholes — Wikipedia — https://en.wikipedia.org/wiki/Christopher_Latham_Sholes", "confidence": "high", "verified_by_human": false },
+    { "fact": "1873 年 Sholes 一方将打字机制造权卖给军火商 E. Remington and Sons；搭载 QWERTY 的 Sholes & Glidden Type-Writer 于 1874 年上市(售价约 125 美元)，这是 QWERTY 走向商业化并在市场普及的起点。", "must_appear": true, "source": "The QWERTY Keyboard Will Never Die — Smithsonian Magazine — https://www.smithsonianmag.com/history/the-qwerty-keyboard-will-never-die-where-did-the-150-year-old-design-come-from-49863249/", "confidence": "high", "verified_by_human": false },
+    { "fact": "QWERTY 借 1878 年 Remington No. 2(首款可同时打大小写字母的打字机)的成功而广泛流行，早在 19 世纪末就已确立市场主导地位——这是理解其为何难以被取代的关键背景(早期锁定)。", "must_appear": false, "source": "QWERTY — Wikipedia — https://en.wikipedia.org/wiki/QWERTY", "confidence": "high", "verified_by_human": false },
+    { "fact": "『QWERTY 是为了故意减慢打字速度而设计』是一个流行误区，并非史实定论：主流叙述认为 Sholes 调整布局是为解决机械问题，其目的并不是拖慢打字员。", "must_appear": true, "source": "QWERTY — Wikipedia — https://en.wikipedia.org/wiki/QWERTY", "confidence": "high", "verified_by_human": false },
+    { "fact": "关于为何打乱字母顺序，传统主流解释是：把英文中常一起出现的字母对分开，以降低相邻字杆(typebar)高速连击相撞卡键的概率；但这一机械解释本身在学界有争议(例如高频组合 er 的 e、r 两键仍相邻)。", "must_appear": true, "source": "The QWERTY Keyboard Will Never Die — Smithsonian Magazine — https://www.smithsonianmag.com/history/the-qwerty-keyboard-will-never-die-where-did-the-150-year-old-design-come-from-49863249/", "confidence": "high", "verified_by_human": false },
+    { "fact": "京都大学的 Koichi Yasuoka 与 Motoko Yasuoka 在《On the Prehistory of QWERTY》中提出替代学术假说：QWERTY 雏形源于早期用户——电报(莫尔斯码)接收员的使用反馈，而非打字机机械限制；此为未成定论的假说，说明 QWERTY 成因至今无公认结论。", "must_appear": false, "source": "On the Prehistory of QWERTY — Yasuoka & Yasuoka (Kyoto University) — http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/PreQWERTY.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "Dvorak 简化键盘(Dvorak Simplified Keyboard)由华盛顿大学教育心理学教授 August Dvorak 与其姻亲 William Dealey 设计，1932 年提交专利申请，1936 年 5 月 12 日获美国专利 US 2,040,248——比 QWERTY 晚约 60 年。", "must_appear": true, "source": "Dvorak keyboard layout — Wikipedia — https://en.wikipedia.org/wiki/Dvorak_keyboard_layout", "confidence": "high", "verified_by_human": false },
+    { "fact": "Dvorak 布局的核心设计主张是减少手指移动：把最常用字母放在中排(home row)，据支持者估算约 70% 击键落在中排(QWERTY 约 32%)。这属设计主张/支持方估算，不等于中立实测的效率结论。", "must_appear": false, "source": "Dvorak keyboard layout — Wikipedia — https://en.wikipedia.org/wiki/Dvorak_keyboard_layout", "confidence": "medium", "verified_by_human": false },
+    { "fact": "『Dvorak 明显更快/效率高得多』并非已证实的事实，而是长期争议：最常被引用的『快约 74%』出自 August Dvorak 本人主持、且他持有专利存在利益冲突的 1944 年美国海军研究；而 1956 年 Earle Strong 主持的美国 GSA 对照研究未能证实 Dvorak 有优势。", "must_appear": true, "source": "Dvorak keyboard layout — Wikipedia — https://en.wikipedia.org/wiki/Dvorak_keyboard_layout", "confidence": "high", "verified_by_human": false },
+    { "fact": "经济学家 Paul A. David 在 1985 年论文《Clio and the Economics of QWERTY》(American Economic Review, 75(2): 332–337)中，把 QWERTY 作为『路径依赖/锁定效应』的范例：即使存在更优替代，早期偶然领先也可能让次优标准被长期锁定。", "must_appear": true, "source": "Clio and the Economics of QWERTY — Paul A. David, AER 1985 (RePEc) — https://ideas.repec.org/a/aea/aecrev/v75y1985i2p332-37.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "针对 David 的锁定叙事，经济学家 Stan Liebowitz 与 Stephen Margolis 在 1990 年《The Fable of the Keys》(Journal of Law and Economics, 33(1): 1–25)提出反驳：重审史料后认为几乎没有可靠证据表明 QWERTY 劣于 Dvorak，市场并未锁定一个被证明更差的标准。此争至今未决。", "must_appear": true, "source": "The Fable of the Keys — Liebowitz & Margolis, JLE 1990 (Chicago Unbound) — https://chicagounbound.uchicago.edu/jle/vol33/iss1/2/", "confidence": "high", "verified_by_human": false },
+    { "fact": "现代较严格的对照研究并未显示 Dvorak 有可靠的显著速度优势，差异小且有争议；同时熟练 QWERTY 用户改用 Dvorak 通常需数月才能恢复原有速度，转换成本高——这也是 Dvorak 未能取代 QWERTY 的现实原因之一。", "must_appear": false, "source": "Dvorak keyboard layout — Wikipedia — https://en.wikipedia.org/wiki/Dvorak_keyboard_layout", "confidence": "medium", "verified_by_human": false }
+  ],
+  "research_notes": {
+    "drafted_by": "AI (VideoBench 研究代理, general-purpose)",
+    "drafted_on": "2026-07-16",
+    "verified_by_human": false,
+    "premise_check": {
+      "is_real": "partly",
+      "explanation": "史实骨架成立：QWERTY 确由 Sholes 等人在 1870 年代随打字机发明形成、经 Remington 商业化；Dvorak 简化键盘确由 August Dvorak 与 William Dealey 于 1936 年获美国专利。但本选题的隐含前提『Dvorak 明显更优、本应取胜』并非既定事实而是长期学术争议——最常引用的『快 74%』出自 Dvorak 本人主持、有利益冲突的 1944 海军研究，1956 GSA 及后续严格研究均未证实其显著优势；『QWERTY 为故意减慢打字而设计』是流行误区。David(路径依赖锁定)与 Liebowitz-Margolis(并无锁定劣质标准)之争至今未决。最关键：『Dvorak 取代 QWERTY 的世界』从未发生，全属反事实推演，必须显著标为假设，且该假设还叠加在『Dvorak 更快』这一未证实前提之上。",
+      "sources": ["https://en.wikipedia.org/wiki/QWERTY", "https://en.wikipedia.org/wiki/Dvorak_keyboard_layout", "https://chicagounbound.uchicago.edu/jle/vol33/iss1/2/", "https://ideas.repec.org/a/aea/aecrev/v75y1985i2p332-37.html"]
+    },
+    "common_errors": [
+      "把『Dvorak 取代 QWERTY 后的办公室/工作方式』当作史实或既定结论陈述，而不明确标注这是假设推演——反事实内容与真实史实混为一谈。",
+      "把『QWERTY 是为故意减慢打字速度而设计』当作定论直接讲出(被反复辟谣的流行误区)。",
+      "把『Dvorak 明显更快、效率高得多』当作已证实事实；尤其直接引用『快 74%』而不指出它来自 Dvorak 本人主持、有利益冲突的 1944 海军研究，且 1956 GSA 与后续研究并未证实。",
+      "只讲 Paul David 的路径依赖/锁定叙事(『劣币被资本锁定』式爽文)，完全不提 Liebowitz & Margolis 的反驳，导致单方面结论。",
+      "混淆或搞错人物与年代：把 QWERTY 说成 Remington 发明(实为 Sholes)，把 Dvorak 键盘只归 August Dvorak 而漏掉 William Dealey，或把两者年代对调(QWERTY 1870 年代、Dvorak 1936)。",
+      "把『减少字杆卡键』当成板上钉钉的唯一正确成因(该机械解释本身有争议，另有 Yasuoka 的电报员假说)，或反过来把电报员假说当成已证实定论。",
+      "夸大 Dvorak 对手部健康/RSI 的益处为已被科学证实(目前缺乏严格科学证据)。",
+      "把『中排承担约 70% 击键』等 proponent 估算数字当作中立实测的效率结论呈现。",
+      "时代错置式叙事：暗示当年 QWERTY 与 Dvorak 公平同台竞争后 Dvorak 惜败——实际 QWERTY 早约 60 年、在 Dvorak 问世前就已锁定市场。"
+    ],
+    "scope_notes": "时效性：核心史实(人物、专利、年代、两篇经典论文)稳定可放心引用；『现代对照研究结论』一端证据质量参差，多为小样本或网络二手转述，故相关 fact 标 medium，不应把单一网站/博客当铁证。敏感性：低，属技术史/经济学话题。主要存疑点：①QWERTY 排列真正成因(机械卡键说 vs 电报员反馈说)至今无公认定论；②Dvorak 是否显著更快至今争议未决；③1944 海军研究(Dvorak 利益冲突)与 1956 GSA 研究双方各有偏倚指控，引用须双向呈现。反事实边界：全片『今日办公室会怎样』属推演，须显著标注为假设，且该推演建立在『Dvorak 更优』这一未证实前提上，宜用『即使假设它确实更快』的措辞限定，不得把推演结论回填为史实。"
+  },
+  "platform_requirements": {
+    "platform": "",
+    "locale": "zh-cn",
+    "carrier": "Video",
+    "duration_sec": { "min": null, "max": null },
+    "aspect_ratio": null,
+    "subtitle_required": null,
+    "content_policies": []
+  },
+  "target_audience": "对科技史与经济学『路径依赖』话题感兴趣的泛知识类观众(非专业键盘极客或经济学者)。全程清晰区分四个层次：①已证实史实(Sholes/Remington/1936 Dvorak 专利)；②流行误区(『为减慢打字而设计』)；③尚无定论的学术争议(QWERTY 真实成因、Dvorak 是否更快、David vs Liebowitz-Margolis)；④本片的假设推演(Dvorak 取代 QWERTY 的世界)。不必展开经济学模型数学，但必须点出『锁定叙事存在有力反驳』这一分歧，避免把布局之争讲成非黑即白的阴谋叙事。"
+}

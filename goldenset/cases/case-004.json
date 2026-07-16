@@ -1,0 +1,70 @@
+{
+  "case_id": "case-004",
+  "mode": "with_reference",
+  "profile": "content_channel",
+  "channel": {
+    "name": "城市里的野生动物·它们怎么活下来的",
+    "description": "每期讲一种成功适应大城市环境的野生动物，结合真实案例和生态学解释它们的食物、路线、繁殖如何在钢筋水泥里找到生存缝隙",
+    "locale": "zh-cn",
+    "carrier": "Video"
+  },
+  "query": "旧金山 Glen Canyon 的郊狼，为什么能住在城市中心？",
+  "brief": "【频道】城市里的野生动物·它们怎么活下来的\n【频道需求】每期讲一种成功适应大城市环境的野生动物，结合真实案例和生态学解释它们的食物、路线、繁殖如何在钢筋水泥里找到生存缝隙\n【本期选题】旧金山 Glen Canyon 的郊狼，为什么能住在城市中心？",
+  "must_cover": [
+    { "point": "结合真实案例(旧金山 Glen Canyon 郊狼)", "source": "query+channelDescription", "must_appear": true },
+    { "point": "用生态学解释其食物来源", "source": "channelDescription", "must_appear": true },
+    { "point": "解释其活动路线/领地/廊道", "source": "channelDescription", "must_appear": true },
+    { "point": "解释其繁殖", "source": "channelDescription", "must_appear": true },
+    { "point": "说明它们如何在钢筋水泥里找到生存缝隙", "source": "channelDescription", "must_appear": true }
+  ],
+  "key_facts": [
+    { "fact": "郊狼(Canis latrans，北美原生犬科动物，是介于狐与狼之间的中型食肉动物，并非狼、狐或鬣狗)约在 2002 年重新出现在旧金山；此前近一个世纪几乎绝迹，市区 20 世纪最后一次记录约在 1925 年，之后自然重新定居。", "must_appear": true, "source": "Coyotes in the Presidio | Presidio National Park — https://presidio.gov/about/sustainability/coyotes-in-the-presidio", "confidence": "high", "verified_by_human": false },
+    { "fact": "基因证据显示旧金山的奠基郊狼来自金门大桥以北的马林县，是跨越金门大桥进入半岛的：一只成年雄性郊狼于约 2003 年 5 月在 Presidio 被捕获佩戴项圈，DNA 分析约 99.5% 指向北岸种群；旧金山因此成为历史上彼此隔离的北、南两个郊狼种群的连接点。它们是自然扩散而来，并非人为放归或引入。", "must_appear": true, "source": "San Francisco's Golden Gate: A bridge between historically distinct coyote populations? | USGS — https://www.usgs.gov/publications/san-francisco-s-golden-gate-a-bridge-between-historically-distinct-coyote-canis", "confidence": "high", "verified_by_human": false },
+    { "fact": "Glen Canyon Park 长期有一个定居的郊狼家庭群(社区与自然观察者多年报告约为 3 只的家庭，个体会更替、数目会变动)；在旧金山，各郊狼家庭群通常各自占据一片公园绿地作为领地。", "must_appear": true, "source": "Coexisting with coyotes | The Glen Park Association — https://www.glenparkassociation.org/coexisting-with-coyotes/", "confidence": "high", "verified_by_human": false },
+    { "fact": "旧金山郊狼是广食性杂食动物，人类来源食物是出现频率最高的一类：一项 2019–2022 年、基于 700 多份粪便 DNA 的研究发现，人类食物出现在约 78% 的粪便样本中，其中鸡肉最常见(约 72% 的样本)。这里的百分比是粪便中的出现频率，不是按食物量的占比。", "must_appear": true, "source": "Dining Out with San Francisco's Coyotes | UC Davis — https://www.ucdavis.edu/climate/news/dining-out-san-franciscos-coyotes", "confidence": "high", "verified_by_human": false },
+    { "fact": "啮齿动物是旧金山郊狼最主要的自然猎物，尤以囊鼠(pocket gopher，约出现在 57% 的粪便样本)为主，还包括大鼠等；郊狼因此在城市中承担了控制啮齿动物等自然害虫防治的生态作用。", "must_appear": true, "source": "Dining Out with San Francisco's Coyotes | UC Davis — https://www.ucdavis.edu/climate/news/dining-out-san-franciscos-coyotes", "confidence": "high", "verified_by_human": false },
+    { "fact": "郊狼食谱随城市环境显著变化：绿地多的公园(如 Presidio、金门公园、McLaren)里以野生啮齿动物为主；铺装率高、餐馆密集的街区则更多摄取人类食物残余，且大鼠比例更高。这一空间差异正是它们在钢筋水泥缝隙中就地取材的证据。", "must_appear": false, "source": "New Research Reveals What San Francisco Coyotes Eat | KQED — https://www.kqed.org/arts/13970587/san-francisco-coyote-eating-habits-research-poop-samples", "confidence": "high", "verified_by_human": false },
+    { "fact": "家猫只占旧金山郊狼粪便样本的约 4.5%，远低于公众担忧；把郊狼描述成主要以宠物为食并不符合本地数据(但仍应看护好宠物)。", "must_appear": false, "source": "Racoons, pigs, rats and cats found in poop of San Francisco's coyotes | Discover Wildlife — https://www.discoverwildlife.com/animal-facts/coyote-diet-san-francisco", "confidence": "high", "verified_by_human": false },
+    { "fact": "作为杂食性广食者，郊狼除动物性猎物外也吃水果和植物(在芝加哥城市郊狼研究中果实约占粪便样本的 23%)；这种什么都吃的食性可塑性，是它们能适应城市环境的关键之一。", "must_appear": false, "source": "General Information About Coyotes | Urban Coyote Research — https://urbancoyoteresearch.com/coyote-info/general-information-about-coyotes", "confidence": "medium", "verified_by_human": false },
+    { "fact": "领地与廊道：郊狼有很强的领地性，各家庭群把公园绿地作为领地，并沿峡谷、公园、高尔夫球场等自然斑块在城市中移动、回避人群密集区；城市中支撑一个家庭群所需的领地远小于乡野，例如 Presidio 约 2.3 平方英里就能支持约两对繁殖对。", "must_appear": true, "source": "Coyotes in the Presidio | Presidio National Park — https://presidio.gov/about/sustainability/coyotes-in-the-presidio", "confidence": "high", "verified_by_human": false },
+    { "fact": "繁殖：郊狼为社会性单配(一夫一妻的 alpha 配对，通常维持到一方死亡)，约在 2 月交配，妊娠约 62–65 天，幼崽约在 4 月出生，产仔/育幼季大致覆盖春夏(约 3 月至 9 月)；Presidio 通常只有一对 alpha 繁殖对。", "must_appear": true, "source": "General Information About Coyotes | Urban Coyote Research — https://urbancoyoteresearch.com/coyote-info/general-information-about-coyotes", "confidence": "high", "verified_by_human": false },
+    { "fact": "幼崽扩散：满一岁左右的亚成体通常被亲代逐出出生领地，去寻找空缺栖息地建立新领地(land tenure 机制)；正是这种扩散使郊狼不断向城市新区域扩张并定居下来。", "must_appear": true, "source": "Coyotes in the Presidio | Presidio National Park — https://presidio.gov/about/sustainability/coyotes-in-the-presidio", "confidence": "high", "verified_by_human": false },
+    { "fact": "行为适应：郊狼本性偏晨昏或日间活动，但进入城市后普遍转为以夜间活动为主，以尽量避开人类——这种活动节律的调整是它们能在市中心与人共处、几乎隐形生活的关键行为机制。", "must_appear": true, "source": "Study Results | Urban Coyote Research — https://urbancoyoteresearch.com/coyote-info/study-results", "confidence": "high", "verified_by_human": false },
+    { "fact": "人兽共处：绝不可投喂郊狼——投喂会使其习惯化、胆子变大、更多在白天出现，并与攻击事件相关；应拴好狗、把猫留在室内、收好垃圾/宠物粮/落果等吸引物，遇到靠近的郊狼应用变大身形、大声驱赶(hazing)的方式使其重拾对人的戒心。旧金山官方也强调投喂被禁止、会让郊狼失去对人的自然恐惧。", "must_appear": true, "source": "Coyote Relationships with People | Urban Coyote Research — https://urbancoyoteresearch.com/coyote-info/coyote-relationships-people", "confidence": "high", "verified_by_human": false }
+  ],
+  "research_notes": {
+    "drafted_by": "AI (VideoBench 研究代理, general-purpose)",
+    "drafted_on": "2026-07-16",
+    "verified_by_human": false,
+    "premise_check": {
+      "is_real": "true",
+      "explanation": "前提成立。郊狼约 2002 年重新定居旧金山(此前近一个世纪几乎绝迹，市区最后记录约 1925 年)，已在全城多个绿地公园各自占据家庭领地，全市估计约 100 只。Glen Canyon 是旧金山地理中心附近的一片峡谷绿地，当地社区与自然观察者多年报告该公园有一个定居的郊狼家庭(约 3 只，个体会更替)。基因研究表明奠基个体来自金门大桥以北的马林县，跨桥进入半岛；旧金山如今成为历史上彼此隔离的北、南两个种群的连接点。具体头数是逐年变动的估计值。",
+      "sources": ["https://presidio.gov/about/sustainability/coyotes-in-the-presidio", "https://mecu.ucdavis.edu/san-francisco-coyotes/", "https://www.usgs.gov/publications/san-francisco-s-golden-gate-a-bridge-between-historically-distinct-coyote-canis", "https://www.glenparkassociation.org/coexisting-with-coyotes/", "https://baynature.org/article/urban-coyotes-in-our-midst/", "https://richmondsunsetnews.com/2023/02/03/learning-to-coexist-with-at-least-100-coyotes-in-san-francisco/"]
+    },
+    "common_errors": [
+      "把郊狼说成是人为放归/重新引入旧金山——实际是自然扩散重新定居的。",
+      "把 coyote 误译或误称为狼、狐狸，或错译成土狼(鬣狗)；正确中文是郊狼(Canis latrans)。",
+      "说奠基郊狼来自南边半岛——基因证据指向金门大桥以北的马林县(北岸种群)；旧金山只是后来成为南北种群的连接点。",
+      "夸大郊狼捕食宠物，把它描绘成主要以猫狗为食——旧金山研究中猫仅约 4.5%。",
+      "笼统说城市郊狼主要靠翻垃圾/吃宠物为生——食性随街区差异很大，绿地公园里以野生啮齿动物(囊鼠)为主。",
+      "说郊狼天生是夜行动物——它们本性偏晨昏/日行，夜行主要是适应城市、躲避人类后的调整。",
+      "把估计数字当精确定值(如断言全市正好 100 只、Glen Canyon 固定 3 只)——这些是逐年变动的估计。",
+      "说幼崽在冬天出生——旧金山地区幼崽通常约 4 月出生。",
+      "把郊狼描述成像狼群一样成大群集体围猎——城市郊狼多为家庭小群，捕小型猎物时常单独或成对行动。",
+      "渲染郊狼危险、易攻击人——攻击极其罕见；但也不应走向另一极端去投喂。",
+      "把粪便出现频率(如人类食物 78%)说成按食物量/重量的占比。",
+      "在片中示范或建议投喂、诱拍、靠近郊狼以获取镜头。"
+    ],
+    "scope_notes": "数字均为逐年变动的估计(全市约 100 只、Glen Canyon 家庭约 3 只)，须以约/估计表述。食性百分比是 2019–2022 旧金山研究中粪便的出现频率，不是按食物量/重量的占比。猫约 4.5% 是旧金山本地结论；另有更广域加州研究报告过更高食猫比例(某报道约 35%)，勿混为一谈。投喂违法：加州与旧金山确有禁令与执法，但具体法条本次未逐条核实，稳妥表述为被禁止/强烈不建议。郊狼跨金门大桥入城的严谨证据是基因分析(USGS)；2004 年媒体报道拍到郊狼过桥属轶事佐证，二者宜区分。首次出现年份/地点在不同来源有 2001/2002、Presidio/Bernal 的细微出入，统一用约 2002 年。果实约占 23% 引自芝加哥研究，属普遍食性非旧金山本地量化。敏感性：全片保持共处基调，切勿示范/建议投喂、诱拍或靠近郊狼。"
+  },
+  "platform_requirements": {
+    "platform": "",
+    "locale": "zh-cn",
+    "carrier": "Video",
+    "duration_sec": { "min": null, "max": null },
+    "aspect_ratio": null,
+    "subtitle_required": null,
+    "content_policies": []
+  },
+  "target_audience": "对城市生态与野生动物好奇的中文大众，尤其城市居民；初高中科普深度。开篇先讲清郊狼是什么(Canis latrans，北美原生中型犬科食肉动物，不是狼/狐/鬣狗)，可引入广食者、中型食肉动物、生态廊道、行为可塑性等概念但用生活化语言解释。叙事锚点放在与人共处、在城市缝隙里求生，多用可核验的行为与数据，避免拟人化煽情；讲人兽冲突时给出正确共处指引(尤其勿投喂)而非制造恐惧。"
+}

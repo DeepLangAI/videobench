@@ -2,18 +2,29 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "videobench/task_context",
   "title": "TaskContext",
-  "description": "Judge 输入的任务上下文与生产约束。有参照模式缺任一参照字段即拒评；无参照模式仅评不需参照的维度。",
+  "description": "Judge 输入的任务上下文与生产约束。两种 profile：product_marketing（带货，需 input_assets/product_facts/platform/brand）与 content_channel（知识/解说频道，需 channel/query/must_cover/key_facts）。有参照模式缺该 profile 要求的任一参照字段即拒评；无参照模式仅评不需参照的维度。",
   "type": "object",
   "required": ["case_id", "mode"],
-  "if": { "properties": { "mode": { "const": "with_reference" } } },
-  "then": { "required": ["case_id", "mode", "brief", "input_assets", "product_facts", "platform_requirements", "brand_requirements"] },
   "properties": {
-    "case_id": { "type": "string", "description": "goldenset/cases/ 中的题目编号" },
+    "case_id": { "type": "string", "description": "goldenset/cases/ 中的题目编号，文件名即 case_id" },
     "mode": { "enum": ["with_reference", "no_reference"], "description": "评估模式，决定可评维度范围（见 docs/dimensions.md 的需参照列）" },
-    "brief": { "type": "string", "description": "原始 Brief 全文，不允许改写或摘要" },
+    "profile": { "enum": ["product_marketing", "content_channel"], "default": "product_marketing", "description": "题目形态：带货片 / 知识解说频道片。决定 with_reference 下必填的参照字段集；缺省视为 product_marketing" },
+    "brief": { "type": "string", "description": "原始 Brief 全文，不允许改写或摘要（content_channel 下为 channelName + channelDescription + query 的原文拼接）" },
+    "channel": {
+      "type": "object",
+      "description": "content_channel：频道设定，每期复用的格式与内容要求，是 L1 指令遵循/内容完整的覆盖基准",
+      "required": ["name", "description"],
+      "properties": {
+        "name": { "type": "string", "description": "频道名 channelName" },
+        "description": { "type": "string", "description": "频道需求 channelDescription 原文，不改写" },
+        "locale": { "type": "string", "description": "如 zh-cn" },
+        "carrier": { "type": "string", "description": "载体，如 Video" }
+      }
+    },
+    "query": { "type": "string", "description": "content_channel：本期具体选题/问题原文，不改写" },
     "input_assets": {
       "type": "array",
-      "description": "输入素材清单",
+      "description": "输入素材清单（product_marketing）",
       "items": {
         "type": "object",
         "required": ["path", "type"],
@@ -26,7 +37,7 @@
     },
     "product_facts": {
       "type": "array",
-      "description": "产品事实表：可核验的事实断言，L1 信息准确的对照基准",
+      "description": "产品事实表（product_marketing）：可核验的事实断言，L1 信息准确的对照基准",
       "items": {
         "type": "object",
         "required": ["fact"],
@@ -36,14 +47,56 @@
         }
       }
     },
+    "must_cover": {
+      "type": "array",
+      "description": "content_channel：频道/选题要求必须覆盖的内容点，L1 内容完整/指令遵循 的对照基准",
+      "items": {
+        "type": "object",
+        "required": ["point"],
+        "properties": {
+          "point": { "type": "string" },
+          "source": { "type": "string", "description": "该覆盖点出处，如 channelDescription / query" },
+          "must_appear": { "type": "boolean", "description": "true 时缺失即触发 Gate『关键内容缺失』" }
+        }
+      }
+    },
+    "key_facts": {
+      "type": "array",
+      "description": "content_channel：可核验的事实断言，L1 信息准确 ⚑ 的对照基准。每条须附来源；AI 起草的须置 verified_by_human=false，人工核验前不得据此对 L1 硬判（转 needs_human）",
+      "items": {
+        "type": "object",
+        "required": ["fact"],
+        "properties": {
+          "fact": { "type": "string" },
+          "must_appear": { "type": "boolean", "description": "true 时缺失即触发 Gate『关键内容缺失』" },
+          "source": { "type": "string", "description": "可核验来源 URL 或出处" },
+          "confidence": { "enum": ["high", "medium", "low"], "description": "起草置信度" },
+          "verified_by_human": { "type": "boolean", "description": "是否已人工核验；false 时该条不得作为 L1 信息准确的硬判依据" }
+        }
+      }
+    },
+    "research_notes": {
+      "type": "object",
+      "description": "content_channel：事实表的起草与核验背景（AI 起草，待人工审核）。common_errors 是 Judge 做 L1 事实查错的已知陷阱清单；premise_check 记录选题前提是否成立；scope_notes 记录时效性/敏感性/存疑点",
+      "properties": {
+        "drafted_by": { "type": "string" },
+        "drafted_on": { "type": "string" },
+        "verified_by_human": { "type": "boolean", "description": "整表是否已人工核验；false 时 L1 信息准确一律 needs_human，不许硬判" },
+        "premise_check": { "type": "object", "properties": { "is_real": { "type": "string" }, "explanation": { "type": "string" }, "sources": { "type": "array", "items": { "type": "string" } } } },
+        "common_errors": { "type": "array", "items": { "type": "string" }, "description": "该选题成片易犯的事实错误/误区，供 Judge 逐条排查" },
+        "scope_notes": { "type": "string" }
+      }
+    },
     "platform_requirements": {
       "type": "object",
       "description": "平台硬性要求，是 Gate 第 8 条的依据",
       "properties": {
         "platform": { "type": "string" },
-        "duration_sec": { "type": "object", "properties": { "min": { "type": "number" }, "max": { "type": "number" } } },
-        "aspect_ratio": { "type": "string" },
-        "subtitle_required": { "type": "boolean" },
+        "locale": { "type": "string" },
+        "carrier": { "type": "string" },
+        "duration_sec": { "type": "object", "properties": { "min": { "type": ["number", "null"] }, "max": { "type": ["number", "null"] } } },
+        "aspect_ratio": { "type": ["string", "null"] },
+        "subtitle_required": { "type": ["boolean", "null"] },
         "content_policies": { "type": "array", "items": { "type": "string" } }
       }
     },
@@ -58,5 +111,15 @@
       }
     },
     "target_audience": { "type": "string", "description": "Judge 逼近的目标人群画像" }
-  }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "mode": { "const": "with_reference" }, "profile": { "const": "content_channel" } }, "required": ["mode", "profile"] },
+      "then": { "required": ["case_id", "mode", "profile", "brief", "channel", "query", "must_cover", "key_facts", "target_audience"] }
+    },
+    {
+      "if": { "properties": { "mode": { "const": "with_reference" }, "profile": { "not": { "const": "content_channel" } } }, "required": ["mode"] },
+      "then": { "required": ["case_id", "mode", "brief", "input_assets", "product_facts", "platform_requirements", "brand_requirements"] }
+    }
+  ]
 }

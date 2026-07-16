@@ -1,0 +1,66 @@
+{
+  "case_id": "case-001",
+  "mode": "with_reference",
+  "profile": "content_channel",
+  "channel": {
+    "name": "电池热失控·热量传播图解",
+    "description": "每期拆解一次电动车电池安全事故的物理过程，从第一颗电芯的内部短路讲起，用可视化动画展示热量如何在电芯间、模组间层层传导引发连锁失控，配真实事故数据和防护设计对比",
+    "locale": "zh-cn",
+    "carrier": "Video"
+  },
+  "query": "一块 800V 动力电池热失控时，热量是怎么一路传开的？",
+  "brief": "【频道】电池热失控·热量传播图解\n【频道需求】每期拆解一次电动车电池安全事故的物理过程，从第一颗电芯的内部短路讲起，用可视化动画展示热量如何在电芯间、模组间层层传导引发连锁失控，配真实事故数据和防护设计对比\n【本期选题】一块 800V 动力电池热失控时，热量是怎么一路传开的？",
+  "must_cover": [
+    { "point": "从第一颗电芯的内部短路作为起点讲起", "source": "channelDescription", "must_appear": true },
+    { "point": "用可视化动画展示热量在电芯间的传导", "source": "channelDescription", "must_appear": true },
+    { "point": "展示热量在模组间层层传导、引发连锁失控", "source": "channelDescription", "must_appear": true },
+    { "point": "配真实事故/测试数据", "source": "channelDescription", "must_appear": true },
+    { "point": "给出防护设计对比", "source": "channelDescription", "must_appear": true },
+    { "point": "以一块 800V 动力电池为载体，且不得把 800V 高电压当作热失控成因", "source": "query", "must_appear": true }
+  ],
+  "key_facts": [
+    { "fact": "动力电池热失控本质是电芯层面的『链式放热反应』：机械/电/热滥用最终多以电芯内部短路为共同特征，短路放热把电芯加热到自产热温度后，内部各组分的分解反应依次接力、正反馈加速直至失控；触发热失控的是电芯内部化学/热学过程，与电池包对外的系统电压(400V/800V)无关。", "must_appear": true, "source": "Feng, Ouyang 等《Thermal runaway mechanism of lithium ion battery for electric vehicles: A review》, Energy Storage Materials, 2018 — https://www.sciencedirect.com/science/article/abs/pii/S2405829716303464", "confidence": "high", "verified_by_human": false },
+    { "fact": "单体热失控常用三个特征温度刻画：T1 自产热起始温度(约 80–120°C，多由 SEI 膜分解引发)、T2 热失控触发温度(温度骤升拐点，三元电芯随内短路严重程度约在 130–250°C 区间)、T3 热失控最高温度(常超过 800°C)。具体数值随正极体系/SOC/电芯而变，属示例而非通用常数。", "must_appear": false, "source": "Feng 等《Time Sequence Map for Interpreting the Thermal Runaway Mechanism of Li-Ion Batteries With NCM Cathode》, Frontiers in Energy Research, 2018 — https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2018.00126/full", "confidence": "high", "verified_by_human": false },
+    { "fact": "热失控的温度阶梯(链式反应顺序)大致为：SEI 膜分解(约 80–120°C)→负极嵌锂与电解液反应→隔膜收缩/熔化(PE 约 130°C、PP 约 170°C)乃至崩溃(约 190°C)引发大面积内部短路→正极分解并释放晶格氧、电解液分解(约 250°C 以上)→剧烈放热使温度冲到数百至 800°C 以上。", "must_appear": true, "source": "《Thermal Runaway in Lithium-Ion Batteries: A Review of Mechanisms, Prediction Approaches, and Mitigation Strategies》, Batteries (MDPI), 2025 — https://www.mdpi.com/2313-0105/12/3/88", "confidence": "high", "verified_by_human": false },
+    { "fact": "内部短路是热失控的『扳机』，但并不是把电芯加热到 800°C 的主要热源；绝大部分热量来自正极释氧之后与负极/电解液发生的剧烈化学放热反应。成片若把『短路电流发热』说成主要热量来源，属机理错误。", "must_appear": true, "source": "Feng 等《Time Sequence Map...NCM Cathode》, Frontiers in Energy Research, 2018 — https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2018.00126/full", "confidence": "high", "verified_by_human": false },
+    { "fact": "化学体系决定热失控烈度：三元(NCM)正极约 200°C 起就易分解并释放晶格氧、助燃放热；磷酸铁锂(LFP)因 PO4 四面体中 P–O 强共价键几乎不释放晶格氧，显著分解需更高温度(约 >230°C，峰值常在 350–500°C 以上)，热稳定性明显更好——这是 LFP/刀片类电池更安全的根本原因，但『更安全』不等于『不会热失控』。", "must_appear": true, "source": "《磷酸铁锂电池和三元类电池热稳定性对比》, 电池中国网(cbea) — http://www.cbea.com/ldc/201811/931722.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "热量在相邻电芯间『接力』主要通过三条路径：经电芯壳体/汇流排/冷却板等的固体热传导、高温喷发气与射流火焰的热对流、以及热辐射；相邻电芯被加热到自身 T2 后被引燃，逐颗扩散即热蔓延(thermal runaway propagation)，模组间则可经结构件传导与喷出气/火焰跨模组扩散。", "must_appear": true, "source": "《...thermal runaway propagation characteristics of lithium-ion battery module with NCM pouch cells》, Journal of Energy Storage — https://www.sciencedirect.com/science/article/abs/pii/S2352152X23017772", "confidence": "high", "verified_by_human": false },
+    { "fact": "热蔓延的时间/温度尺度可参考实验数据(特定电芯/条件)：三元(NCM)模组蔓延极快，整包蔓延约数百秒量级、表面峰值温度可达约 838°C；磷酸铁锂(LFP)模组蔓延慢得多，单体间引燃间隔可达数百至上千秒(如满电 LFP 约 667–1305s)；同等条件下 NCM 蔓延速度约为 LFP 的两倍。这些是量级参考，不可当作『所有 800V 电池的固定数值』。", "must_appear": false, "source": "《...thermal runaway propagation characteristics...NCM pouch cells》, Journal of Energy Storage — https://www.sciencedirect.com/science/article/abs/pii/S2352152X23017772", "confidence": "medium", "verified_by_human": false },
+    { "fact": "强制性国标 GB 38031-2025《电动汽车用动力蓄电池安全要求》已于 2026 年 7 月 1 日起对新申报车型实施(存量车型 2027 年 7 月 1 日前完成切换)，把热扩散要求从旧版的『报警』升级为『不起火、不爆炸』：触发单体热失控后，电池包/系统在观察期内(据解读约 2 小时、各监测点温度 ≤60°C)不起火、不爆炸，且仍需发出报警信号、烟气不得危害乘员。", "must_appear": true, "source": "《市场最前沿丨电动汽车电池新国标 7 月落地，安全门槛再升级》, 新华网 — https://www.news.cn/fortune/20260629/ecdbb252acf842e7ac2b432d103471dd/c.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "旧版 GB 38031-2020 的热扩散要求是『电芯单体热失控后、在乘员舱到达危险情况前至少 5 分钟发出热事件报警信号』，目的是为乘员预留逃生时间——它并不等于『保证 5 分钟内不起火不爆炸』；『不起火、不爆炸』是 2025 新版才强制的更高门槛。", "must_appear": false, "source": "《电池热失控后 5 分钟内不起火！中国电动车强制性国家标准发布》, 新浪汽车(2020) — https://auto.sina.cn/zz/hykx/2020-05-14/detail-iircuyvi3055881.d.html", "confidence": "medium", "verified_by_human": false },
+    { "fact": "800V 是整车高压/超充架构规格：核心目的是在快充时通过提高电压来提升充电功率、缩短充电时间(相比 400V 可显著缩短并降低同功率下的电流/线束发热)，代表如保时捷 Taycan(2019)首发、小鹏 G9 为国内首款 800V 高压 SiC 平台量产车。它是电池包/整车电气层面的概念，不是热失控或热量传播的成因。", "must_appear": true, "source": "《电动汽车 800V 高压平台应用与研究》, 电子工程专辑(eet-china) — https://www.eet-china.com/mp/a387733.html", "confidence": "high", "verified_by_human": false },
+    { "fact": "正极分解释放的氧主要在电芯内部加速放热反应，通常不足以支撑内部完全燃烧；明火/喷射火焰多发生在可燃气体喷出壳体、遇空气之后。热失控产气以 H2、CO、CO2、CH4、C2H4 等为主，LFP 产气中 H2 比例较高。", "must_appear": false, "source": "《惰性气氛下不同 LFP 和 NCM 正极材料锂离子电池热失控特性及气体成分分析》, 科学指南针 — https://www.shiyanjia.com/knowledge-articleinfo-7696.html", "confidence": "medium", "verified_by_human": false },
+    { "fact": "抑制热蔓延的常见防护是『延缓+阻断+争取时间』的多层设计：电芯间加隔热材料(气凝胶/云母/陶瓷纤维等，实验显示可把蔓延时间从约 8–12 秒延长到数十秒)、模组/包级防火隔热墙、定向泄压设计(如预切云母引导高温气体定向排出、避免侧漏引燃相邻模组)、以及 BMS 热失控预警与液冷热管理，共同支撑满足 GB 38031 的热扩散要求。防护是阻断蔓延/争取逃生时间，而非让电芯永不热失控。", "must_appear": true, "source": "《动力电池热扩散防护方法研究与分析》, 搜狐汽车 — https://www.sohu.com/a/690777649_121730969", "confidence": "medium", "verified_by_human": false }
+  ],
+  "research_notes": {
+    "drafted_by": "AI (VideoBench 研究代理, general-purpose)",
+    "drafted_on": "2026-07-16",
+    "verified_by_human": false,
+    "premise_check": {
+      "is_real": "partly",
+      "explanation": "『热量在电芯间、模组间层层传导引发连锁失控』这一核心现象真实且被大量文献/国标证实，学名热蔓延/热扩散(thermal runaway propagation)，选题成立。但『800V』是易错前提：800V 指整车高压/超充架构的系统标称电压(为提升充电功率而从 400V 升到约 800V)，属电池包对外的电气规格；热失控与热蔓延是电芯层面的化学/热学现象。800V 电池包只是把更多/更高电压的电芯串到约 800V，热失控仍从单颗电芯开始按热学规律蔓延，与系统是 400V 还是 800V 不在同一层面。成片可用一块 800V 电池包作为叙事载体，但绝不能把『800V 高电压』讲成热失控成因或热量传播的驱动力。",
+      "sources": ["https://www.eet-china.com/mp/a387733.html", "https://www.sciencedirect.com/science/article/abs/pii/S2405829716303464", "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2018.00126/full"]
+    },
+    "common_errors": [
+      "把『800V 高压』当成热失控直接原因或热量传播驱动力(『电压把热量传开』)——800V 是整车高压/超充架构规格，热蔓延靠热传导/对流/辐射，与系统标称电压不在同一层面。",
+      "把内部短路的『短路电流发热』当作把电芯烧到 800°C 的主要热源——真正主要热源是正极释氧后与负极/电解液的剧烈化学放热，内短路只是扳机。",
+      "宣称『正极释放的氧足以支撑电芯内部完全燃烧』——释放的氧主要在内部加速放热，明火燃烧多在可燃气体喷出壳体遇空气之后。",
+      "把旧国标 GB 38031-2020 说成『保证 5 分钟内不起火不爆炸』——旧版要求是危险发生前至少 5 分钟发出报警信号(留逃生时间)；『不起火、不爆炸』是 2025 新版(2026-07-01 起实施)才强制。",
+      "把某化学体系/某次实验的温度阈值或秒数当成『通用/固定数字』——阈值随正极材料(NCM 镍含量/LFP)、SOC、电芯规格与触发方式显著变化。",
+      "混用『热失控(thermal runaway)』与『热蔓延/热扩散(thermal propagation)』——前者是单体失控放热，后者是从一颗电芯扩散到相邻电芯/模组的过程。",
+      "声称某防护(刀片结构/CTP/气凝胶/液冷)能『绝对杜绝』热失控或让电池『绝对安全』——防护目标是延缓/阻断蔓延、争取时间，LFP 也会热失控。",
+      "把 SEI/隔膜/正极的温度阈值排序讲反或漏掉『释氧』这一关键放热环节，导致温度阶梯因果链断裂。"
+    ],
+    "scope_notes": "时效性：GB 38031-2025 已于 2026-07-01 起对新申报车型实施(存量车型 2027-07-01 前切换)，成片若仍称『现行标准只要求 5 分钟逃生』即过时。数字口径：文中温度阈值/蔓延时间为文献典型值或特定实验值，随正极体系/SOC/电芯规格/触发方式变化，引用应标注适用条件而非绝对化。标准细节存疑点：『触发后约 2 小时观察、监测点 ≤60°C』来自解读文章而非逐字标准正文，正式引用前建议核对 GB 38031-2025 原文。敏感性：涉及电动车起火安全，避免制造恐慌，不给『某品牌一定安全/危险』结论，防护对比以公开标准与文献为准、不点名贬损具体车企/车型。"
+  },
+  "platform_requirements": {
+    "platform": "",
+    "locale": "zh-cn",
+    "carrier": "Video",
+    "duration_sec": { "min": null, "max": null },
+    "aspect_ratio": null,
+    "subtitle_required": null,
+    "content_policies": []
+  },
+  "target_audience": "关心电动车安全的普通车主/消费者(非电池工程师)；能接受可视化降维讲解，但要求机理正确。讲解深度停在『温度阶梯→正极释氧助燃→热传导/对流蔓延→防护如何争取时间』，用具体温度区间与秒—分钟时间尺度建立直觉，并清晰区分热失控/热蔓延、NCM/LFP、800V 整车架构/电芯化学三组概念。"
+}
