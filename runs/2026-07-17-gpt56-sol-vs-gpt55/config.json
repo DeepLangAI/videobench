@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-07-17-gpt56-sol-vs-gpt55",
+  "date": "2026-07-17",
+  "mode": "with_reference",
+  "purpose": "gpt5.6-sol vs gpt5.5 盲评：6 条 content_channel 题目（goldenset case-001~006）× a/b 双成片，完整评估 = Gate + 六层维度诊断 + GSB",
+  "videos_dir": "/Users/admin/Downloads/gpt5.6-sol vs gpt5.5",
+  "blinding": "文件夹内仅 a/b 命名，评估全程不知道哪个是 gpt5.6-sol、哪个是 gpt5.5；揭盲映射由用户持有",
+  "topic_case_map": {
+    "电池热失控·热量传播图解": "case-001",
+    "商业结构一个概念怎么被卖爆": "case-002",
+    "隐私条款拆解·你到底同意了什么": "case-003",
+    "城市里的野生动物·它们怎么活下来的": "case-004",
+    "如果历史拐了个弯·反事实推演": "case-005",
+    "深海恐惧图解·尺度失控的瞬间": "case-006"
+  },
+  "judges": {
+    "full": "gemini-3.5-flash",
+    "visual_crosscheck": "doubao-seed-2-0-pro-260215",
+    "gateway_config": "~/.claude/skills/video-triage/scripts/config.json",
+    "input": "native video via base64 data URI, fps=0.5 (doubao)"
+  },
+  "judge_prompt_version": "prompts/genre_router.md v1 + gate_judge.md + dimension_judge_content_channel.md v1(试验中) + audience_judge.md v1(2人格:目标用户+泛路人) + gsb_judge.md；driver.py 附加机器可读 JSON 输出规范",
+  "objective_track": "ffprobe 规格 + 音轨存在性 + ebur128 LUFS（objective/summary.json）；本机已有 ffmpeg（models.md '本机无 ffmpeg' 已过时）",
+  "scoring": "维度分按 models.md 密度锚定（模型直觉分虚高 1–1.5，只作参考）；双模型合并：音频类只采信 gemini，视觉类两模型同报为高置信",
+  "gsb": {
+    "pairs": 6,
+    "position_randomization": "random.Random(20260717) 决定首序，gsb/positions.json 留档",
+    "swap_reeval": "每对换位复评一次，反转标 swap_consistent=false 降级 S 并 needs_human",
+    "direction": "报告统一换算为 a 相对 b"
+  },
+  "reference_mismatch_finding": {
+    "发现": "本批成片为『给定频道、自选本期选题』生成：case-002~005 的 a/b 选题与黄金集 query 无关且彼此不同（星巴克第三空间 vs 南瓜拿铁；抖音 vs ChatGPT 条款；纽约游隼 vs 伦敦赤狐；火线 vs Betamax），case-001/006 与频道核心主题一致但未含 query 特定要素（如 800V 载体）",
+    "处置": "双轨评估。主轨 track=channel（gate2/dim2/gsb2-*）：channel-level 降级参照，must_cover 只保留 source=channelDescription 项，002-005 去掉不相关 key_facts；附录轨 track=goldenset（gate/dim/gsb1|2_*）：黄金集 query 参照，保留供审计（其 L1 大面积 1 分属参照错配错杀）。生成侧到底有没有拿到 query 需用户确认——若确认拿到了，附录轨才是正确口径"
+  },
+  "caveats": [
+    "content_channel 档 key_facts/research_notes 为 AI 起草 verified_by_human=false：事实冲突一律 needs_human，不作 fatal 硬判",
+    "dimension_judge_content_channel + genre_router→content_channel 路由处于试验中（未过黄金集双向回归）",
+    "case-003 条款类断言强时效性，'当前条款'类结论需按视频制作日人工复核",
+    "单采样（每 judge 每视频 1 次）；GSB 做了换位复评但未做多次采样"
+  ]
+}

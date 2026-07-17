@@ -1,0 +1,5906 @@
+{
+ "case-001-a": {
+  "case_id": "case-001",
+  "video": "a",
+  "topic": "电池热失控·热量传播图解",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频完全未使用“800V动力电池”作为载体，实验边界声明为“四颗41Ah软包电芯”。"
+      },
+      {
+       "timestamp_sec": 60.0,
+       "description": "未展示模组与模组之间的传导过程，仅展示了受限模组内电芯间的热蔓延。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 3,
+     "evidence": [
+      {
+       "timestamp_sec": 18.0,
+       "description": "将热量产生主要归结于焦耳热公式，忽略了正极释氧化学反应这一主要热源。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": true
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "未包含三元与铁锂热稳定性对比，未包含GB 38031-2025新国标强制要求。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": true
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "objective",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "1080x1920分辨率，无压缩伪影和噪点。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "优秀的MG科学图解动效，风格统一，色彩搭配符合学术规范。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 48.0,
+       "description": "电芯内部三维剖面及冷板流道模型无变形、无穿模。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 24.0,
+       "description": "专业术语及公式排版美观，无错别字及乱码。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "电芯热扩散及喷射气流在镜头切换中保持逻辑连贯一致。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 4.8,
+     "evidence": [
+      {
+       "timestamp_sec": 12.0,
+       "description": "温度场扩散动效平滑自然，无诡异插值。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "全片无帧间闪烁和颜色异常跳变。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "objective",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "-18.2 LUFS，无底噪或爆音。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 35.0,
+       "description": "配音普通话标准，无生僻错音。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 105.0,
+       "description": "旁白停顿与画面结论展示完全一致。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "深沉科技感背景音乐，完美烘托科普基调，未遮盖旁白。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 3.0,
+       "description": "“12秒热失控传到邻芯”的痛点引入非常有冲击力。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "从机理、数据、路径到防护，逻辑链条闭环。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "100秒左右承载的学术信息量适中，节奏不拖沓。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 70.0,
+       "description": "重要数据和对比用图表凸显，但因缺少关键宏观背景而略有遗憾。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "objective",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "9:16竖屏，104秒，非常适合短视频平台的知识解说品类。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 85.0,
+       "description": "成功传达了冷板及隔热防护设计的价值，但未与当前热门的800V技术概念接轨。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "存在核心指令未遵循及重大内容缺失，属于偏题视频，无法直接交付发布。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频的动画和学术图解质量极高，但完全遗漏了“800V动力电池”这一核心叙事载体，且未提及“模组间传导”、“三元/铁锂化学体系对比”及“2025新国标要求”，属于严重的指令遵循缺失，无法直接交付。",
+   "intuition_score": 3.0,
+   "tier": "及格",
+   "needs_human_items": [
+    {
+     "reason": "视频中将前期的热积聚完全归因于焦耳热（00:18-00:23），涉嫌漏掉化学释氧的本质热源，存在机理偏差。",
+     "key_fact": "内部短路是热失控的『扳机』，但并不是把电芯加热到 800°C 的主要热源；绝大部分热量来自正极释氧之后与负极/电解液发生的剧烈化学放热反应。若把『短路电流发热』说成主要热量来源，属机理错误。",
+     "video_quote": "Q = I²R 电流翻倍 焦耳热按平方增长"
+    },
+    {
+     "reason": "完全遗漏了三元（NCM）与磷酸铁锂（LFP）正极体系安全性差异的核心科普事实。",
+     "key_fact": "化学体系决定热失控烈度：三元(NCM)正极约 200°C 起就易分解并释放晶格氧、助燃放热；磷酸铁锂(LFP)因 PO4 四面体中 P–O 强共价键几乎不释放晶格氧……这是 LFP更安全的根本原因，但『更安全』不等于『不会热失控』。",
+     "video_quote": "无（视频仅在 01:05 提到 5 Ah NMC 软包研究，无对比）"
+    },
+    {
+     "reason": "未提及2026年7月1日实施的新国标GB 38031-2025，该内容为选题的核心时代背景背景之一。",
+     "key_fact": "强制性国标 GB 38031-2025《电动汽车用动力蓄电池安全要求》已于 2026 年 7 月 1 日起对新申报车型实施……把热扩散要求从旧版的『报警』升级为『不起火、不爆炸』。",
+     "video_quote": "无"
+    }
+   ]
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 2.33,
+   "L2_visual": 4.75,
+   "L3_temporal": 4.85,
+   "L4_audio": 4.88,
+   "L5_narrative": 4.38,
+   "L6_commercial": 3.67
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 3.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": true
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": true
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.4,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-001-b": {
+  "case_id": "case-001",
+  "video": "b",
+  "topic": "电池热失控·热量传播图解",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频全程未提及“800V 动力电池”或“800V 高压架构”这一关键选题载体，也未展示模组（Module）之间的热量传导，仅停留在一排单体电芯（Cell）的传导展示上。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 47.0,
+       "description": "准确指出了“内短路是点火器，真正的主热源是正负极与电解液的氧化还原反应”这一关键电池热失控机理，避免了将短路发热当作主热源的常见行业误区。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "缺失了 must_cover 中要求的“展示模组间传导”和“以800V动力电池为载体”两个核心要素。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "objective",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频分辨率为 1920x1080，画面清晰无明显压缩伪影。"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 14.0,
+       "description": "暗色科技感网格背景配合精细的三维电芯剖面动画，橙黑配色风格高度统一，数据图表排版十分专业。"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 32.0,
+       "description": "电芯模型和传热波形渲染细腻，模型结构无变形、崩坏或多指穿模问题。"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "画面左下角参数卡片及温度指示标注清晰，无乱码、错别字或版面截断。"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一贯性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 65.0,
+       "description": "多颗电芯排布和热传导波形在镜头推移中保持恒定，无异常闪烁和突变。"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 6.0,
+       "description": "温度曲线的攀升与热量波形的起伏动画非常平滑自然，符合物理热传导直觉。"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频动画全程流畅，无帧间闪烁和坏帧。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "objective",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "音轨存在，集成响度为 -18.3 LUFS，符合常规响度规范，无爆音或明显底噪。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 35.0,
+       "description": "旁白“聚乙烯 PE 隔膜”等专业术语发音标准，语言流利。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 48.0,
+       "description": "旁白念到氧化还原反应时，画面上对应的“主热源”卡片及高亮区域同步亮起，对齐精确。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "科技风背景音乐沉稳，音量适中，很好地衬托了严肃的科普氛围而没有压制人声。"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "开头前 3 秒以“电芯失控并非从明火开始”切入，迅速建立技术科普的悬念与观看动机。"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "严密遵循热力学和化学反应的温度阶梯（SEI膜->电解液->隔膜收缩->短路->主热源），因果叙事逻辑非常扎实。"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "作为硬核科普，解说节奏不疾不徐，信息密度高但给观众留足了理解时间。"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 14.0,
+       "description": "右下角辅以详细的源文献出处，左侧为参数解析卡片，视觉与听觉上的重点非常突出。"
+      }
+     ]
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 104.0,
+       "description": "清晰传达了热蔓延三路径以及防护设计的核心逻辑，技术价值传达非常到位。"
+      }
+     ]
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "objective",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频时长 2分19秒，16:9 横屏，各项格式参数无违规。"
+      }
+     ]
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "由于指令遵循与内容完整维度的致命缺失，本片必须进行返工补充才能发布交付。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频在电芯热失控机理的可视化展示上极其精准且精美，但完全遗漏了“800V 动力电池”载体和“模组间层层传导”的要求，属于不可交付的跑题成片。",
+   "intuition_score": 3.0,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 3.0,
+   "L2_visual": 4.62,
+   "L3_temporal": 4.75,
+   "L4_audio": 5.0,
+   "L5_narrative": 5.0,
+   "L6_commercial": 4.0
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-002-a": {
+  "case_id": "case-002",
+  "video": "a",
+  "topic": "商业结构一个概念怎么被卖爆",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频标题与全篇拆解对象为星巴克第三空间，而非要求的雅诗兰黛夜晚生意",
+       "quote": "星巴克把第三空间卖成了一门生意"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 44.0,
+       "description": "内容与雅诗兰黛 key_facts 完全冲突；且星巴克数据中包含前瞻未发生年份的数据包装",
+       "quote": "2025财年，自营门店产品销售占比..."
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "未包含任何关于雅诗兰黛、小棕瓶或夜间修护的 must_cover 覆盖点"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "1080P画面，画质清晰"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "排版风格符合商业PPT演示规范"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "产品图和图标无变形"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "字体规整，无错别字"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "图表元素淡入淡出自然"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "转场动效符合物理逻辑"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "画面无频闪或跳变"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 5.0,
+       "description": "无爆音和杂音"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "口播内容与选题目标雅诗兰黛完全不符",
+       "quote": "一杯咖啡为什么能卖成一个生活场景..."
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "字幕、画面与音频完美同步"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "BGM音量适中，不影响口播听感"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 3,
+     "evidence": [
+      {
+       "timestamp_sec": 3.0,
+       "description": "提出了星巴克的商业钩子，但对本选题是无效的"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "星巴克的案例拆解框架逻辑完整，但用错了主体"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "语速和信息密度均匀"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "重点数据有PPT视觉放大"
+      }
+     ]
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "未表达任何与夜晚修护或小棕瓶生意相关的卖点"
+      }
+     ]
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "比例和时长符合普通知识视频规范"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "选题完全错误，无法交付，必须重做"
+      }
+     ]
+    }
+   ],
+   "one_line_diagnosis": "视频内容彻底套错选题，将要求的“雅诗兰黛/夜晚”做成了“星巴克/第三空间”，导致核心任务完全未完成，不可交付。",
+   "intuition_score": 1.0,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.75,
+   "L3_temporal": 5.0,
+   "L4_audio": 4.0,
+   "L5_narrative": 3.75,
+   "L6_commercial": 2.33
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 3.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-002-b": {
+  "case_id": "case-002",
+  "video": "b",
+  "topic": "商业结构一个概念怎么被卖爆",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频主题完全偏离。任务要求拆解雅诗兰黛的‘夜晚’生意，视频实际拆解的是星巴克‘秋天’（南瓜香料拿铁）的商业逻辑。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频未包含任何与雅诗兰黛、小棕瓶、夜间修护相关的信息，核心事实完全缺失。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "任务要求的 must_cover 关键点（『夜晚』概念包装、全线产品线扩张、营销叙事拆解、雅诗兰黛真实案例复盘）全部缺失。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频分辨率为 1920x1080，画面清晰，无明显伪影或噪点。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "采用精美的幻灯片式图文排版，色调统一，视觉风格契合咖啡与秋季主题。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "画面中的产品与场景素材生成/呈现正常，无变形或穿模。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 5.0,
+       "description": "画面重点文字排版清晰，无错别字、乱码或截断。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "转场与缩放动画流畅，无物体凭空出现或消失的异常。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 55.0,
+       "description": "实拍倒奶等片段播放平滑，无诡异插值或卡顿。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "画面帧间过渡平稳，无多余的闪烁或颜色跳变。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "旁白配音清晰，无电流声或明显底噪，响度适中。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "普通话发音标准，英文词汇（如 Coffee）发音正确。但因案例偏离，语音内容与任务要求完全不符。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "旁白解说、字幕和图像切换在时序上完全同步。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "背景音乐旋律舒缓，贴合商业解说调性，没有干扰人声。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "开头引入的是星巴克纸杯和秋天味道，未能建立起针对本期雅诗兰黛“夜晚/夜修”主题的观看动机。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "讲解逻辑链条（限时-多场景扩品-渠道价格细分）虽然结构完整，但由于针对的实体完全错误，导致叙事逻辑在此任务中不成立。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "叙事案例偏离，节奏快慢对完成本任务无参考意义。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "未能呈现或强调雅诗兰黛特润修护精华、昼夜节律及夜间修护的任何核心商业概念。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "完全没有表达雅诗兰黛及小棕瓶系列的核心卖点与商业价值。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "时长为91秒，宽高比16:9，符合常规中视频知识解说规范。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "由于案例主体完全张冠李戴，属于无法直接发布、必须推倒重做的重大交付事故。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频内容发生根本性偏离：任务要求复盘雅诗兰黛的‘夜晚’生意，但视频实际制作的是星巴克南瓜香料拿铁（秋天概念）的案例，属于重大主题错误，必须退回重做。",
+   "intuition_score": 1,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.69,
+   "L3_temporal": 4.88,
+   "L4_audio": 4.62,
+   "L5_narrative": 1.0,
+   "L6_commercial": 2.33
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.25,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-003-a": {
+  "case_id": "case-003",
+  "video": "a",
+  "topic": "隐私条款拆解·你到底同意了什么",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频开篇即声明拆解抖音，而非 Samsung Health",
+       "quote": "这期拆抖音，2026版隐私政策开头就把范围扩大..."
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 5.0,
+       "description": "内容完全围绕抖音APP的火山版、极速版等，与三星健康数据AI训练无任何关联",
+       "quote": "火山版、极速版、抖音商城、汽水音乐..."
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "未包含任何关于三星健康、GDPR、AI 训练与建模、人工复核等 key_facts 和 must_cover 点"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "画面为1080P，图文展示清晰"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "幻灯片设计风格统一，深色背景科技感较强"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "纯平面设计，无主体变形或渲染错误"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 45.0,
+       "description": "文字清晰，排版规整，未发现错字"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "图表元素过渡自然"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "高亮框滑动和页面切换动效流畅"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "视频播放流畅，无坏帧或颜色闪烁"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "音量平稳，无刺耳杂音"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 2.0,
+       "description": "配音虽然吐字清晰，但播报的是完全错误的内容题材（抖音而非三星）",
+       "quote": "这期拆抖音..."
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "旁白与PPT切换步调完全一致"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "背景音乐契合科普基调，音量适中"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 1.0,
+       "description": "开头建立的动机完全偏离了三星健康的主题，属于严重货不对板"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 3,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "讲解的章节层级本身是清晰的，但由于内容主体完全错误，无法给高分"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "解说速度与图文变换节奏合拍"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 3,
+     "evidence": [
+      {
+       "timestamp_sec": 70.0,
+       "description": "重点信息有变色和红框圈出，但均属于错误对象的信息"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 90.0,
+       "description": "完全没有提及三星健康的任何隐私变动及 AI 训练授权，未完成核心知识传达"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 97.0,
+       "description": "16:9 横屏，长度约1分37秒，无技术违规"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "内容完全做错，不可交付，必须重做"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频内容完全做错，将要求的“三星健康健康数据AI训练条款拆解”做成了“抖音2026隐私政策拆解”，属于严重制作事故。",
+   "intuition_score": 1.0,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.62,
+   "L3_temporal": 4.62,
+   "L4_audio": 3.75,
+   "L5_narrative": 2.75,
+   "L6_commercial": 2.33
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 3.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 3.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-003-b": {
+  "case_id": "case-003",
+  "video": "b",
+  "topic": "隐私条款拆解·你到底同意了什么",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频实际拆解对象为 ChatGPT 隐私政策，而非 Brief 要求的 Samsung Health。",
+       "quote": "ChatGPT 的美国隐私政策，5月18日改了一句关键话..."
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频中引用的所有时间线和条款细节（如5月18日、ChatGPT共享给营销伙伴等）均与 Brief 的 Samsung Health 事实表完全背离。",
+       "quote": "ChatGPT 的美国隐私政策，5月18日改了一句关键话..."
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "Brief 要求的 5 个 must_cover 核心要点全部缺失。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "画面分辨率为 1080x1920，字体和矢量图形清晰无噪点。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "精美的扁平化 MG 动效与直观的对比图表设计。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "纯 MG 动画呈现，无人物出镜，动画元件无变形崩坏。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 9.0,
+       "description": "对比表格文字版式规范，无乱码与错字。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "数据流转动效流畅，开关及指示线逻辑切换自然。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 45.0,
+       "description": "图表缩放、数据流动动效物理运动自然符合预期。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "转场与帧间衔接无抖动及异常闪亮。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "旁白无杂音，响度控制合理（-18.4 LUFS）。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "配音发音标准，无误读字词。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "配音口播与画面中出现的文本内容、特效音完美对齐。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "科技风的电子背景音乐与隐私话题氛围契合度高。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 3.0,
+       "description": "前三秒通过抛出“隐私条款改了一句话”快速建立用户的防范心理和观看动机。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "叙事从条款对比过渡到机制解释，再到具体设置指导，讲解链条逻辑通顺。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "信息量大且语速快，但通过视觉图表辅助，节奏把控合理。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 54.0,
+       "description": "重点概念（如“有限数据”）被黄字和图标放大强调，主次分明。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "由于完全做错了选题，导致 Samsung Health 这一核心知识主体的价值未能得到任何表达。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频比例 9:16，时长 79.12 秒，符合平台短视频的规格要求。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "严重的选题事故，内容完全不符，不可直接发布。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频动效与音画制作精良，但发生了严重的选题事故，将 Samsung Health 隐私条款变动做成了 ChatGPT 隐私政策拆解，导致指令遵循完全失败。",
+   "intuition_score": 1.5,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.5,
+   "L3_temporal": 4.88,
+   "L4_audio": 4.5,
+   "L5_narrative": 4.0,
+   "L6_commercial": 2.33
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-004-a": {
+  "case_id": "case-004",
+  "video": "a",
+  "topic": "城市里的野生动物·它们怎么活下来的",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频完全偏离了要求的‘旧金山郊狼’主题，全片介绍的是‘纽约游隼’。",
+       "quote": "纽约的高楼和桥梁，对游隼来说，像一排排新鲜悬崖。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "因为主题错配，视频未包含任何郊狼的事实信息。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "所有关于旧金山郊狼的 must_cover 点全部缺失。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "画面达到1080P，细节清晰，无压缩伪影。"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "构图符合规范，高楼与鸟类特写排版得当。"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 53.0,
+       "description": "游隼特写画面没有变形或AI崩坏痕迹。"
+      }
+     ]
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 2.0,
+       "description": "字幕与左上角文本卡片排版规范，无乱码。"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "画面切换自然，没有诡异插值或跳变。"
+      }
+     ]
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 45.0,
+       "description": "帧率稳定，没有颜色或亮度的异常闪烁。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "口播录音清晰，底噪极小，无电流爆音。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 35.0,
+       "description": "中文配音字正腔圆，专业术语发音正确。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 25.0,
+       "description": "音频波形与字幕出现时间完全对齐。"
+      }
+     ]
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "BGM与环境氛围适配，未盖过人声。"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 2.0,
+       "description": "开篇抛出‘游隼视城市如悬崖’的科学视角，建立较好悬念。"
+      }
+     ]
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "视频从生态适应角度进行了多维度拆解，结构清晰（虽主题完全错误）。"
+      }
+     ]
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "时长64秒，16:9横向构图，符合主流中长视频平台要求。"
+      }
+     ]
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "因核心物种与案例制作完全错误，完全无法交付使用。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "skipped_no_reference": true
+    }
+   ],
+   "one_line_diagnosis": "视频主题完全做错（将“旧金山郊狼”做成了“纽约游隼”），导致所有核心覆盖点缺失，属于严重的货不对板，不可交付。",
+   "intuition_score": 1.5,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.5,
+   "L3_temporal": 4.88,
+   "L4_audio": 4.75,
+   "L5_narrative": 4.0,
+   "L6_commercial": 3.0
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-004-b": {
+  "case_id": "case-004",
+  "video": "b",
+  "topic": "城市里的野生动物·它们怎么活下来的",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频标题、画面字幕和旁白完全以‘伦敦赤狐’为主角展开，完全偏离了要求的‘旧金山 Glen Canyon 郊狼’选题。",
+       "quote": "伦敦一座混凝土塔楼下，一只雌狐学会了听哨声……"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 21.0,
+       "description": "视频中引用的所有同位素数据和生态习惯均为赤狐的数据（如34.6%的人类食物占比），与郊狼事实表严重冲突。",
+       "quote": "人类来源食物和宠物食品在城市狐饮食中估计占34.6%"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "Brief中指定的‘旧金山 Glen Canyon 郊狼’、‘控制囊鼠’、‘金门大桥迁移’等所有核心事实全部缺失。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 8.0,
+       "description": "赤狐高清特写，毛发纹理清晰可见，1080P画质优秀。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "草地上赤狐与鸽子同框纪实镜头，色彩沉稳，构图精美。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 58.0,
+       "description": "老妇人面部特写及草地上赤狐的画面非常真实，无AI崩坏痕迹。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 28.0,
+       "description": "数据可视化文字排版美观，坐标和百分比指示清晰，无错别字。",
+       "quote": "人类来源食物 34.6%"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 12.0,
+       "description": "草地上的赤狐抖动身体，其背景和周围花草物体过渡稳定自然，无突变。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 120.0,
+       "description": "赤狐和鸽子的动作均属于极高水准的实拍视频，无任何插值卡顿。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 5.0,
+       "description": "全片亮度稳定，跨镜头转场无任何帧间闪烁或色彩突变现象。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "旁白声音浑厚有力，响度适宜，无爆音或环境杂音。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 49.0,
+       "description": "普通话发音极其标准，无任何语病或词汇发音错误。",
+       "quote": "城市赤狐的领地有时只有大约0.5平方公里"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 124.0,
+       "description": "字幕变化和旁白字句完美卡点，声画对齐精确。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 45.0,
+       "description": "舒缓静谧的背景音乐完美契合大自然和城市野生动物科普的主题。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 3.0,
+       "description": "以伦敦雌狐听见哨声来吃香肠的生动故事开篇，迅速抓住观众注意力。",
+       "quote": "一只雌狐学会了听哨声"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 3,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "单看赤狐视频其‘个案-数据-机制’的逻辑链条很完美；但因物种发生毁灭性颠覆错误，导致无法服务于目标叙事，扣2分。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "剪辑点和配音语速适中，留白恰到好处，科普知识吸收节奏极佳。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 29.0,
+       "description": "数据对比图在草地上平滑浮现，将赤狐在城市和乡村的食性差异表现得主次分明。",
+       "quote": "乡村赤狐：6.0%"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "由于视频完全讲错主角，根本无法传达‘旧金山郊狼’这一核心知识卖点。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 97.0,
+       "description": "时长1分37秒，16:9比例，字幕位于安全区内，适配中视频平台发布要求。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "由于选题错误，不符合任何商业发布标准，必须完全退单重做。",
+       "quote": "无"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频制作水准（画面美学、专业配音、数据可视化及剪辑节奏）堪称科普视频的业界标杆，但犯了彻底跑题、货不对板的毁灭性错误——将要求的“旧金山 Glen Canyon 郊狼”选题完全做成了“伦敦城市赤狐”，导致指令遵循和可交付性彻底失败。",
+   "intuition_score": 1.5,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.62,
+   "L3_temporal": 4.75,
+   "L4_audio": 5.0,
+   "L5_narrative": 4.5,
+   "L6_commercial": 2.33
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 3.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-005-a": {
+  "case_id": "case-005",
+  "video": "a",
+  "topic": "如果历史拐了个弯·反事实推演",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "任务要求推演‘如果 Dvorak 键盘真的取代了 QWERTY’，但视频实际内容完全是关于‘如果火线（FireWire/IEEE 1394）赢了 USB’，属于严重的选题跑偏。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "因主题跑偏，视频未包含任何与 QWERTY 或 Dvorak 键盘相关的 key_facts（如 Sholes 发明打字机、1936年 Dvorak 专利、1944海军研究、经济学‘锁定效应’争议等）。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "任务要求的 5 个 must_cover 核心覆盖点（包含交代 QWERTY vs Dvorak 史实、推演 Dvorak 赢了的世界等）全部缺失。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 5.0,
+       "description": "分辨率为 1920x1080，画面清晰，插图精致，无可见压缩伪影和像素模糊。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 22.0,
+       "description": "视频统一采用红褐色复古手绘/版画插图风格，信息图结构极具设计感，色彩与光影和谐度高。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 27.0,
+       "description": "画面中的各种设备主体（如老式主机、手柄、打印机、音响等）造型严谨，没有变形、穿模或生成崩坏问题。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 18.0,
+       "description": "画面内的核心概念文字如‘等时传输’、‘设备对等’等排版规范，字体清晰，双语字幕均无错别字。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 22.0,
+       "description": "跨镜头切换时，网络拓扑结构图中的连线和硬件设备均保持空间与逻辑的稳定性，没有凭空突变。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 18.0,
+       "description": "数据传输方块在轨道上移动的动态效果，以及示波器的波形变化动画平滑流畅，物理逻辑自然。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 45.0,
+       "description": "视频全程无帧间异常抖动、亮度突变或非必要的色彩跳变。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "旁白声音清晰饱满，无杂音、削波和爆音，响度控制合理（-18.2 LUFS），且 BGM 不会压制人声。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 5.0,
+       "description": "旁白对‘IEEE 1394’、‘USB’等标准规范的英文缩写发音正确、清晰。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "旁白发音、底部字幕显示以及画面图解动效对齐完美，无任何滞后或超前。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "BGM 的科技与历史厚重感基调与视频推演的叙事风格完美匹配。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 1.0,
+       "description": "视频以‘如果今天赢得是火线……你的设备可能不用绕回电脑’这一技术反事实场景为悬念钩子，快速调动了知识类观众的好奇心。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "单从视频自身探讨的‘火线 vs USB’逻辑来看，史实分析、痛点呈现、反事实推演顺序十分清晰，是一篇优秀的科技论证科普。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "剪辑精当，没有废话和多余画面，84秒的信息量密度在短视频形态里非常合适。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 38.0,
+       "description": "重点数据如‘1美元授权费’等利用盖章的视觉特效和超大红字做了强调，主次明确。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "因主题跑偏，任务真正要求的核心知识价值（键盘布局设计的科学与争议）在此视频中未得到任何体现。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 84.0,
+       "description": "时长为 84.42 秒，16:9 比例，包含双语字幕，且声轨完整，符合知识平台的发布规格规范。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "由于完全跑题，视频无法在键盘相关选题的流程下交付使用，必须重新制作。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频画面美学极佳、音画同步且叙事流畅，但内容完全跑题（将键盘布局之争做成了火线与 USB 接口之争），导致指令遵循与可交付性评分为最低分。",
+   "intuition_score": 1,
+   "tier": "差",
+   "needs_human_items": []
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.62,
+   "L3_temporal": 4.88,
+   "L4_audio": 5.0,
+   "L5_narrative": 5.0,
+   "L6_commercial": 2.33
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-005-b": {
+  "case_id": "case-005",
+  "video": "b",
+  "topic": "如果历史拐了个弯·反事实推演",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "视频开篇及全程都在讨论 Betamax 与 VHS 录像带的格式之争，完全未提及 Dvorak 键盘或 QWERTY 键盘的主题。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "成片事实与 key_facts 中的打字机及键盘发展史完全对不上。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "必须覆盖的键盘之争史实及推演内容全部缺失。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "1080p 画质清晰，无伪影。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 25.0,
+       "description": "统一的极简 MG 动画与暗色调图画，视觉美感较好。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 56.0,
+       "description": "画面中绘制的图形无变形或生成伪影。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 9.0,
+       "description": "屏幕上的标题和副标题排版规整，没有错别字。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "人物一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "动画元素在转场和移动中没有出现突兀的闪现或消失。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 45.0,
+       "description": "路线分支图的变化和节点缩放动作自然流畅。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 70.0,
+       "description": "全片无亮度和色彩的异常闪烁。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "旁白底噪极低，人声清晰，LUFS 合规。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 1.0,
+       "description": "配音所述内容非 Dvorak 键盘，属于主题性语音错误。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "旁白发音、字幕以及动画关键帧对齐良好。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "BGM 的科技解说风格与视频调性相符。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 3.0,
+       "description": "开篇抛出的是 'Betamax 赢了' 的钩子，而非 'Dvorak 键盘取代 QWERTY' 的钩子。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "整段视频的叙事逻辑用于解说 Betamax，无法服务于键盘选题。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "对要求的主题没有叙事节奏可言。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "错误的主题信息覆盖了应当呈现的核心信息。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "未能传达关于 Dvorak 键盘效率与历史局限的任何商业/知识价值。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 111.4,
+       "description": "视频规格（16:9，带字幕，近 2 分钟）符合常规发布标准。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 1,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "主题完全偏离，无法通过审核发布，必须重做。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频内容发生了严重的选题错配，将关于“Dvorak 键盘取代 QWERTY”的选题做成了“Betamax 赢了”，导致指令遵循和可交付性彻底失败。",
+   "intuition_score": 1.0,
+   "tier": "差",
+   "needs_human_items": [
+    {
+     "reason": "选题严重偏差。视频实际内容为 'Betamax 赢了'（磁带格式之争），而非 'Dvorak 键盘取代 QWERTY'，需确认是否为源文件拉取错误或任务 Brief 下发错误。",
+     "key_fact": "All key facts (concerning QWERTY and Dvorak history)",
+     "video_quote": "整个视频的旁白和 ASR (例如：'如果当年赢的不是 VHS，而是 Betamax...')"
+    }
+   ]
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 1.0,
+   "L2_visual": 4.75,
+   "L3_temporal": 4.75,
+   "L4_audio": 3.62,
+   "L5_narrative": 1.0,
+   "L6_commercial": 2.33
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 1.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-006-a": {
+  "case_id": "case-006",
+  "video": "a",
+  "topic": "深海恐惧图解·尺度失控的瞬间",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 40.0,
+       "description": "视频未包含‘未知生物的比例/尺度’这一维度的具体可视化对比，仅泛泛提及尺度不再属于陆地。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 34.0,
+       "description": "5000米处压力表述为约500个大气压（理论上为501 atm），属合理近似，但需人工复核其在严谨科普中的接受度。",
+       "quote": "5000米，估算约500个大气压"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": true
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "未覆盖must_cover中关于‘未知生物的比例/尺度’的具体内容。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "画质清晰，1080P，无压缩伪影。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 5.0,
+       "description": "扁平暗色系MG动画风格极其契合深海主题，信息图表美观直观。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 6.0,
+       "description": "小人与几何图形动画平滑，无崩坏或穿模现象。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "画面文字排版精致，清晰易读，无错别字。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "数值与刻度尺的变化在运动中保持一致，无异常闪烁。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 8.0,
+       "description": "下潜动画与指针转动的物理动效非常平滑自然。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 1.0,
+       "description": "旁白录音清晰，底噪极小，响度合规。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 10.0,
+       "description": "旁白发音标准，语气神秘低沉，契合主题。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 12.0,
+       "description": "旁白、字幕与画面的下潜刻度节奏完美同步。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "深海氛围式BGM和低沉的压力音效极具沉浸感。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 2.0,
+       "description": "开篇重写熟悉尺度的概念十分吸引人。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 30.0,
+       "description": "从浅海压力、到光线消失、再到无光带尺度失控，层层递进。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 45.0,
+       "description": "对于60秒的知识短视频，信息密度合理，不拖沓也不过快。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 15.0,
+       "description": "压力与黑暗层级划分清晰，但漏掉了未知生物这一维度的层级表现。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 50.0,
+       "description": "成功将“深海恐惧是尺度失控”的核心科普价值传达给受众。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "时长64秒，符合横屏科普视频规范。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 4.5,
+     "evidence": [
+      {
+       "timestamp_sec": 64.0,
+       "description": "整体制作精良，修改或补全生物对比后即可达到完美交付水准。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频视觉动效与叙事递进极佳，但漏掉了‘未知生物尺度’这一指定维度的展示，且5000米压力的近似数值需人工复核。",
+   "intuition_score": 4.5,
+   "tier": "优秀",
+   "needs_human_items": [
+    {
+     "reason": "5000米深度的压力表述为‘约500个大气压’，按10米/1atm计算加上海面1atm理论上是501atm，需核查该近似值是否影响科普严谨性。",
+     "key_fact": "在海水中每下潜约 10 米，压力约增加 1 个大气压；海平面处约为 1 个标准大气压。",
+     "video_quote": "5000米，估算约500个大气压"
+    }
+   ]
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 4.0,
+   "L2_visual": 4.62,
+   "L3_temporal": 4.88,
+   "L4_audio": 5.0,
+   "L5_narrative": 4.75,
+   "L6_commercial": 4.83
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": true
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 4.5,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ },
+ "case-006-b": {
+  "case_id": "case-006",
+  "video": "b",
+  "topic": "深海恐惧图解·尺度失控的瞬间",
+  "gemini": {
+   "scores": [
+    {
+     "layer": "L1_task",
+     "dimension": "指令遵循",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 35.0,
+       "description": "视频从压力部分直接跳到了心理机制讲解，完全跳过了大纲要求的『黑暗这一维度』与『未知生物的比例/尺度这一维度』。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "信息准确",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 9.0,
+       "description": "物理数值（每增加10米多1个大气压）表述准确，但心理机制部分存在确定性定论表述的瑕疵。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": true
+    },
+    {
+     "layer": "L1_task",
+     "dimension": "内容完整",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "must_cover 中要求出现的『黑暗』与『未知生物尺度』两个核心覆盖点缺失。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "清晰度",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "画质清晰，分辨率1920x1080，无明显压缩噪点。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "美学",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 25.0,
+       "description": "暗色调MG数据图解设计，构图具有极强的空间压迫感，符合审美预期。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "主体质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 35.0,
+       "description": "人体、脑部等MG动画主体图形绘制规范，无变形或崩坏。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L2_visual",
+     "dimension": "文字质量",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 18.0,
+       "description": "图表内的文字排版精致，坐标清晰，无错别字。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "物体恒常性",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 20.0,
+       "description": "画面元素过渡自然，无突变、闪烁或消失现象。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "运动自然",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 25.0,
+       "description": "压力指针和方向箭头的物理运动动画平滑，插值自然。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L3_temporal",
+     "dimension": "无闪烁",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "全片帧间亮度和色彩过渡极其稳定，无任何闪烁。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音质",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "音轨存在。配音清晰无底噪，频段均衡符合出版级标准。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "语音准确",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 18.0,
+       "description": "旁白发音标准，多位数物理量（10,994米）及单位读法准确。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音画同步",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 25.0,
+       "description": "旁白配音与字幕、图表变化的时间轴精确对齐。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L4_audio",
+     "dimension": "音乐适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 35.0,
+       "description": "低沉且带有心跳声的氛围BGM完美烘托了深海恐惧的主题情绪。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "开头吸引力",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 3.0,
+       "description": "前3秒以极简的“下潜十米压力倍增”抛出物理客观事实，迅速建立起深海压迫感的钩子。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "镜头逻辑",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 34.0,
+       "description": "从客观物理压强过渡到主观身体警戒反应的叙事链条通顺，但内容因缺失关键维度显得突兀。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "节奏",
+     "method": "judge",
+     "score": 4,
+     "evidence": [
+      {
+       "timestamp_sec": 0.0,
+       "description": "叙事节奏克制，符合科普解说调性，但信息总量由于维度缺失显得单薄。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L5_narrative",
+     "dimension": "信息层级",
+     "method": "judge",
+     "score": 3,
+     "evidence": [
+      {
+       "timestamp_sec": 35.0,
+       "description": "将进化假说（对深水不可逃离/失去参照的本能警觉）与生理事实混为一谈进行确定性陈述，信息层级划分不够科学严谨。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "品牌一致性",
+     "skipped_no_reference": true
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "卖点表达",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "核心卖点（黑暗、未知生物尺度、多维度深海环境失控）只表达了压力一项，卖点传达极不完整。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "平台适配",
+     "method": "judge",
+     "score": 5,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "视频规格（16:9，60秒时长）完全符合中短视频平台的无约束适配要求。"
+      }
+     ],
+     "fatal_flag": false,
+     "needs_human": false
+    },
+    {
+     "layer": "L6_commercial",
+     "dimension": "可交付性",
+     "method": "judge",
+     "score": 2,
+     "evidence": [
+      {
+       "timestamp_sec": 60.0,
+       "description": "因核心覆盖点严重缺失且叙事诚实性存在瑕疵，不符合发布标准，必须退回重制。"
+      }
+     ],
+     "fatal_flag": true,
+     "needs_human": false
+    }
+   ],
+   "one_line_diagnosis": "视频视觉和音频氛围表现极佳，但由于完全缺失了『黑暗』与『生物尺度』两个大纲核心维度，且将心理机制假说当作生理事实定论陈述，判定不可交付。",
+   "intuition_score": 3.0,
+   "tier": "及格",
+   "needs_human_items": [
+    {
+     "reason": "视频将深海恐惧症的进化警觉假说（失去视觉参照、无法逃离导致警觉）作为确定性生理和大脑回路机制陈述，缺少假说限制词，需人工裁决该叙事口吻是否符合科普规范。",
+     "key_fact": "一种被广泛引用的解释(进化假说)认为：人类是陆生动物，深水中无法判断下方尺度、距离与潜在威胁，失去视觉参照会触发对『未知捕食者/坠入深处』的本能警觉——须明确表述为解释性假说，而非已被证实的因果事实。",
+     "video_quote": "0:35 - '威胁判断，先于理性计算。不可见、不可逃离、尺度失衡。恐惧回路启动后，心跳和呼吸会加快。'"
+    }
+   ]
+  },
+  "doubao_visual": "见主轨",
+  "layer_scores": {
+   "L1_task": 2.67,
+   "L2_visual": 4.62,
+   "L3_temporal": 4.75,
+   "L4_audio": 5.0,
+   "L5_narrative": 4.0,
+   "L6_commercial": 3.0
+  },
+  "merged_dims": [
+   {
+    "layer": "L1_task",
+    "dimension": "指令遵循",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "信息准确",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": true
+   },
+   {
+    "layer": "L1_task",
+    "dimension": "内容完整",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "清晰度",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "美学",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "主体质量",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L2_visual",
+    "dimension": "文字质量",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "物体恒常性",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "运动自然",
+    "score": 4.5,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "无闪烁",
+    "score": 5.0,
+    "source": "gemini+doubao",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音质",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "语音准确",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音画同步",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L4_audio",
+    "dimension": "音乐适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "开头吸引力",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "镜头逻辑",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "节奏",
+    "score": 4.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L5_narrative",
+    "dimension": "信息层级",
+    "score": 3.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "卖点表达",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "平台适配",
+    "score": 5.0,
+    "source": "gemini",
+    "fatal_flag": false,
+    "needs_human": false
+   },
+   {
+    "layer": "L6_commercial",
+    "dimension": "可交付性",
+    "score": 2.0,
+    "source": "gemini",
+    "fatal_flag": true,
+    "needs_human": false
+   },
+   {
+    "layer": "L3_temporal",
+    "dimension": "人物一致性",
+    "score": 5.0,
+    "source": "doubao_only",
+    "needs_human": true
+   }
+  ]
+ }
+}

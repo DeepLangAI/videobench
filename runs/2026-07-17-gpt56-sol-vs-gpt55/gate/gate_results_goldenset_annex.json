@@ -1,0 +1,618 @@
+{
+ "case-001-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "borderline",
+    "evidence": "视频以41Ah和5Ah NCM软包电芯模组为测试对象展示热失控，未在台词或画面中显式提及“800V动力电池”这一叙事载体背景。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "borderline",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "视频虽然完美契合了电芯热失控机理和防护设计对比，但未在台词中提及或以“800V动力电池”作为叙事载体，需确认是否必须要体现800V这一背景要素。"
+  ]
+ },
+ "case-001-b": {
+  "error": "missing/unparsed"
+ },
+ "case-002-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "fail",
+    "evidence": "整条视频（00:00-01:43）均在讲解星巴克（Starbucks）及其“第三空间”概念，与任务要求的“雅诗兰黛（Estée Lauder）把'夜晚'变成生意”的主题完全不符。"
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "fail",
+    "evidence": "视频中的事实均围绕星巴克展开，无法核验任务给定的雅诗兰黛核心事实。"
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "视频缺失了所有与雅诗兰黛相关的 key_facts 以及 must_cover 覆盖点。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-002-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "fail",
+    "evidence": "全片（00:00-01:31）介绍的品牌是星巴克（Starbucks），而非任务要求的雅诗兰黛（Estée Lauder）。"
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "fail",
+    "evidence": "视频与事实表要求的雅诗兰黛小棕瓶历史、二裂酵母、夜间修护等事实完全不符，讲述的是星巴克南瓜香料拿铁的历史和数据。"
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "未提及任何与雅诗兰黛、“夜晚”概念包装、昼夜节律科学及小棕瓶产品线相关的内容，未覆盖任何 must_cover 要点。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-003-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "fail",
+    "evidence": "整段视频（00:00-01:37）：视频拆解的产品为“抖音”（字节跳动旗下产品），而任务要求的品牌和产品是“Samsung Health”（三星健康），产品完全错乱。"
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "fail",
+    "evidence": "整段视频（00:00-01:37）：视频内容围绕抖音2026版隐私政策进行拆解，与任务要求的“三星健康AI训练授权及数据同步”核心事实完全不符。"
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "整段视频（00:00-01:37）：未提及任何关于 Samsung Health、健康/用药/经期数据、AI 训练与建模、云同步捆绑以及三星官方澄清等 must_cover 的必备内容。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-003-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "fail",
+    "evidence": "全程（00:00-01:19）视频实际内容为“ChatGPT（OpenAI）”，与任务要求的“Samsung Health（三星健康）”完全不符。"
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "fail",
+    "evidence": "全程（00:00-01:19）讨论 ChatGPT 5月18日版隐私政策与营销伙伴数据共享，而非 Samsung Health 2026年7月的 AI 训练授权政策。"
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "缺失所有关于 Samsung Health 授权健康数据（用药、经期追踪等）用于 AI 训练的细则、绑定云同步的后果以及三星官方澄清等 must_cover 核心点。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-004-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "视频选题与要求完全不符。要求的主题为“旧金山 Glen Canyon 的郊狼”，必须覆盖点包括郊狼案例、其食物来源、活动路线、繁殖以及在城市中的生存。但实际视频（00:00-01:04）全程讲述的是“纽约游隼把高楼当悬崖”以及游隼在纽约的食物、繁殖和生存缝隙，导致所有关于郊狼的关键内容全部缺失。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-004-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "fail",
+    "evidence": "整条视频的主角和地点完全错误。本期选题要求讲述【旧金山 Glen Canyon 的郊狼】，但视频从 00:01 开始通篇讲述的是【伦敦一座混凝土塔楼下的赤狐】，属于根本性事实错配。"
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "由于主题完全错配，所有关于【旧金山郊狼】的必须覆盖点（如 Glen Canyon 案例、郊狼食物来源、领地廊道、繁殖和不投喂原则等）全部缺失。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "交付视频与选题方案完全不符，将‘旧金山郊狼’做成了‘伦敦赤狐’，建议直接打回重做。"
+  ]
+ },
+ "case-005-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "fail",
+    "evidence": "整段视频（00:00 - 01:24）：视频实际内容探讨的是‘如果火线（FireWire）赢了 USB’，而 Query 和 Brief 要求的主题是‘如果 Dvorak 键盘取代 QWERTY’，视频主题与事实要求完全不符。"
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "整段视频（00:00 - 01:24）：由于视频主题错误，must_cover 中所有关于 QWERTY 与 Dvorak 键盘之争的历史岔路口交代、推演及学术争议等必备内容全部缺失。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-005-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "fail",
+    "evidence": "全程（00:00 - 01:51）。视频主题与任务选题完全错配。任务要求推演“如果 Dvorak 键盘取代 QWERTY 键盘”，但视频实际内容完全在讲述“如果 Betamax 赢了录像带格式战争（与 VHS 对比）”。"
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "由于视频选题错配，所有 must_cover 中要求的“QWERTY vs Dvorak 史实”、“Dvorak 获胜推演”以及相关的键盘技术史细节全部缺失。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-006-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "borderline",
+    "evidence": "缺失 must_cover 中的『讲清未知生物的比例/尺度这一维度』。此外，缺失以下 must_appear=true 的事实：1. 没提海洋五层分层英文/中文专业名称（epipelagic等）；2. 没提深海水温（2-4°C）；3. 没区分 thalassophobia 与 aquaphobia；4. 没提非 DSM-5 独立诊断；5. 没将进化心理机制标注为『假说/推测』。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "borderline",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "视频缺少关于『未知生物的比例/尺度』的讲解。",
+   "视频未提及海洋五个深度分层（表层带、中层带等）及深海水温等关键事实。",
+   "视频未对深海恐惧症的诊断定性（非DSM-5独立条目、假说属性）及与aquaphobia的区别进行说明。"
+  ]
+ },
+ "case-006-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "视频缺失了 must_cover 要求中的【黑暗这一维度】以及【未知生物的比例/尺度这一维度】，且未包含海洋分层、水温及深海恐惧症区分等 must_appear 的背景事实。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ }
+}

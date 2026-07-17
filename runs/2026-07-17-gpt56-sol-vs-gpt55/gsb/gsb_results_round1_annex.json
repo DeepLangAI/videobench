@@ -1,0 +1,669 @@
+{
+ "case-001": {
+  "case_id": "case-001",
+  "topic": "电池热失控·热量传播图解",
+  "runs": [
+   {
+    "run": 1,
+    "A": "b",
+    "B": "a",
+    "file": "case-001.gsb2-1_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 139.52,
+      "B_sec": 104.32
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 在 Scene 04 精准纠正了‘短路电流发热是主热源’的经典认知误区，明确指出短路只是点火器，化学氧化还原才是主热源，完全符合专业事实；视频 B 突出 Q=I^2R 焦耳热公式容易给受众造成误导。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 采用 16:9 高清科技风 UI 微交互动效，带有动态温度标尺与热成像可视化，视觉质感与信息层级远优于视频 B 的 9:16 扁平二维动画。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 A 动效与温度演进时序高度契合，分场景转场自然流畅；视频 B 节奏偏快，部分图表展示过于短暂。"
+      },
+      "audio": {
+       "verdict": "win",
+       "evidence": "视频 A 的语音播报沉稳专业，极具科普纪录片质感；视频 B 语速偏快。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 从微观热点、温度阶梯到蔓延路径、NTSB 真实事故数据再到系统防护哲学，层层递进，结语升华恰到好处。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 达到精品科普成片的交付标准，在专业性、观赏性与用户价值上均全面胜出。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.92,
+      "S": 0.06,
+      "B": 0.02
+     },
+     "rationale": "视频 A 在符合频道 Brief 的前提下，不仅视觉质量与叙事节奏极其优秀，更在物理机理上做到了高度精准（明确纠正了内短路焦耳热与化学放热的主次关系）。对比之下，视频 B 视觉质感偏简单，且推导 Q=I^2R 容易产生科学误导。综合来看，视频 A 显著好于视频 B。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "a",
+    "B": "b",
+    "file": "case-001.gsb2-2_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 104.32,
+      "B_sec": 139.52
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频 B 更加完整地按照温度阶梯（SEI分解、电解液气化、隔膜失效、氧化还原主反应）梳理了第一颗电芯热失控的因果链，并纠正了“内短路是主要热源”的常见误区；而视频 A 略过了早期反应，直接从内短路切入，物理机制的拆解不如 B 细致。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频 B 的横屏科技感网格背景、电芯温度渐变动画、以及传导路径的可视化比视频 A 极简的平面色块更加精致、生动。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频 B 的时序动画（如温度曲线的抬头与电芯受热变色）与旁白讲解节奏高度同步，转场更平滑。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者均提供清晰的中文配音，发音标准，无明显背景杂音。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频 B 采用 Scene 分镜结构，层层递进地从单体失控讲到多体蔓延、真实事故统计再到防护设计，逻辑闭环极佳；视频 A 的学术拼贴感较强。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频 B 无论在画面美观度、信息密度还是制作规格上，都远比视频 A 更接近商业可交付的科普短视频标准。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.05,
+      "B": 0.95
+     },
+     "rationale": "视频 A 在与视频 B 的对比中处于明显劣势。视频 B 在视觉动效设计、热失控物理/化学链式反应的机理讲解完整度、以及叙事流畅性上均显著胜出，完全符合该科普频道的定位与观众期待。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-002": {
+  "case_id": "case-002",
+  "topic": "商业结构一个概念怎么被卖爆",
+  "runs": [
+   {
+    "run": 1,
+    "A": "b",
+    "B": "a",
+    "file": "case-002.gsb2-1_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 91.26,
+      "B_sec": 103.4
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "A和B都完美覆盖了频道描述的要求，分别成功拆解了“时间段（秋天）”和“场景（第三空间）”的商业化过程。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "两者的排版风格、图片/视频素材质量均等，左字右图的布局清晰专业。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "转场与画面切换流畅，时序无明显瑕疵。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "均使用清晰的AI男声配音，BGM和人声比例协调。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "A的叙事逻辑更严密，将“秋天”概念如何通过“限时回归、横向扩品、价格梯度”转化为可持续售卖的产品线讲得非常透彻；而B将“第三空间”的场景变现直接归因于咖啡单品和食品的售卖，商业逻辑的推导略显牵强。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "A提炼的商业方法论（时间×场景×价格）更具落地和参考价值。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.7,
+      "S": 0.3,
+      "B": 0.0
+     },
+     "rationale": "视频A相对B更好。视频A围绕“秋天（Pumpkin Spice Latte）”这一主题，将抽象概念产品化的链路梳理得更为清晰，方法论提炼（稀缺机制、多场景延伸、价格梯度）非常到位。视频B虽然制作水平相当，但在论证“第三空间”这一场景概念如何拆解成产品线时，把基础的咖啡分类和食品直接作为其变现产品线，商业逻辑说服力略逊于A。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "a",
+    "B": "b",
+    "file": "case-002.gsb2-2_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 103,
+      "B_sec": 91
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频 B 将“秋天/季节期待”包装成产品线及销售矩阵的论证逻辑，比视频 A 将“第三空间”生硬拆解为各种饮料品类的逻辑更具说服力。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频 B 的暖色调视觉包装（橙、褐）与主题高度契合，排版与素材美感显著优于视频 A 较单调的绿黑扁平设计。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两者时序过渡均正常，无明显硬伤。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "旁白配音均清晰，背景音乐与画面融合度均合格。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频 B 的稀缺机制与渠道扩充拆解非常清晰，符合目标观众对“商业逻辑拆解”的深度期待。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频 B 整体质感和商业故事的完备性更适合作为成片交付。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.05,
+      "S": 0.15,
+      "B": 0.8
+     },
+     "rationale": "视频 B 在选题的解构深度和逻辑链条上比 A 更合理（A 将第三空间与产品线的划分强行绑定较为勉强）。此外，视频 B 针对秋天主题的暖色调视觉包装和排版设计精美度明显优于 A，更符合该频道的定位与商业解构视频的审美要求。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-003": {
+  "case_id": "case-003",
+  "topic": "隐私条款拆解·你到底同意了什么",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-003.gsb2-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 97.13,
+      "B_sec": 79.12
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "A和B都完美符合频道定位，选择了大众App（抖音、ChatGPT），进行了新旧条款对比，并翻译成人话，给出了防范建议。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频A的横屏UI排版和动效设计更加精致、专业，信息呈现的科技感和美学质量优于竖屏的视频B。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两者的动效演进与配音节奏同步率都极高。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音均清晰，BGM音量控制合理。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频A的叙事逻辑更自洽，逐步拆解基础模式、授权边界、高风险项及关闭指南。视频B引入国内《个人信息保护法》去衡量OpenAI，在逻辑契合度上略有瑕疵。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频A在排版、画质、结构上更接近成熟商业自媒体的交付标准。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.8,
+      "S": 0.2,
+      "B": 0.0
+     },
+     "rationale": "视频A相较于视频B，在视觉质量（横屏排版与动效设计）以及叙事逻辑上都表现得更为成熟。视频A对抖音隐私政策的拆解层层递进，防御指南更加清晰实用，更具用户价值。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-003.gsb2-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 79.12,
+      "B_sec": 97.13
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "A和B都完美契合频道Must-cover，完成了App隐私条款的新旧对比、翻译成人话、授权边界理清和用户实用建议。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "A的竖屏科技风动效和B的横屏精细可视化图表均处于极高制作水平，仅是适用平台和画幅不同。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两者叙事节奏都极强，转场流畅，信息密度高且易于吸收。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "配音均清晰自然，音效和BGM配合得当。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "A深入剖析了ChatGPT模型训练和临时聊天的隐私边界；B详尽拆解了抖音高风险授权和第三方支付共享，均极其真诚和诚实。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "两支视频均达到可直接发布的高商业完成度。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.1,
+      "S": 0.8,
+      "B": 0.1
+     },
+     "rationale": "视频A（ChatGPT隐私政策拆解）和视频B（抖音隐私政策拆解）制作水平皆属上乘。A侧重AI工具与合规标尺，B侧重国民App的深水隐私区，均完美将晦涩条款翻译为普通人能懂的人话并给出对策。两者在视觉动效、文案节奏上难分伯仲，不存在稳定、明确的偏好倾向，故判为平手（S）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "S",
+  "swap_consistent": false,
+  "needs_human": true,
+  "note": "换位反转 ['G', 'S'] → 降级 S"
+ },
+ "case-004": {
+  "case_id": "case-004",
+  "topic": "城市里的野生动物·它们怎么活下来的",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-004.gsb2-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 64.87,
+      "y_sec": 97.28
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "两条视频都满足了频道的Must Cover要求（介绍城市野生动物，结合案例和生态学解释食物、路线和繁殖）。但B在“真实案例”和“生态学解释”的深度上做得更好：B引入了具体的赤狐“白腿”与人类互动的案例，并给出了具体的研究数据（稳定同位素分析人类食物占比、领地面积对比）；而A的案例和数据相对抽象，科普深度略逊于B。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "B的视频画面之间有更强的叙事关联性（老人俯瞰与赤狐抬头的镜头相呼应），且在1:10处巧妙地使用了画中画展示红外夜视相机下的狐狸巢穴，视觉表现更丰富。A则主要是纽约城市空镜和游隼特写的交替，画面有些单调。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "B的时长较长（约97秒），整体节奏更像一部精致的微纪录片，信息释放循序渐进；A的时长较短（约65秒），且卡片切换较快，显得有些仓促。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音自然，背景音乐与画面主题契合度高，音质清晰。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "B的叙事结构非常完整：从个体故事引入 -> 展开生态学科学数据（食物与路线） -> 总结适应机制（改变的是行为而非器官），非常吸引人。A则更偏向于分点陈述的说明文，叙事吸引力不足。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "B在整体完成度、视觉排版和内容趣味性上更接近成熟科普自媒体的发布标准。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.15,
+      "B": 0.85
+     },
+     "rationale": "两条视频选题不同，但均围绕城市野生动物的生存适应展开。Video B（伦敦赤狐）在叙事上远胜于Video A（纽约游隼），B以人与动物互动的真实故事开头，中间穿插了具体的生态学科学研究（稳定同位素分析、领地尺度对比），最后升华到行为适应，科普深度和趣味性极佳。同时，B在视觉呈现（如画中画展示夜视画面）和剪辑连贯性上也优于A。因此，A相对B较差。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-004.gsb2-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 97,
+      "B_sec": 65
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 提供了更硬核的科普数据支撑，例如稳定同位素分析得出的食物比例（34.6% vs 6%）以及领地面积对比（0.5 vs 10平方公里），比视频 B 更符合初高中科普深度的要求。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 中赤狐在人类社区、草坪活动以及红外相机下在棚屋育幼的画面，与“城市野生动物”的主题贴合度极高，画面冲击力强于视频 B 混杂的荒野镜头。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两支视频的剪辑时序和画面节奏均非常流畅，无明显瑕疵。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的旁白配音清晰自然，BGM 与视频氛围契合度高。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 以具体个例“白腿”温情引入，中间条理清晰，结尾总结“改变的是时间、路线、距离，而不是器官”具有很强的生态学思考和叙事升华，优于 B 较为常规的科普叙事。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 的整体完成度、文案深度和画面故事性明显更优，更具商业传播和用户留存价值。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.85,
+      "S": 0.15,
+      "B": 0.0
+     },
+     "rationale": "视频 A 在任务契合度、画面故事性、科普深度以及叙事升华上全面胜出。它不仅通过具体数据（同位素研究、领地面积）提供了扎实的生态学科普，还通过完美的画面配合与极具深度的人文笔触，生动展现了赤狐在城市夹缝中的生存状态，是一支高质量的科普成片。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-005": {
+  "case_id": "case-005",
+  "topic": "如果历史拐了个弯·反事实推演",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-005.gsb2-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 84,
+      "B_sec": 111
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "B"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 完整地围绕『火线 vs USB』的技术标准之争展开了历史回顾和反事实推演，完全符合频道定位的各项必须要素。视频 B 在播放完相同的内容后（1:24处），突然拼接了另一个不相关的选题『Betamax 赢了 VHS』的开头，且在 1:51 处强行截断，未完成推演，属于关键内容缺失的严重事故。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 画面风格前后一致，插画精致，动效流畅。视频 B 在 1:24 后切换到了完全不同的视觉风格，且未播完即黑屏结束。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 A 节奏紧凑，结构完整。视频 B 出现了极其生硬的拼接痕迹，时序逻辑完全断裂。"
+      },
+      "audio": {
+       "verdict": "win",
+       "evidence": "视频 A 背景音乐与旁白融合度高。视频 B 在后半段音频突变，且在结尾处旁白句子未读完即被切断。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 拥有完整的叙事闭环，最终落脚到『路径依赖』的结论上。视频 B 逻辑混乱，属于半成品。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 达到了极高的成片交付标准。视频 B 属于导出错误的废片，完全不可用。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 1.0,
+      "S": 0.0,
+      "B": 0.0
+     },
+     "rationale": "视频 B 存在严重的剪辑与导出事故。视频的前 84 秒与视频 A 完全一致（讲述火线与 USB 的竞争），但在 1 分 24 秒时，视频 B 突然拼接了另一个选题（Betamax 录像带）的视频片段，且该片段在 1 分 51 秒处人声和画面都戛然而止，属于未完成的残损视频。相比之下，视频 A 结构完整，逻辑严密，画风统一且极具质感，科普信息准确，是一部可以直接发布的优质成片。因此判定视频 A 远好于视频 B。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-005.gsb2-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 111.4,
+      "B_sec": 84.42
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频 B 在推演“日常生活、工作方式、产业格局”的细分影响时，比视频 A 更加具体和深入，完美契合了频道 must_cover 的要求。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频 B 采用的手绘设计图与复古羊皮纸风格视觉细节极其丰富，相比视频 A 简单的扁平矢量 UI，美感和质感有降维打击式的优势。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两者时序动画均流畅，卡点准确。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者旁白配音及背景音乐质量均等，无明显差异。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频 B 的史实商业转折和技术架构（对等 vs 主从）逻辑链条更清晰，反事实推演的经济学与技术史支撑更扎实。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频 B 整体调性、视觉包装和文案深度已达到头部泛知识科普视频的专业标准，商业成品度更高。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.05,
+      "S": 0.1,
+      "B": 0.85
+     },
+     "rationale": "视频 A（Betamax 选题）和视频 B（火线 选题）均符合频道规范，但视频 B 在视觉呈现（手绘设计图风格）上远比 A 精美，且在反事实推演的深度上（详细拆解了菊花链拓扑对工作流和产业格局的影响）比 A 更加透彻，更符合泛知识受众对“路径依赖”这一话题的深度思考需求。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "G",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-006": {
+  "case_id": "case-006",
+  "topic": "深海恐惧图解·尺度失控的瞬间",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-006.gsb2-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 65,
+      "B_sec": 61
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频 B 在心理科普部分更加克制，明确指出了 thalassophobia 并非 DSM-5 的独立诊断条目，且对心理进化机制用“假说”进行定性，符合 Brief 对科学诚实性的要求；视频 A 的口播翻译腔和病句较多。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "两者使用了基本相同的可视化资产，画面风格和图表一致。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频 B 的配音与图表动效的转场和缩放配合得更好，节奏感更舒适。"
+      },
+      "audio": {
+       "verdict": "loss",
+       "evidence": "视频 A 的配音 AI 声音机械感强，有明显的字词吞音和不自然断句；视频 B 的男声配音发音清晰，沉稳且更具科普质感。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频 B 从 10 米到 10000 米的压力递进阐述逻辑更连贯，心理警报部分的承接也比视频 A 更合理自然。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频 B 整体的配音质量和文案水平达到了可直接发布的水准，而视频 A 因配音瑕疵和病句需要二次修改。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.1,
+      "B": 0.9
+     },
+     "rationale": "视频 A 相对视频 B 较差。主要原因在于视频 A 的 AI 配音存在明显的字词吞音、发音不自然及断句机械等问题，且文案中存在语病；相比之下，视频 B 的配音质量显著更高，文案在科普心理机制时更为严谨和克制，完美契合了频道的定位与 Brief 的要求。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-006.gsb2-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 61,
+      "B_sec": 65
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频A和视频B均较好地完成了频道关于“深海恐惧与尺度失效”的定位。视频A在物理量对比和心理学机制上的表述更准确、更客观。例如，视频A明确指出了“深海恐惧症是否达到特定恐惧症仍需专业评估”，符合“给假说/推测留标签，不夸大为医学定论”的科学警示要求；而视频B虽有类似表述，但整体叙事逻辑上，视频A将物理压强（10米增加1个大气压，1000米约100倍）以及潜水舱受力（1平方厘米承受1.1吨力）等物理尺度展示得更为具象和清晰。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频A的视觉UI设计更显专业，采用了科技感、冷色调的图表与动效，用简明的数据和解剖图式的人脑、受力面模型来展示深海压力，非常符合科普频道的“可视化对比”定位。视频B的动画风格偏向手绘/简笔画风格，虽然直观但精致度和专业感略逊于视频A。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两支视频的转场和字幕同步性均表现良好，节奏控制得当。"
+      },
+      "audio": {
+       "verdict": "win",
+       "evidence": "视频A配音的AI人声音质更自然，语气低沉冷静，符合深海科普的严肃与神秘感。视频B的配音略显机械，且环境背景音的融合度没有A自然。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频A的叙事逻辑更严密，从下潜深度与压力的线性关系，引入到潜水舱的受力分析，再延伸到人类大脑在失去视觉、尺度失控时的恐惧警报机制，科普条理清晰。视频B在后半段对压力、黑暗、不可逃离感三要素的结合讲解略显仓促。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频A在视觉美术设计、文案科学性及配音质量上更接近高水平的自媒体科普视频，商业交付价值更高。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.85,
+      "S": 0.15,
+      "B": 0.0
+     },
+     "rationale": "综合比较，两支视频都围绕“深海恐惧与尺度失效”展开。视频A在视觉呈现的科技感与专业度上明显优于视频B的手绘简易风格。同时，视频A在物理压力的感知类比（如1平方厘米受力1.1吨）和心理学机制的克制描述上更符合Brief要求，文案客观严谨，配音也更具吸引力，因此判定视频A更好。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ }
+}

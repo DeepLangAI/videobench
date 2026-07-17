@@ -1,0 +1,670 @@
+{
+ "case-001": {
+  "case_id": "case-001",
+  "topic": "电池热失控·热量传播图解",
+  "runs": [
+   {
+    "run": 1,
+    "A": "b",
+    "B": "a",
+    "file": "case-001.gsb1_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 140,
+      "B_sec": 104
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "B"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 完整覆盖了单体电芯从内短路到热失控的温度链条机理，而视频 B 缺失了这一部分。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 是标准的 16:9 横屏，图表文字显示完整；视频 B 为粗暴裁剪的竖屏，左右两侧的文字和关键动画内容被截断。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 A 的叙事时序更加完整，涵盖了热失控的起因、发展、蔓延到防护的全过程。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "配音和背景音轨质量相同。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 逻辑更连贯，先分析微观原因，再展示宏观表现和防护设计。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 画面完整，符合频道高质量科普视频交付标准；视频 B 因裁剪导致画面信息丢失，不可直接交付。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.95,
+      "S": 0.05,
+      "B": 0.0
+     },
+     "rationale": "视频 A 构图完整（16:9），且包含了关于单体电芯热失控发生过程的完整科普分析；视频 B 则是将视频 A 的后半段强行裁剪成 9:16 竖屏，导致前半段关键科普内容缺失，且左右两侧画面及文字信息丢失严重。因此，视频 A 显著优于视频 B。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "a",
+    "B": "b",
+    "file": "case-001.gsb2_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 104,
+      "B_sec": 140
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频A为竖屏，其内容主要聚焦于“软包电芯（pouch cell）”的热失控传播实验和焦耳热计算（Q=I²R）及冷板路径对比，未明确提及或扣题“800V动力电池”这一载体。视频B为横屏，且在开头（0:00-0:10）明确以“800V动力电池包”作为叙事载体切入，并清晰地解释了“800V高压是超充架构，并非热失控原因，热失控本质是电芯层面的链式放热反应”，完美扣合了Query和Must-cover中“不得把800V高电压当作热失控成因”的限定条件。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频B采用16:9横屏设计，三维动画渲染和色彩过渡（如0:00-0:20的电池包三维结构、0:30-1:00的圆柱电芯热分布渐变动画）比视频A扁平的二维MG动画更加立体、精致，细节更丰富，符合科技数码/汽车科普频道的审美。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两支视频的动画均与配音口播保持了良好的同步率，时序表达上没有明显的问题。"
+      },
+      "audio": {
+       "verdict": "loss",
+       "evidence": "视频B的配音音质更加清晰自然，有科技科普视频的质感；视频A的配音音效带有一些AI合成的沉闷感，且音轨背景音效相对单一。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频B的叙事结构更加系统完整：先从800V概念澄清开始，接着以圆柱电芯为例，从内部短路（SEI膜分解、隔膜熔化失效）讲到正负极氧化还原反应，再讲到热量通过传导/对流/辐射在相邻电芯间的蔓延过程，最后引出防护设计对比。视频A的叙事直接切入12秒的软包电芯实验，中间公式推导略显生硬，整体逻辑链不如B清晰易懂。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频B无论是画幅（横屏适合长视频科普）、精细的三维动画、还是完整的文案策划，都更符合一个专业电池/汽车安全科普频道的真实交付标准。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.05,
+      "B": 0.95
+     },
+     "rationale": "视频A（竖屏）在任务契合度上明显逊色于视频B。视频B不仅以横屏三维精细动画直观展示了热蔓延过程，更重要的是在开头精准完成了关于“800V高压架构”与“电芯级热失控本质”概念的厘清，完美扣合了Brief的特殊限定条件。视频B的画面美观度、配音质量及叙事逻辑均显著优于视频A。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-002": {
+  "case_id": "case-002",
+  "topic": "商业结构一个概念怎么被卖爆",
+  "runs": [
+   {
+    "run": 1,
+    "A": "b",
+    "B": "a",
+    "file": "case-002.gsb1_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 91.26,
+      "B_sec": 103.4
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "both"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "两支视频均完全偏离了关于‘雅诗兰黛夜晚生意’的Query，错播为了关于‘星巴克秋季限定与第三空间’的内容。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "画面素材完全相同，均是星巴克相关的幻灯片和视频切片。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "时序表现一致，仅B视频在尾部多保留了约12秒的星巴克总结画面。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "音频内容一致，均为关于星巴克商业逻辑的中文配音。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "对于本期雅诗兰黛的主题，两者的叙事均不切题。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "由于货不对板，两者均不具备商业可交付性。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.0,
+      "S": 1.0,
+      "B": 0.0
+     },
+     "rationale": "视频A与视频B在内容上均完全跑题，错将‘星巴克’的案例视频当作‘雅诗兰黛’的视频进行输出，两支视频均存在致命的内容错误，因此判定为无实质差异（S）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "a",
+    "B": "b",
+    "file": "case-002.gsb2_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 103.4,
+      "B_sec": 91.26
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 完全符合雅诗兰黛小棕瓶与‘夜晚’概念的解构主题；视频 B 严重跑题，制作成了星巴克‘第三空间’的案例。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 的视觉设计、配色及图表完全围绕美妆与雅诗兰黛品牌展开，视觉质量优良且切题。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 A 的时间轴、数据出现时机与音频讲解高度同步。"
+      },
+      "audio": {
+       "verdict": "win",
+       "evidence": "视频 A 配音清晰，语速节奏适中，BGM 契合商业分析氛围。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 具有极强的叙事逻辑，将‘概念-产品-矩阵-复购’这一商业链路清晰地呈献给观众。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 高度符合商业科普频道的可交付标准；视频 B 因主题错误无法使用。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 1.0,
+      "S": 0.0,
+      "B": 0.0
+     },
+     "rationale": "视频 A 完美契合了 Brief 中关于‘雅诗兰黛如何把夜晚变成一门生意’的要求，视频制作精美、逻辑清晰、论据详实。而视频 B 发生了严重的主题偏差，内容完全为星巴克咖啡的商业解构，因此视频 A 具有压倒性优势，判定为 G。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "S",
+  "swap_consistent": false,
+  "needs_human": true,
+  "note": "换位反转 ['S', 'G'] → 降级 S"
+ },
+ "case-003": {
+  "case_id": "case-003",
+  "topic": "隐私条款拆解·你到底同意了什么",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-003.gsb1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 97.13,
+      "B_sec": 79.12
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "both"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "双方均存在严重的致命错误。本期任务主题为“Samsung Health健康数据用于AI训练隐私条款拆解”，但视频A实际内容为“抖音2026隐私政策”，视频B实际内容为“ChatGPT/OpenAI隐私政策变动”。两视频均完全偏离了Query和选题要求，任务对齐度均为0。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "虽然视频A（16:9横屏）和视频B（9:16竖屏）在动效设计、图表展示上都具有很高的制作水准，但由于内容完全偏离主题，其视觉设计无法带来任何实际的业务价值。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "无实际对比价值。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "无实际对比价值。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "无实际对比价值。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "两视频均偏离了设定的APP和条款主题，在商业交付层面上皆属于不可用的废片。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.0,
+      "S": 1.0,
+      "B": 0.0
+     },
+     "rationale": "两个视频都触发了第一层致命错误门槛。本期选题明确要求拆解“Samsung Health健康数据AI训练条款”，但视频A拆解的是抖音隐私政策，视频B拆解的是ChatGPT隐私政策，均完全没有提及Samsung Health或相关的医疗健康数据。对于当前设定的特定任务而言，两个视频均完全不可用，故判定为无实质差异（S）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-003.gsb2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 79,
+      "B_sec": 97
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "both"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "A视频讨论的是ChatGPT的隐私政策，B视频讨论的是抖音的隐私政策，均完全偏离了指定的Samsung Health任务主题。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "两者均采用了各自频道统一的MG动效风格，仅画幅不同（A为竖屏，B为横屏）。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "时序均正常，但内容均不符合主题。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "均有配音和背景音乐，音质正常。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "叙事逻辑在各自的错误主题下是完整的，但对本任务无意义。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "均因完全跑题而无法交付。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.0,
+      "S": 1.0,
+      "B": 0.0
+     },
+     "rationale": "两部视频均存在致命的主题错误：视频 A 拆解的是 ChatGPT 隐私政策，视频 B 拆解的是抖音隐私政策，均未提及 Samsung Health。因此两部视频均无法满足任务要求，判定为无实质差异（S）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "S",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-004": {
+  "case_id": "case-004",
+  "topic": "城市里的野生动物·它们怎么活下来的",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-004.gsb1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 65,
+      "B_sec": 97
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "both"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "两段视频均完全偏离了要求的选题（旧金山 Glen Canyon 的郊狼）。视频 A 讲述的是纽约的游隼，视频 B 讲述的是伦敦的赤狐，均未包含任何关于旧金山郊狼的内容及关键事实，均判定为致命错误。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "由于内容完全不相关，视觉质量对比失去实际意义。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "由于内容完全不相关，时序对比失去实际意义。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "配音与字幕清晰，但内容完全错误。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "由于内容完全不相关，叙事对比失去实际意义。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "两段视频对于本期选题均无任何商业可用性。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.0,
+      "S": 1.0,
+      "B": 0.0
+     },
+     "rationale": "视频 A 和视频 B 都出现了根本性的选题错误，完全偏离了“旧金山 Glen Canyon 的郊狼”这一要求。视频 A 制作的是关于纽约游隼的内容，视频 B 制作的是关于伦敦赤狐的内容。两段视频均无法满足交付要求，存在严重的致命错误，故判定为无实质差异（S）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-004.gsb2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 97.28,
+      "B_sec": 64.87
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "both"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "双方均完全偏离了本期选题（旧金山郊狼）。视频A制作了“伦敦赤狐”，视频B制作了“纽约游隼”，均未包含任何关于郊狼的关键事实。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "两者的画面画质、包装模板、信息图表展示方式完全一致，均达到了很高的工业科普视频水准。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "时序过渡自然，视频节奏控制得当。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "均使用了相同的专业中文配音和背景音乐，音画同步良好。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "尽管主角错误，但两者的叙事结构（案例引入-食物-领地/路线-繁殖-人兽共处）均符合频道大纲要求。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "因选题彻底错误，两者均无法在实际业务中交付给该 query 的用户。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.0,
+      "S": 1.0,
+      "B": 0.0
+     },
+     "rationale": "视频A（伦敦赤狐）和视频B（纽约游隼）都完全偏离了本次任务要求的“旧金山郊狼”主题。两支视频属于该科普频道的其他期内容，虽然制作水准（配音、包装、文案节奏）均非常优秀且保持一致，但对于本次特定选题而言均为错误视频。因此，两者在完成度上没有实质性差异，均不可用。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "S",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-005": {
+  "case_id": "case-005",
+  "topic": "如果历史拐了个弯·反事实推演",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-005.gsb1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 84.42,
+      "B_sec": 111.4
+     },
+     "gate_shortcut": {
+      "applied": true,
+      "fatal_side": "both"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "双方均完全偏离了 Query 要求的键盘之争（Dvorak vs QWERTY）。视频 A 制作的是火线与 USB 之争，视频 B 制作的是 Betamax 与 VHS 之争。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "虽然两视频均具有复古插画风格，视觉质量较好，但由于内容完全偏题，视觉维度的比较失去实际业务意义。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "时序流畅，但均与任务主题无关。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "配音与音效完整，但均与任务主题无关。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "均无法完成本期键盘选题的叙事要求。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "因完全偏题，均不可交付。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.0,
+      "S": 1.0,
+      "B": 0.0
+     },
+     "rationale": "两支视频均存在致命的内容错误：视频 A 实际内容为“火线 vs USB”的推演，视频 B 实际内容为“Betamax vs VHS”的推演，均与 Query“Dvorak 键盘取代 QWERTY”完全无关。因此，两支视频均无法满足任务目标，判定为无实质差异（同等不及格）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-005.gsb2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 111.4,
+      "B_sec": 84.42
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "both"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "两视频均完全偏离了Dvorak vs QWERTY键盘的主题，错讲为了Betamax和火线接口。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "动效和美术风格一致，均保持了较好的视觉水平。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 B 后半段发生异常快放，导致画面与声音播放速度极不自然；视频 A 播放速度与节奏正常。"
+      },
+      "audio": {
+       "verdict": "win",
+       "evidence": "视频 B 后半段的配音因视频快放而变尖锐、嘈杂，存在明显音轨事故；视频 A 声音清晰正常。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 全程叙事结构完整，节奏合适；视频 B 的异常加速毁掉了后半段的叙事表现。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 B 存在严重的音频和渲染速度故障，不具备商用可能。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.9,
+      "S": 0.1,
+      "B": 0.0
+     },
+     "rationale": "两个视频都因为完全偏离了任务要求的“Dvorak键盘”主题而判定致命错误。但在视频制作质量上，视频 B 后半段出现了严重的视频/音频异常倍速播放技术事故，导致配音尖锐刺耳，无法观看。视频 A 制作质量完好，无技术事故，因此视频 A 显著优于视频 B。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "S",
+  "swap_consistent": false,
+  "needs_human": true,
+  "note": "换位反转 ['S', 'B'] → 降级 S"
+ },
+ "case-006": {
+  "case_id": "case-006",
+  "topic": "深海恐惧图解·尺度失控的瞬间",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-006.gsb1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 64.62,
+      "B_sec": 60.63
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 完整覆盖了 Brief 中要求的“压力”和“黑暗”（真光层、暮光层、无光层）两个核心维度。而视频 B 完全忽略了“黑暗”这一重要物理维度，通篇仅围绕“压力”及深潜器受力展开，不符合频道的科普定位。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 针对光线随深度的消退过程（200米、1000米分界）进行了直观的阶梯式可视化设计，契合“尺度失效”的主题；视频 B 偏向静态压强和密封舱受力分析，视觉上缺乏对深海“黑暗”环境的动态展现。"
+      },
+      "temporal": {
+       "verdict": "tie",
+       "evidence": "两支视频的转场和动画同步率都很好，没有明显的卡顿或错位。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两支视频均采用了平稳的男声配音和低沉的深海环境音效，声画结合度高。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 遵循“压力-黑暗-感官尺度失效-心理机制”的递进逻辑，叙事更为完整和科学；视频 B 在中段花大量篇幅讲解密封舱压强换算，略偏向工程物理学，对深海恐惧的“感官/尺度触发机制”解析不如 A 聚焦。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 结构完整，完美切合频道选题，可直接发布；视频 B 存在关键维度缺失，商用价值打折扣。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.9,
+      "S": 0.1,
+      "B": 0.0
+     },
+     "rationale": "视频 A 相对视频 B 表现明显更好。核心原因在于 A 完整履行了选题要求，不仅讲清了压力增加的规律，还详细图解了光线（黑暗）随深度消退的三个主要区间，视觉和文案逻辑层层递进，非常符合“深海恐惧图解”的定位。视频 B 则完全遗漏了“黑暗”维度，且中段讲解偏离了心理恐惧触发机制本身，更像是一期深海压强科普，因此 A 胜出。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-006.gsb2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 61,
+      "B_sec": 65
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频B对光线分层（0-200m阳光带、200-1000m暮光带、1000m以下无光区）的可视化展示更清晰完整，更符合任务要求。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频B采用了动态表盘、下潜动效和色彩对比，视觉效果明显比视频A偏静态的概念图更直观、更有表现力。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频B的动效随着配音的下潜深度实时变化，节奏紧凑，动态转场更流畅。"
+      },
+      "audio": {
+       "verdict": "loss",
+       "evidence": "视频B的水下环境音效和低频环境音更加逼真，能更好地渲染深海的压抑感。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频B以深度下潜为主线进行科普，叙事结构更符合泛科普观众的认知逻辑。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频B的图表动效完成度极高，达到了高质量科普短视频的商业交付标准。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.05,
+      "B": 0.95
+     },
+     "rationale": "视频B在视觉动效、科普细节（如光照分层可视化）、音效渲染以及叙事逻辑上均显著优于视频A。视频A的画面偏向静态概念展示，而视频B则通过生动的动态刻度、水下动效和清晰的逻辑，完美契合了“深海恐惧及尺度失控可视化”的频道定位。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "G",
+  "swap_consistent": true,
+  "needs_human": false
+ }
+}

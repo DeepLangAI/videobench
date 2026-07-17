@@ -1,0 +1,72 @@
+
+######## track = channel ########
+=== Gate ===
+case-001-a: pass  needs_human=False
+case-001-b: pass  needs_human=False
+case-002-a: pass  needs_human=False
+case-002-b: pass  needs_human=False
+case-003-a: pass  needs_human=False
+case-003-b: pass  needs_human=False
+case-004-a: pass  needs_human=False
+case-004-b: pass  needs_human=False
+case-005-a: pass  needs_human=False
+case-005-b: pass  needs_human=False
+case-006-a: borderline  needs_human=True
+case-006-b: fail  needs_human=False
+=== 六层分 (merged) ===
+case-001-a {'L1_task': 3.67, 'L2_visual': 4.75, 'L3_temporal': 4.88, 'L4_audio': 4.5, 'L5_narrative': 4.75, 'L6_commercial': 4.33} tier: 及格
+case-001-b {'L1_task': 4.33, 'L2_visual': 4.62, 'L3_temporal': 4.75, 'L4_audio': 5.0, 'L5_narrative': 4.75, 'L6_commercial': 4.67} tier: 优秀
+case-002-a {'L1_task': 4.67, 'L2_visual': 4.88, 'L3_temporal': 5.0, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 4.33} tier: 及格
+case-002-b {'L1_task': 5.0, 'L2_visual': 4.75, 'L3_temporal': 4.75, 'L4_audio': 4.88, 'L5_narrative': 5.0, 'L6_commercial': 5.0} tier: 优秀
+case-003-a {'L1_task': 5.0, 'L2_visual': 4.75, 'L3_temporal': 4.88, 'L4_audio': 4.75, 'L5_narrative': 4.75, 'L6_commercial': 5.0} tier: 优秀
+case-003-b {'L1_task': 5.0, 'L2_visual': 4.62, 'L3_temporal': 4.88, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 5.0} tier: 顶级
+case-004-a {'L1_task': 5.0, 'L2_visual': 4.62, 'L3_temporal': 5.0, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 5.0} tier: 顶级
+case-004-b {'L1_task': 5.0, 'L2_visual': 4.56, 'L3_temporal': 4.62, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 5.0} tier: 顶级
+case-005-a {'L1_task': 5.0, 'L2_visual': 4.62, 'L3_temporal': 4.88, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 5.0} tier: 顶级
+case-005-b {'L1_task': 5.0, 'L2_visual': 4.88, 'L3_temporal': 4.88, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 5.0} tier: 顶级
+case-006-a {'L1_task': 3.33, 'L2_visual': 4.62, 'L3_temporal': 4.88, 'L4_audio': 5.0, 'L5_narrative': 4.5, 'L6_commercial': 4.0} tier: 及格
+case-006-b {'L1_task': 2.67, 'L2_visual': 4.62, 'L3_temporal': 4.75, 'L4_audio': 4.75, 'L5_narrative': 3.5, 'L6_commercial': 3.33} tier: 及格
+=== GSB (a vs b) ===
+case-001 电池热失控·热量传播图解: B swap_consistent=True conf=['high', 'high'] 
+case-002 商业结构一个概念怎么被卖爆: B swap_consistent=True conf=['high', 'high'] 
+case-003 隐私条款拆解·你到底同意了什: S swap_consistent=False conf=['high', 'high'] 换位反转 ['G', 'S'] → 降级 S
+case-004 城市里的野生动物·它们怎么活: B swap_consistent=True conf=['high', 'high'] 
+case-005 如果历史拐了个弯·反事实推演: G swap_consistent=True conf=['high', 'high'] 
+case-006 深海恐惧图解·尺度失控的瞬间: B swap_consistent=True conf=['high', 'high'] 
+G/S/B = 1/1/4  NetLift=-50%  DecisiveWinRate=20%
+
+######## track = goldenset ########
+=== Gate ===
+case-001-a: borderline  needs_human=True
+case-001-b: ?  needs_human=None
+case-002-a: fail  needs_human=False
+case-002-b: fail  needs_human=False
+case-003-a: fail  needs_human=False
+case-003-b: fail  needs_human=False
+case-004-a: fail  needs_human=False
+case-004-b: fail  needs_human=True
+case-005-a: fail  needs_human=False
+case-005-b: fail  needs_human=False
+case-006-a: borderline  needs_human=True
+case-006-b: fail  needs_human=False
+=== 六层分 (merged) ===
+case-001-a {'L1_task': 2.33, 'L2_visual': 4.75, 'L3_temporal': 4.85, 'L4_audio': 4.88, 'L5_narrative': 4.38, 'L6_commercial': 3.67} tier: 及格
+case-001-b {'L1_task': 3.0, 'L2_visual': 4.62, 'L3_temporal': 4.75, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 4.0} tier: 差
+case-002-a {'L1_task': 1.0, 'L2_visual': 4.75, 'L3_temporal': 5.0, 'L4_audio': 4.0, 'L5_narrative': 3.75, 'L6_commercial': 2.33} tier: 差
+case-002-b {'L1_task': 1.0, 'L2_visual': 4.69, 'L3_temporal': 4.88, 'L4_audio': 4.62, 'L5_narrative': 1.0, 'L6_commercial': 2.33} tier: 差
+case-003-a {'L1_task': 1.0, 'L2_visual': 4.62, 'L3_temporal': 4.62, 'L4_audio': 3.75, 'L5_narrative': 2.75, 'L6_commercial': 2.33} tier: 差
+case-003-b {'L1_task': 1.0, 'L2_visual': 4.5, 'L3_temporal': 4.88, 'L4_audio': 4.5, 'L5_narrative': 4.0, 'L6_commercial': 2.33} tier: 差
+case-004-a {'L1_task': 1.0, 'L2_visual': 4.5, 'L3_temporal': 4.88, 'L4_audio': 4.75, 'L5_narrative': 4.0, 'L6_commercial': 3.0} tier: 差
+case-004-b {'L1_task': 1.0, 'L2_visual': 4.62, 'L3_temporal': 4.75, 'L4_audio': 5.0, 'L5_narrative': 4.5, 'L6_commercial': 2.33} tier: 差
+case-005-a {'L1_task': 1.0, 'L2_visual': 4.62, 'L3_temporal': 4.88, 'L4_audio': 5.0, 'L5_narrative': 5.0, 'L6_commercial': 2.33} tier: 差
+case-005-b {'L1_task': 1.0, 'L2_visual': 4.75, 'L3_temporal': 4.75, 'L4_audio': 3.62, 'L5_narrative': 1.0, 'L6_commercial': 2.33} tier: 差
+case-006-a {'L1_task': 4.0, 'L2_visual': 4.62, 'L3_temporal': 4.88, 'L4_audio': 5.0, 'L5_narrative': 4.75, 'L6_commercial': 4.83} tier: 优秀
+case-006-b {'L1_task': 2.67, 'L2_visual': 4.62, 'L3_temporal': 4.75, 'L4_audio': 5.0, 'L5_narrative': 4.0, 'L6_commercial': 3.0} tier: 及格
+=== GSB (a vs b) ===
+case-001 电池热失控·热量传播图解: B swap_consistent=True conf=['high', 'high'] 
+case-002 商业结构一个概念怎么被卖爆: S swap_consistent=False conf=['high', 'high'] 换位反转 ['S', 'G'] → 降级 S
+case-003 隐私条款拆解·你到底同意了什: S swap_consistent=True conf=['high', 'high'] 
+case-004 城市里的野生动物·它们怎么活: S swap_consistent=True conf=['high', 'high'] 
+case-005 如果历史拐了个弯·反事实推演: S swap_consistent=False conf=['high', 'high'] 换位反转 ['S', 'B'] → 降级 S
+case-006 深海恐惧图解·尺度失控的瞬间: G swap_consistent=True conf=['high', 'high'] 
+G/S/B = 1/4/1  NetLift=+0%  DecisiveWinRate=50%

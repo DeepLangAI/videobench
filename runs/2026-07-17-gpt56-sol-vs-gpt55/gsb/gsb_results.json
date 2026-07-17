@@ -1,0 +1,670 @@
+{
+ "case-001": {
+  "case_id": "case-001",
+  "topic": "电池热失控·热量传播图解",
+  "runs": [
+   {
+    "run": 1,
+    "A": "b",
+    "B": "a",
+    "file": "case-001.gsb3-1_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 140,
+      "B_sec": 104
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "A和B都很好地完成了Brief中要求的『从内部短路讲起、可视化展示热蔓延、结合测试数据和防护设计』。A引用了NTSB事故报告，B引用了MDPI与JES学术论文数据，两者在任务契合度上基本持平。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频A存在多处严重的画面瑕疵和版式Bug：如~14-16s出现空的深色信息面板、~44-46s白色药丸状元素错位悬浮遮挡电芯、多处画面右缘有橙色残留线段、~78s信息卡与底部元素重叠叠压、~104-108s文字行呈灰色低对比度未激活态。相比之下，视频B版面干净，无任何画面渲染Bug。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频A的场景几乎从头到尾固定在同一个电芯阵列排版上，一屏静置时间达10-15s，PPT感和模板化严重。视频B分屏节奏更快（4-8s），画面切换更加平滑自然。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "双方均使用清晰的AI配音，声音质量与配乐融合度均合格，无明显差异。"
+      },
+      "narrative": {
+       "verdict": "tie",
+       "evidence": "视频A从单体热失控讲到系统防护和事故复盘，叙事流畅；视频B则侧重用物理公式（Q=I²R）和具体实验文献进行降维科普，逻辑也非常严密。两者叙事各有千秋。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频A因为存在大量低级的视觉重叠、遮挡、空白面板和裁切残留等Bug，达不到商业交付标准；视频B虽然动效较为静态，但整体逻辑清晰、信息准确且无明显bug，具备更高的商业可用性。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.1,
+      "B": 0.9
+     },
+     "rationale": "综合比较，视频A虽然初看UI设计更具科技感，但其在渲染和排版上存在多处画面Bug（如空的面板、错位悬浮的白色长条、被裁切的残留线段、文字叠压等），严重影响了成片的质量和专业度，属于不可直接交付的半成品。而视频B版式干净、无低级错误，且科普逻辑严密，引用数据更为详实具体，整体用户价值明显高于A。因此判定A相对B更差（B）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "a",
+    "B": "b",
+    "file": "case-001.gsb3-2_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 104,
+      "B_sec": 140
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "两支视频均完成了核心要点的覆盖，包括从内短路讲起、可视化热传导、引入真实数据与防护设计对比。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频A设计风格干净统一且无任何画面Bug；视频B存在大量元素叠压、空白信息面板、错位悬浮块和裁剪线段残留等严重Bug。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频A切换节奏合理（4-8s）；视频B同一画面布局静置时间过长（10-15s），且存在转场动效残留。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者配音均清晰，无背景音压过人声的问题。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频A以软包电池的实验为叙事脉络，节奏更紧凑，科普直观；视频B行文稍显拖沓。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频A无画面硬伤，可直接交付；视频B因大量严重的视觉Bug无法直接使用。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.95,
+      "S": 0.05,
+      "B": 0.0
+     },
+     "rationale": "视频A在核心科普任务完成的基础上，视觉设计干净、排版无误、节奏流畅，商业可用性极高。相比之下，视频B虽然动效较多，但存在空白面板、错位遮挡、叠压、残留线段等多处低级的画面渲染Bug，且模板化严重，综合体验远差于视频A。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "G",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-002": {
+  "case_id": "case-002",
+  "topic": "商业结构一个概念怎么被卖爆",
+  "runs": [
+   {
+    "run": 1,
+    "A": "b",
+    "B": "a",
+    "file": "case-002.gsb3-1_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 91,
+      "B_sec": 103
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "A和B都很好地完成了频道的商业解构任务，分别针对PSL季节性产品和第三空间概念进行了拆解。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频A采用了版面排版结合大量实拍b-roll素材，视觉质感更好；视频B则是纯粹的AI深底模板卡片，PPT感较强。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频B存在多处超长时间的单屏静态静置（如自营门店销售一屏静置达18s），视频A时序节奏更合理。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音音质和BGM选择都符合定位，无明显差异。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频A的叙事配合多变的画面更具吸引力，视频B画面过于单调，容易让观众失去耐心。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频A的实拍感和版面设计更接近可直接交付的短视频自媒体成品。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.85,
+      "S": 0.15,
+      "B": 0.0
+     },
+     "rationale": "视频A比视频B更好。视频B的AI模板感太重，尤其是长达18秒的静态图表画面缺乏镜头变化和视觉动态，容易被用户划走。视频A引入了较多相关的实拍空镜头，配合编辑风排版，整体视频感和节奏明显优于B。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "a",
+    "B": "b",
+    "file": "case-002.gsb3-2_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 103.4,
+      "B_sec": 91.26
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "双方均准确拆解了星巴克品牌下的抽象概念商业化逻辑（A为第三空间，B为PSL与秋季概念），均高度符合频道定位。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频A模板化卡片堆砌感严重，且存在长达18秒的静态图表展示；视频B采用编辑排版配合高质感实拍B-roll，视觉高级感明显更强。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频A几乎无动态镜头语言；视频B的实拍视频片段提供了良好的时序动态，视频感更足。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音与BGM质量相当，无明显差异。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频B将抽象概念落地到具体爆款单品PSL的演进，叙事逻辑更具象、更有吸引力。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频A的PPT感在视频平台上竞争力较低；视频B的编辑杂志风格与实拍剪辑更具商业交付价值。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.1,
+      "B": 0.9
+     },
+     "rationale": "视频B在视觉排版、B-roll动态素材的选用以及案例具象化叙事上均明显优于视频A。视频A存在长达18秒的PPT页面静置缺陷，AI味和模板感较重，因此A相对B更差。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-003": {
+  "case_id": "case-003",
+  "topic": "隐私条款拆解·你到底同意了什么",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-003.gsb3-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 97.13,
+      "B_sec": 79.12
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "两支视频都完成了对特定软件（抖音/ChatGPT）隐私政策改动的拆解与人话翻译。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频 A 使用了高频复用的青橙圆角卡片模板，文字小且对比度低，可读性差；视频 B 采用独特的版画风定制排版，视觉设计感和对照直观度显著优于 A。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "两支视频都有一定的 PPT 感，但视频 B 的排版动效和对比切换节奏较 A 稍显生动。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "音轨和配音质量基本一致，无明显差异。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频 A 纯属条目罗列，缺乏叙事连贯性；视频 B 以“改了一句话”为钩子，逻辑线更清晰。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频 B 的设计原创度高，符合主流短视频平台优质科普内容的交付水准，而 A 的模板味太浓，容易被划走。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.05,
+      "S": 0.15,
+      "B": 0.8
+     },
+     "rationale": "视频 A 相对视频 B 表现较差。主要体现在视觉设计和叙事上，视频 A 采用了套路化的深色青橙卡片模板，文字对比度低且排版密集，AI 模板味和 PPT 感极重；而视频 B 采用了美学设计感较强的米色版画风格，在对比修改条款时使用了直观的可视化对照，叙事上也比 A 的纯罗列文案更吸引人。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-003.gsb3-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 79,
+      "y_sec": null,
+      "B_sec": 97
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频A紧扣频道定位，针对ChatGPT隐私政策的新旧版本变化（删除不共享跨场景数据，改为可能共享有限数据）进行了清晰的前后对比；而视频B对抖音隐私政策的拆解主要偏向于静态条款的分类罗列，缺乏明显的修改前后对比。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频A采用了独特的竖屏米底版画插画风格，排版设计感强，新旧对比的可视化非常直观。视频B则套用了常见的深底青橙卡片模板，存在大量文字偏小偏灰、对比度低、可读性差的问题。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "虽然两视频都存在一定的单屏静置现象，但视频A配合了较多局部动效和引导性动画；视频B在97秒的视频中，前62秒仅有4张静态卡片以淡入方式切换，单屏静置长达8-16s，PPT感极重，非常沉闷。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音与背景音乐均清晰无杂音，配合基本契合画面，无明显优劣差距。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频A以“改了一句话”为叙事钩子展开，逻辑紧凑，从条款改动引申到用户的应对策略。视频B的文案则完全是条款条目的干瘪罗列，缺乏趣味性和叙事主线。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频A具有独特的美术风格和良好的排版，商业完备度较高。视频B的AI模板感重、文字可读性低且过于静态，不符合高水平商业交付标准。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.9,
+      "S": 0.1,
+      "B": 0.0
+     },
+     "rationale": "视频A在任务契合度上明显优于视频B，完成了核心的“新旧条款对比”要求。在视觉上，A的米底版画风排版设计感远超B套用AI卡片模板的效果，且B存在文字小、对比度低的可读性硬伤。时序上A的动效也比B长时间纯静态卡片展示更丰富，叙事结构也更完整生动，因此视频A显著好于视频B。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-004": {
+  "case_id": "case-004",
+  "topic": "城市里的野生动物·它们怎么活下来的",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-004.gsb3-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 64.87,
+      "B_sec": 97.28
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频 B 结合了伦敦赤狐“白腿”与人的互动案例，并给出了同位素分析等具体生态学研究数据，比视频 A 纯罗列游隼知识点更符合“真实案例+生态学解释”的定位。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频 A 全片仅有 2-3 张静态照片反复作为背景，单屏静置超 10s，PPT 味极浓；视频 B 则是高画质、多机位的真实纪录片实拍 B-roll，动态丰富度完全不在一个量级。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频 A 缺乏镜头运动，节奏拖沓；视频 B 剪辑流畅，声画同步极佳。"
+      },
+      "audio": {
+       "verdict": "loss",
+       "evidence": "视频 B 的配乐与环境音效更具纪录片的质感与沉浸感。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频 B 采用故事化叙事，逻辑层层递进，总结性强；视频 A 为生硬的百科罗列。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频 A 因强烈的幻灯片质感在实际平台分发中很难留住用户；视频 B 已达优秀自媒体科普视频的交付标准。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.05,
+      "B": 0.95
+     },
+     "rationale": "视频 A 存在严重的模板化与 PPT 倾向，全片仅用极少量的静态照片加字卡填充，缺乏视频动态。而视频 B 展现了极高的制作水准，通过伦敦赤狐的实拍镜头、人狐互动的温情故事线、详实的科学数据以及优秀的科普文案，在视觉效果、信息量和趣味性上都对 A 形成碾压态势。因此 A 显著差于 B。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-004.gsb3-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 97.28,
+      "B_sec": 64.87
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 不仅完美对齐了食物、路线和繁殖的硬性指标，而且引入了稳定同位素和领地尺度的具体科研数据，比视频 B 更具科普深度。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 采用丰富、多机位的实拍 B-roll，极具动态美感；而视频 B 仅用 2-3 张静态照片循环充当背景，PPT感严重，视觉效果极差。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 A 剪辑流畅，节奏感强；视频 B 存在大段单屏静置（超 8s），且在 40s 处有转场半透明残留，时序体验较差。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音与背景音乐都较为清晰、自然，符合基本要求。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 以赤狐“白腿”的具体故事引入，科普数据与温情叙事结合得当；视频 B 则显得沉闷、说教味浓。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 完成度极高，已达到可直接发布推广的成片标准；视频 B 属于低留存率的 PPT 视频，无商业价值。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.95,
+      "S": 0.05,
+      "B": 0.0
+     },
+     "rationale": "视频 A 相对视频 B 具有压倒性的优势。A 拥有丰富的动态实拍素材（老奶奶喂食狐狸、赤狐草地捕食等）、具体生动的故事主线以及严谨的生态研究数据，完全符合频道定位；而视频 B 画面几乎完全由静态照片和字卡堆砌而成（PPT味极浓），单屏静置时间过长，极易导致真实用户流失。因此判定 A 为更好（G）。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "B",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-005": {
+  "case_id": "case-005",
+  "topic": "如果历史拐了个弯·反事实推演",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-005.gsb3-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 84.42,
+      "B_sec": 111.4
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "tie",
+       "evidence": "两者均很好地完成了频道对于技术史交代、反事实推演以及多维度（日常生活/工作/产业）影响的分析任务。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 的牛皮纸铜版画插画风非常独特且全片统一，信息表达丰富；而视频 B 则是极其单调的黑底霓虹 icon 模板堆砌，视觉表现力弱。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 B 存在严重的单屏静置问题（如日常推演部分房子 icon 停留长达 14 秒），且结尾戛然而止；视频 A 的镜头切换和节奏明显更紧凑合理。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音与背景音乐表现均正常，无明显差异。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 叙事逻辑清晰，节奏合理；视频 B 节奏拖沓，信息密度低，结尾缺乏有效收束。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 整体美术定制感和视听节奏已达到可实际发布的知识类短视频水平，而视频 B 因套版痕迹重、画面单调，商业价值较低。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.95,
+      "S": 0.05,
+      "B": 0.0
+     },
+     "rationale": "视频 A 相对视频 B 有着压倒性的优势。视频 A 的牛皮纸/铜版画美术风格极为精致、统一，且分镜配合文案节奏合理；反观视频 B，画面使用非常简陋的线条 icon 模板，存在单屏长达 14 秒的静置，且结尾戛然而止，PPT 感和 AI 模板痕迹过重，用户流失率会极高。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-005.gsb3-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 111.4,
+      "B_sec": 84.42
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "loss",
+       "evidence": "视频 B 在技术细节（等时传输、设备对等）和产业博弈（授权费）上的讲解更透彻，推演逻辑也更硬核；视频 A 的推演相对单薄。"
+      },
+      "visual": {
+       "verdict": "loss",
+       "evidence": "视频 A 是简陋的黑底霓虹 icon 模板；视频 B 则是极其精美的铜版手绘插画风格，实物图与插画的排版极其讲究，视觉效果完胜。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频 A 有多处长达 14 秒以上的单屏静置，且结尾戛然而止；视频 B 动画丰富，转场自然流畅。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配音与背景音乐均符合标准，无明显硬伤。"
+      },
+      "narrative": {
+       "verdict": "loss",
+       "evidence": "视频 A 节奏拖沓，信息密度低；视频 B 叙事紧凑，层层递进，更具科普视频的趣味性。"
+      },
+      "commercial": {
+       "verdict": "loss",
+       "evidence": "视频 A 的 PPT 模板感太重且画面沉闷；视频 B 制作精良，具备极高的商业交付水平。"
+      }
+     },
+     "gsb": "B",
+     "probabilities": {
+      "G": 0.0,
+      "S": 0.05,
+      "B": 0.95
+     },
+     "rationale": "视频 B 在视觉艺术风格、时序动画设计、技术细节深度和叙事节奏上全面碾压视频 A。视频 A 视觉单调，多处画面静置长达十几秒，模板感重且结尾仓促，用户体验较差。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "G",
+  "swap_consistent": true,
+  "needs_human": false
+ },
+ "case-006": {
+  "case_id": "case-006",
+  "topic": "深海恐惧图解·尺度失控的瞬间",
+  "runs": [
+   {
+    "run": 1,
+    "A": "a",
+    "B": "b",
+    "file": "case-006.gsb3-1_ab.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 64.62,
+      "sec_B": 60.63
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 覆盖了压力、黑暗和不可逃离感这几个维度，虽然缺失了未知生物比例，但相比之下，视频 B 缺失了黑暗和未知生物比例两个频道必载维度，且包含空屏问题。"
+      },
+      "visual": {
+       "verdict": "win",
+       "evidence": "视频 A 的深青色细线仪表风与深海主题更契合，视觉层级较好。视频 B 的红绿 HUD 风格虽然有特色，但数字罗列感较强，且在后半段出现了约 2 秒的近乎空屏状态。"
+      },
+      "temporal": {
+       "verdict": "win",
+       "evidence": "视频 A 虽有半透明残影和 PPT 节奏，但整体画面过渡比视频 B 的慢淡入导致的空屏现象更稳定。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者音轨表现相当，配音清晰，背景音乐烘托了深海的紧张氛围。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 A 结构相对完整，逻辑递进更符合科普观众的接受习惯。"
+      },
+      "commercial": {
+       "verdict": "win",
+       "evidence": "视频 A 整体视觉完成度更高，更接近频道的交付标准。"
+      }
+     },
+     "gsb": "G",
+     "probabilities": {
+      "G": 0.7,
+      "S": 0.2,
+      "B": 0.1
+     },
+     "rationale": "综合评估，视频 A 在任务对齐、视觉呈现以及时序稳定性上均优于视频 B。视频 B 缺失了多个频道要求的核心维度，且在后半段出现了明显的画面空窗（近空屏），视觉层级也偏扁平。因此判定 A 更好。",
+     "confidence": "high",
+     "needs_human": false
+    }
+   },
+   {
+    "run": 2,
+    "A": "b",
+    "B": "a",
+    "file": "case-006.gsb3-2_ba.md",
+    "result": {
+     "duration_check": {
+      "A_sec": 60.6,
+      "B_sec": 64.6
+     },
+     "gate_shortcut": {
+      "applied": false,
+      "fatal_side": "none"
+     },
+     "dimension_comparison": {
+      "task_alignment": {
+       "verdict": "win",
+       "evidence": "视频 A 和 B 都较好地覆盖了压力的概念，但视频 B 更好地融合了“黑暗”这一频道必载维度，其光照随深度衰减的可视化（阳光带、暮光带、无光带）更契合主题。"
+      },
+      "visual": {
+       "verdict": "tie",
+       "evidence": "视频 A 采用深绿/红色 HUD 风格，信息层级偏扁平；视频 B 采用深青色仪表盘和刻度尺风格。两者视觉质量和氛围感相当，且都存在单屏静置时间较长的问题。"
+      },
+      "temporal": {
+       "verdict": "loss",
+       "evidence": "视频 B 在约 40 秒处出现了较长时间的半透明残影和交叉溶解，影响了画面流畅度；但视频 A 也在约 28 秒处出现了近乎空屏的慢显现问题。综合来看时序表现基本持平。"
+      },
+      "audio": {
+       "verdict": "tie",
+       "evidence": "两者的配乐与配音均符合泛科普风格，声画同步正常。"
+      },
+      "narrative": {
+       "verdict": "win",
+       "evidence": "视频 B 在叙事结构上将压力、黑暗与深海恐惧症的心理机制结合得更自然，逻辑连贯性略优于视频 A。"
+      },
+      "commercial": {
+       "verdict": "tie",
+       "evidence": "两者均有轻微的 PPT 节奏，但整体包装完整，具备相似的商业可用性。"
+      }
+     },
+     "gsb": "S",
+     "probabilities": {
+      "G": 0.35,
+      "S": 0.45,
+      "B": 0.2
+     },
+     "rationale": "视频 A 和 B 在视觉和技术层面上各有小瑕疵（如 A 的慢显现空屏、B 的半透明残影和转场问题），且均有单屏静置较长的问题。视频 B 在任务对齐度上略好，涵盖了黑暗维度，但整体差异未达到压倒性优势，故判定为无实质差异。",
+     "confidence": "medium",
+     "needs_human": false
+    }
+   }
+  ],
+  "final_a_vs_b": "S",
+  "swap_consistent": false,
+  "needs_human": true,
+  "note": "换位反转 ['G', 'S'] → 降级 S"
+ }
+}
