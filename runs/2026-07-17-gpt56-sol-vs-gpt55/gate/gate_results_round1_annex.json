@@ -1,0 +1,664 @@
+{
+ "case-001-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-001-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-002-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-002-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-003-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-003-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-004-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-004-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-005-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-005-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "pass",
+  "needs_human": false,
+  "needs_human_reasons": []
+ },
+ "case-006-a": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "borderline",
+    "evidence": "视频中未包含关于『未知生物的比例/尺度』这一维度的对比展示，缺少频道描述中要求的必备要素。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "borderline",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "视频缺失了频道定位中关于『未知生物的比例/尺度』这一维度的对比展示，需人工确认是否放行。"
+  ]
+ },
+ "case-006-b": {
+  "rules": [
+   {
+    "rule": 1,
+    "name": "产品或品牌错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 2,
+    "name": "核心事实错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 3,
+    "name": "关键内容缺失",
+    "verdict": "fail",
+    "evidence": "视频未包含 channelDescription 和 must_cover 要求覆盖的‘黑暗’维度（如光线随深度的衰减和分层）以及‘未知生物的比例/尺度’维度。"
+   },
+   {
+    "rule": 4,
+    "name": "严重人物、产品变形",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 5,
+    "name": "音频缺失或语言错误",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 6,
+    "name": "违反平台、法律或安全要求",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 7,
+    "name": "文件不可播放",
+    "verdict": "pass",
+    "evidence": ""
+   },
+   {
+    "rule": 8,
+    "name": "硬性规格不合格",
+    "verdict": "pass",
+    "evidence": ""
+   }
+  ],
+  "overall": "fail",
+  "needs_human": false,
+  "needs_human_reasons": []
+ }
+}
