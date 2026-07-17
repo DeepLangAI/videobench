@@ -1,6 +1,6 @@
 # GSB Judge Prompt 模板
 
-输出必须符合 `schemas/gsb_result.schema.json`。调用方职责（不写进 prompt）：随机化 A/B 顺序；不透露哪个是新模型哪个是基线；重要样本换位复评 + 多次采样；换位反转标记 swap_consistent=false。
+输出必须符合 `schemas/gsb_result.schema.json`。调用方职责（不写进 prompt）：随机化 A/B 顺序；不透露哪个是新模型哪个是基线；重要样本换位复评 + 多次采样；换位反转标记 swap_consistent=false；**双视频同请求输入时要求 judge 先输出两条视频的时长核对（duration_check），并把密集抽帧人工复核台账（objective/frame_review_ledger.json）作为 confirmed_issues 随 evidence 注入——judge 的"两条内容相同/拼接"类断言必须客观轨抽帧仲裁后才可采信**（models.md 坑 #10/#11）。
 
 ---
 
