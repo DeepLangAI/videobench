@@ -7,7 +7,7 @@
 - **有参照（with-reference）**：视频 + Brief + 产品事实 + 平台/品牌要求，六层全评；
 - **无参照（no-reference）**：只有视频，仅评 dimensions.md 中不需参照的维度，报告必须注明降级范围。
 
-无论哪种模式，**客观检查轨先行**：证据提取阶段同时运行确定性工具检查（ffprobe 规格、OCR 错字比对、ASR 语言检测、LUFS 响度、帧间差分），结果写入 `evidence.objective_metrics`。客观轨能给出结论的项不再交给 Judge，客观轨与 Judge 冲突时以客观轨为准（见 evolution.md）。
+无论哪种模式，**客观检查轨先行**：证据提取阶段同时运行确定性工具检查（ffprobe 规格、OCR 错字比对、ASR 语言检测、LUFS 响度、帧间差分），结果写入 `evidence.objective_metrics`。L2/L3 打分前另跑**密集抽帧人工复核台账**（≥0.5fps 全片拼图 + 可疑帧放大，产物 `objective/frame_review_ledger.json`，记录带时间戳的确认画面 bug 与单屏停留时长）——2026-07-17 实测双 Judge 模型在稀疏抽帧下系统性漏报布局级 bug（models.md 坑 #11），台账作为确认问题清单注入 judge，冲突时以台账为准。客观轨能给出结论的项不再交给 Judge，客观轨与 Judge 冲突时以客观轨为准（见 evolution.md）。
 
 Judge 模型采用双模型策略（gemini-3.5-flash 全维度 + doubao-seed-2-pro 视觉专项），分工、合并规则、评分虚高校准与已知坑见 [models.md](models.md)。
 

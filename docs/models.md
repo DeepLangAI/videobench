@@ -44,13 +44,16 @@ python3 analyze_video.py --url <公网视频URL> --preset visual    # doubao 视
 
 1. **qwen3.6-plus**：纯文本模型，看不了视频——不要用；
 2. **qwen3-vl-flash**：贵（同片 125k tokens）且有幻觉——不要用；
-3. **doubao 输入视频上限 50 MiB**，超限报 InvalidParameter——此时视觉维度以 gemini full 报告为准，并在报告注明该片缺 doubao 交叉验证（本机无 ffmpeg，压不了片）；
+3. **doubao 输入视频上限 50 MiB**，超限报 InvalidParameter——此时视觉维度以 gemini full 报告为准，并在报告注明该片缺 doubao 交叉验证（2026-07-17 更新：本机已有 ffmpeg/ffprobe，可压片或转 URL，"本机无 ffmpeg"已过时）；
 4. **gemini 知识纠错幻觉**：偶发拿自己的知识"纠正"画面文案（如把正确年份判成错别字）——时效性"错别字"类发现必须先核实；
 5. **gemini 同音字听写不可靠**：实测把"第三夜"听成"第三页"、"说完"听成"说罢"——凡"读错字/念错稿"类发现，登记前必须用字幕 VTT 核对原稿；
 6. **网关仅公司网络/特定 Wi-Fi 可达**：连不上先确认网络再排查；
 7. 模型的问题清单是**草稿不是结论**：致命判定（Gate fail）必须有可验证证据，低置信转人工；
 8. **gemini 对无音轨视频会整段幻觉音频**（2026-07-15 hyperframes-showcase 试跑实测，5/5 复现）：对没有音轨的视频，它会虚构 BGM 风格、"音乐戛然而止"、甚至完整的配音内容与 TTS 音色评价（把烧录字幕脑补成口播），并据此下"致命"判定。**任何音频类发现，必须先由客观轨确认音轨存在**（mdls 或 MP4 box 扫描），否则一律作废；
-9. **video-triage 的内置 prompt 面向口播带货短视频**：评产品 showcase / kinetic typography 类片时，"弱钩子、无 CTA、语义断行"等标准系统性偏严（实测把逐屏歌词式文案全判成断行错误）。videobench 正式接入时需按视频类型分化 prompt。
+9. **video-triage 的内置 prompt 面向口播带货短视频**：评产品 showcase / kinetic typography 类片时，"弱钩子、无 CTA、语义断行"等标准系统性偏严（实测把逐屏歌词式文案全判成断行错误）。videobench 正式接入时需按视频类型分化 prompt；
+10. **gemini 双视频同请求输入偶发内容混淆幻觉**（2026-07-17 GSB 实测）：把两条视频当成一条流，虚构"B 前 84 秒与 A 完全一致、后段拼接残损"（抽帧证伪）。缓解：GSB 输出强制 duration_check（两条时长与 ffprobe 比对）+ 换位复评 + 可疑的"内容相同/拼接"类断言一律客观轨抽帧仲裁；时长核对正确≠内容归属正确；
+11. **0.5fps 抽帧不足以做 L2/L3 质检**（2026-07-17 实测）：双模型在 0.5fps 下全部漏掉空面板、悬浮错位元素、裁切残线、灰行叠压等布局级 bug（同片人工密集抽帧全部确认）。L2/L3 打分前先跑**密集抽帧人工复核台账**（≥0.5fps 全片拼图 + 可疑帧放大，产物 objective/frame_review_ledger.json），注入 judge 作确认问题清单（客观优先）；doubao 交叉验证 fps 提到 1.0+；
+12. **模型对"干净的幻灯片式成片"系统性虚高 1–1.5 分**（2026-07-17 实测，虚高偏差在此类片上的具体形态）：全程静态模板卡片可被判 4.85/优秀。对策已进 prompts/dimension_judge_content_channel.md v2（顶级锚定 + AI味/PPT味计扣 + 先数问题后给分）。
 
 ## GSB Pairwise 的模型（2026-07-15 拍板）
 
